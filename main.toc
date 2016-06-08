@@ -33,26 +33,35 @@
 \contentsline {section}{\numberline {3.1}Introduction}{16}
 \contentsline {section}{\numberline {3.2}Recherche d'image par le contenu bas\IeC {\'e}e exemple}{16}
 \contentsline {section}{\numberline {3.3}Architecture du r\IeC {\'e}seau \IeC {\`a} convolution}{18}
-\contentsline {section}{\numberline {3.4}Entra\IeC {\^\i }nement du r\IeC {\'e}seau}{21}
-\contentsline {section}{\numberline {3.5}Extraction des caract\IeC {\'e}ristiques}{22}
-\contentsline {subsection}{\numberline {3.5.1}Derni\IeC {\`e}re couche Soft-max 1000}{22}
-\contentsline {subsection}{\numberline {3.5.2}Avant avant derni\IeC {\`e}re couche de 4096 valeurs}{23}
-\contentsline {subsection}{\numberline {3.5.3}Avant derni\IeC {\`e}re couche de 4096 valeurs}{24}
-\contentsline {section}{\numberline {3.6}La description s\IeC {\'e}mantique}{24}
-\contentsline {subsection}{\numberline {3.6.1}Autoencoder 4x1x4 A REFAIRE}{27}
-\contentsline {subsection}{\numberline {3.6.2}Autoencoder 4x2x1x2x4 A REFAIRE}{27}
-\contentsline {subsection}{\numberline {3.6.3}Denoising autoencoder 4x1x4 A REFAIRE}{28}
-\contentsline {subsection}{\numberline {3.6.4}Autoencoder 4x1x4 A REFAIRE}{28}
-\contentsline {section}{\numberline {3.7}EXPLICATION AUTOENCODERS:}{29}
-\contentsline {section}{\numberline {3.8}Conclusion}{30}
-\contentsline {chapter}{\numberline {4}Application}{31}
-\contentsline {section}{\numberline {4.1}Introduction}{31}
-\contentsline {section}{\numberline {4.2}Technologie utilise}{31}
-\contentsline {subsection}{\numberline {4.2.1}Pourquoi python?}{31}
-\contentsline {subsection}{\numberline {4.2.2}Theano:}{31}
-\contentsline {subsection}{\numberline {4.2.3}Autre}{32}
-\contentsline {section}{\numberline {4.3}Interface}{33}
-\contentsline {section}{\numberline {4.4}Tests}{34}
-\contentsline {section}{\numberline {4.5}Conclusion}{34}
-\contentsline {chapter}{\numberline {5}Introduction / Conclusion}{35}
-\contentsline {chapter}{Bibliographie }{37}
+\contentsline {section}{\numberline {3.4}Entra\IeC {\^\i }nement du r\IeC {\'e}seau}{22}
+\contentsline {section}{\numberline {3.5}Extraction des caract\IeC {\'e}ristiques}{23}
+\contentsline {subsection}{\numberline {3.5.1}Derni\IeC {\`e}re couche Soft-max 1000}{23}
+\contentsline {subsection}{\numberline {3.5.2}Avant avant derni\IeC {\`e}re couche de 4096 valeurs}{24}
+\contentsline {subsection}{\numberline {3.5.3}Avant derni\IeC {\`e}re couche de 4096 valeurs}{25}
+\contentsline {subsection}{\numberline {3.5.4}R\IeC {\'e}sultats}{25}
+\contentsline {section}{\numberline {3.6}La description s\IeC {\'e}mantique}{26}
+\contentsline {subsection}{\numberline {3.6.1}R\IeC {\'e}seau \IeC {\`a} d\IeC {\'e}convolution}{26}
+\contentsline {subsection}{\numberline {3.6.2}Visualisation des caract\IeC {\'e}ristiques}{27}
+\contentsline {section}{\numberline {3.7}Description s\IeC {\'e}mantique avec les Autoencoders}{29}
+\contentsline {subsection}{\numberline {3.7.1}Autoencoder 4x1x4}{29}
+\contentsline {subsection}{\numberline {3.7.2}Autoencoder 4x2x1x2x4}{30}
+\contentsline {subsection}{\numberline {3.7.3}Denoising Autoencoder 4x1x4}{31}
+\contentsline {subsection}{\numberline {3.7.4}R\IeC {\'e}sultats}{32}
+\contentsline {section}{\numberline {3.8}La force des Deep Autoencoders}{33}
+\contentsline {section}{\numberline {3.9}Recherche avec descripteur d'image}{34}
+\contentsline {subsection}{\numberline {3.9.1}4096b avec descripteur}{34}
+\contentsline {subsection}{\numberline {3.9.2}Denoising Autoencoder avec descripteur}{35}
+\contentsline {subsection}{\numberline {3.9.3}R\IeC {\'e}sultats}{36}
+\contentsline {section}{\numberline {3.10}Comparaison avec d'autres syst\IeC {\`e}mes CBIR}{36}
+\contentsline {section}{\numberline {3.11}Conclusion}{39}
+\contentsline {chapter}{\numberline {4}Application}{40}
+\contentsline {section}{\numberline {4.1}Introduction}{40}
+\contentsline {section}{\numberline {4.2}Technologie utilise}{40}
+\contentsline {subsection}{\numberline {4.2.1}Pourquoi python?}{40}
+\contentsline {subsection}{\numberline {4.2.2}Theano:}{40}
+\contentsline {subsection}{\numberline {4.2.3}Autre}{41}
+\contentsline {section}{\numberline {4.3}Interface}{42}
+\contentsline {section}{\numberline {4.4}Tests}{43}
+\contentsline {section}{\numberline {4.5}Conclusion}{43}
+\contentsline {chapter}{\numberline {5}Introduction / Conclusion}{44}
+\contentsline {chapter}{Bibliographie }{46}

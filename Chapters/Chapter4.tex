@@ -69,8 +69,20 @@ Theano fut suivit d'autre framework qui ont repris les mêmes principes, l'un de
 D'autre outils ajoutent des couches d'abstraction a Theano pour faciliter son utilisation (ex: Blocks, Lasagne, Keras) .
 Le modèle (VGG CNN S) que nous avons utilisé est implémenté en Lasagne après avoir été convertie de Caffe (Caffe étant un autre Framework en C++ developpé par le laboratoire Berkeley Vision and Learning Center).\\
 
-Pour les autoencoders, nous avons utilisé Blocks [Bart et al. 15], un autre framework theano qui facilite la définition de modèles et leur modification. Il introduit des outils pour l'apprentissage, visualisations et sérialisation. Enfin, Fuel permet formater les données d'apprentissage d'une façon a faciliter leur manipulation, surtout quand les tailles de ses dernières deviennent importantes.
-Développés aussi par le laboratoire MILA, ces deux outils forment une base solide pour le développement de d’approche basé sur l'apprentissage profond.
+Pour les autoencoders, nous avons utilisé Blocks [Bart et al. 15], un autre framework theano qui facilite la définition de modèles et leur modification. Il introduit des outils pour l'apprentissage, visualisations et sérialisation. Enfin, Fuel permet formater les données d'apprentissage d'une façon a faciliter leur manipulation, surtout quand les tailles de ses dernières deviennent importantes.\\
+
+Dans notre cas, au lieu de le définir couche par couche, l'autoencoder 414 est défini simplement par:\\
+
+>> ae = MLP([Tanh(), Tanh()], [4096, 1000, 4096],
+              weights_init=IsotropicGaussian(0.01),
+              biases_init=Constant(0))\\
+              
+
+Puis, initialisé par:\\
+
+>> ae.initialize()\\
+
+Développés aussi par le laboratoire MILA, ces deux outils forment une base solide pour le développement de d’approches basées sur l'apprentissage profond.
 
 \section{Interface}
 

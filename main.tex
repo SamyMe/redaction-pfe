@@ -1,0 +1,112 @@
+
+% \graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
+
+\documentclass[12pt,a4paper]{book}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ucs}
+%\usepackage{fancyhdr} %pour l'entete
+%\pagestyle{fancy}
+
+\usepackage{float} % pour faire les H des figures
+
+\usepackage{lastpage} %pour changer la numérotation
+\usepackage[french]{babel}
+\usepackage{amsmath}
+\usepackage[final]{pdfpages}
+\usepackage{lmodern}
+\usepackage{amsfonts}
+\usepackage[T1]{fontenc} 
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage[french]{algorithme}
+\usepackage{algorithmicx}
+\usepackage{setspace}
+\usepackage{minitoc}
+\usepackage{lettrine}
+
+\usepackage{titlesec}
+\usepackage{sectsty}
+\usepackage{lipsum}
+\usepackage{caption}
+\usepackage[left=2.5cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+%\documentclass{report}
+%Options: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, Bjornstrup
+\usepackage[Glenn]{fncychap}
+\author{Khalil and Samy}
+
+
+\title{PFE}
+
+%%%% \footnote{wésh yban l'taht}
+%%%%% \mathrm{d} 
+%%%
+
+
+%\renewcommand{\thechapter}{\Roman{chapter}}  %redéfinir la numérotation
+%\renewcommand{\thesection}{\Roman{section}-}
+%\renewcommand{\thesubsection}{\Roman{section}.\Roman{subsection}}
+%\renewcommand{\thesubsubsection}{\Roman{section}.\Roman{subsection}.\Roman{subsubsection}}
+%
+
+%\titleformat{\chapter}[display]  %chapitre
+%{\centering\normalfont\huge\bfseries} %centré, mis en gras, taille de la police du chapitre
+% {\chaptertitlename\ \thechapter}  
+% {20pt}
+% {\Huge}  % la taille de la police du titre 
+ 
+\usepackage{fancyhdr} % pour l’entête
+\pagestyle{fancy}
+\renewcommand\headrulewidth{1pt}
+\fancyhead[R]{\slshape \leftmark } % pour avoir le nom et numéro du chapitre en cours en haut à gauche dans l’entete.
+\fancyhead[L]{ } % à droite de l’entete
+\renewcommand\footrulewidth{1pt}
+\fancyfoot[C]{ }
+\fancyfoot[R]{\thepage}
+
+\titleformat{\chapter}[display]  
+{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{0pt}{\Huge}  
+\titlespacing{\chapter}{0pt}{-20pt}{40pt}  
+
+%\renewcommand\headrulewidth{1pt}
+%\fancyhead[R]{\slshape \leftmark } % pour avoir le nom et numéro du chapitre en cours en haut à gauche dans l’entete.
+%\fancyhead[L]{ } % à droite de l’entete
+%\renewcommand\footrulewidth{1pt}
+%\fancyfoot[C]{ }
+%\fancyfoot[R]{\thepage}
+\begin{document}
+\begin{spacing}{1}
+\let\cleardoublepage\clearpage
+\frontmatter
+\maketitle
+%\onehalfspacing
+\tableofcontents
+% \listoftables
+% \addcontentsline{toc}{chapter}{Liste des tableaux }
+% \listoffigures
+% \addcontentsline{toc}{chapter}{Table des figures }
+\mainmatter
+%\includepdf[page=1]{pdg.pdf}
+%\part{ETAT DE L'ART}
+%\include{intro}
+\dominitoc
+\include{Chapters/Chapter1}
+\include{Chapters/Chapter2} 
+\include{Chapters/Chapter3}
+\include{Chapters/Chapter4} 
+\include{Chapters/Conclusion} 
+
+
+%\bibliographystyle{unsrt}%introduire les references plain | alpha unsrt apalike-fr
+%\bibliography{biblio}
+\addcontentsline{toc}{chapter}{Bibliographie }
+%\addcontentsline{toc}{chapter}{Annexe}
+%\appendix
+\end{spacing}
+\end{document}

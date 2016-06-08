@@ -1,24 +1,23 @@
 %Chapter 2
 
-\chapter{Apprentissage profond} % Main chapter title
+\chapter{Apprentissage profond}
 
-%\label{Chapter2} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+\section{Introduction}
 
-%\lhead{Chapter 2. \emph{Apprentissage profond}} % This is for the header on each page - perhaps a shortened title
+	Quelles sont les limites de l'intelligence des ordinateurs? C'est une question toujours ouverte, même en étant l'une des toutes premières à être posées depuis l'invention des ordinateurs. Dans ce chapitre nous allons présenter l'une des techniques utilisées en intelligence artificielle qui est l'apprentissage automatique, Cette dernière permet d'ajouter à l'ordinateur la capacité d'apprendre et à s'adapter en fonction de la tâche qu'il doit accomplir.
+	
+	Nous aborderons ensuite l'une des techniques les plus récentes de l'apprentissage automatique qui est l'apprentissage profond (Deep Learning), elle propose une nouvelle approche plus approfondie et plus ressemblante au comportement du cerveau.
 
-Quelles sont les limites de l'intelligence des ordinateurs? C'est une question toujours ouverte, même en étant l'une des toutes premières à être posées depuis l'invention des ordinateurs. 
-
-On peut trouver dans un dictionnaire que l'apprentissage est: "La capacité d'acquérir et d'appliquer les connaissances". Et si les ordinateurs développaient la capacité d'apprendre?
 
 \section{Apprentissage automatique:}
 
+	On peut trouver dans un dictionnaire que l'apprentissage est: "La capacité d'acquérir et d'appliquer les connaissances". C'est une notion que l'être humain a développé depuis son enfance, et si les ordinateurs arriveraient à développer la capacité d'apprendre?
 
+	La tâche de l'apprentissage automatique est de concevoir un algorithme d'apprentissage fiable pouvant être utilisé pour résoudre différents problèmes et être appliqué dans différents domaines. Son utilisation pourrait couvrir plusieurs tâches très distinctes tel que la prévision du marché boursier, la découverte de caractéristiques et motifs dans les données scientifiques ou même la reconnaissance d'objets dans les images.
 
-La tâche de l'apprentissage automatique est de concevoir un algorithme d'apprentissage fiable pouvant être utilisé pour différents problèmes dans des domaines différents. Son utilisation pourrait couvrir plusieurs tâches très distinctes tel que la prévision du marché boursier, la découverte de motifs dans les données scientifiques ou même la reconnaissance d'objets dans les images.
+	En effet, à travers l'exploration du processus d'apprentissage du cerveau, les scientifiques ont fait l'hypothèse qu'il pourrait y avoir un algorithme d'apprentissage unique utilisé pour une variété de tâches. Cet algorithme unique pourrait donc à lui tout seul s'adapter à tous les problèmes qu'il rencontre. 
 
-En fait, à travers l'exploration du processus d'apprentissage du cerveau, les scientifiques ont fait l'hypothèse qu'il pourrait y avoir un algorithme d'apprentissage unique utilisé pour une variété de tâches.
-
-Une expérience a été conçue par [Roe et al. 92] au Département du MIT de Brain and Cognitive Sciences, où ils ont coupé le lien entre l'oreille et le cortex auditif, et y ont relié les nerfs optiques (Le cortex auditif étant la partie du cerveau responsable des processus qui traitent l'information auditive capturé par l'oreille). Ils ont découvert que le cortex auditif a appris à traiter les données optiques. En d'autres termes, la partie du cerveau qui une fois a appris à entendre, maintenant apprend à voir.
+	Une expérience a été conçue en neuroscience au Département du MIT de Brain and Cognitive Sciences [Roe et al. 92], où ils ont coupé le lien entre l'oreille et le cortex auditif des furets, et y ont relié les nerfs optiques (Le cortex auditif étant la partie du cerveau responsable des processus qui traitent l'information auditive capturé par l'oreille). Ils ont découvert que le cortex auditif a pu apprendre à traiter les données optiques. En d'autres termes, la partie du cerveau qui une fois a appris à entendre, maintenant apprend à voir.
 
 \begin{figure}[H]
 	\centering
@@ -28,17 +27,16 @@ Une expérience a été conçue par [Roe et al. 92] au Département du MIT de Br
 \end{figure}
 
 
-La même expérience a été reproduite avec succès à plusieurs reprises et avec des configurations différentes (différentes régions du cerveau, des espèces différentes, etc.) qui ont conduit aux mêmes résultats.
+	La même expérience a été reproduite avec succès à plusieurs reprises et avec des configurations différentes (différentes régions du cerveau, des espèces différentes, etc.) qui ont conduit aux mêmes résultats.
 
-
-L'apprentissage automatique vise à concevoir ce genre d'algorithme. L'objectif est de trouver des modèles dans les données utilisées pour l'apprentissage, et les utiliser pour construire des modèles mathématiques pour faire des prédictions pour de nouvelles données.
+	L'apprentissage automatique vise à concevoir ce genre d'algorithme, un algorithme capable à s'adapter à toutes les situations possibles. L'objectif est de trouver des modèles dans les données utilisées pour l'apprentissage, et les généraliser pour construire des modèles mathématiques capables de faire des prédictions pour de nouvelles données.
 
 \section{Concept de base de l'apprentissage:}
 
 
-D'après la définition de [Mit et al. 97] "Un programme informatique apprend d'une expérience \textit{E} à effectuer une tâche \textit{T} si sa performance \textit{P} mesurée pour cette tâche \textit{T} s'améliore avec l’expérience \textit{E}."
+	D'après la définition de [Mit et al. 97] "Un programme informatique apprend d'une expérience \textit{E} à effectuer une tâche \textit{T} si sa performance \textit{P} mesurée pour cette tâche \textit{T} s'améliore avec l’expérience \textit{E}."
 
-La description de ce que les éléments \textit{E},\textit{T} et \textit{P} , comme donné dans [Goo et al. 16] est très claire et peut être vue comme suit :
+	La description des notions d'expérience, tâche et performance comme donné dans [Goo et al. 16] est très claire et peut être vue comme suit :
 
 \subsection{Les tâches \textit{T}:} 
 L'apprentissage automatique intervient dans des tâches où l'algorithmique classique est incapable de donner des résultats satisfaisants, ou prendrait simplement trop de temps. Ces tâches peuvent être par exemple des tâches de :
@@ -260,3 +258,8 @@ L'Apprentissage profond a surperformé les techniques de vision artificielle tra
 	\caption[An Electron]{Résultats du concours d'IMAGEnet.}
 	\label{fig:Electron}
 \end{figure}
+
+
+\section{Conclusion}
+
+

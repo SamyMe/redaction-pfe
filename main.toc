@@ -52,7 +52,7 @@
 \contentsline {subsection}{\numberline {4.2.2}Theano:}{31}
 \contentsline {subsection}{\numberline {4.2.3}Autre}{32}
 \contentsline {section}{\numberline {4.3}Interface}{33}
-\contentsline {section}{\numberline {4.4}Tests}{33}
-\contentsline {section}{\numberline {4.5}Conclusion}{33}
-\contentsline {chapter}{\numberline {5}Introduction / Conclusion}{34}
-\contentsline {chapter}{Bibliographie }{36}
+\contentsline {section}{\numberline {4.4}Tests}{34}
+\contentsline {section}{\numberline {4.5}Conclusion}{34}
+\contentsline {chapter}{\numberline {5}Introduction / Conclusion}{35}
+\contentsline {chapter}{Bibliographie }{37}

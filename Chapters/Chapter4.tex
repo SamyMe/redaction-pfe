@@ -59,7 +59,6 @@ Donc, la dérivée de \textbf{y}, défini ci-dessus, par rapport a \textbf{x} pe
 >> theano.pp(gy)\\
  '((fill((x ** TensorConstant{2}), TensorConstant{1.0}) * TensorConstant{2}) * (x ** (TensorConstant{2} - TensorConstant{1})))'\\
  
-
 Une notion importante est celle de \textit{variables symboliques} qui représente des variables symboliques. Elle peuvent être considéré comme des buffers qui contient des valeurs qui peuvent être partagée entre plusieurs fonctions de Theano.\\
 
 Un autre point fort est l'optimisation pour l'utilisation de matrice multi-dimensionnel, mais aussi la facilite de compiler les opérations sur des GPU.\\
@@ -77,8 +76,26 @@ Développés aussi par le laboratoire MILA, ces deux outils forment une base sol
 
 Pour développer l'interface graphique nous avons utilise PyQt4, un module pour python qui permet de le lier avec Qt, un framework pour le développement d'application multi-plates-formes.\\
 
-Nous allons montrer l'interface que nous avons développer pour l'application de notre approche.
+L'interface que nous avons développé pour l'application de notre approche permet de sélectionner une base d'images qui servira de recueille pour les résultats des requêtes. La base est 
 
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=3in]{Figures/mainMenu.png}
+	\caption[Menu principal]{Menu principal}
+	\label{fig:Electron}
+\end{figure}
+
+
+Ensuite, en cliquant sur le bouton "Recherche", une nouvelle fenêtre s'ouvre qui permet de sélectionner une image qui fera office de requête. Une fois l'image sélectionnée, le bouton "Chercher" lance la recherche et affiche les cinq (5) images jugées les plus ressemblantes. 
+
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=5in]{Figures/search.png}
+	\caption[]{}
+	\label{fig:Electron}
+\end{figure}
 
 \section{Tests}
 

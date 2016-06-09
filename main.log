@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.6)  9 JUN 2016 10:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2016.6.9)  9 JUN 2016 18:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 7 languages loaded.
+Babel <3.9k> and hyphenation patterns for 4 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
@@ -62,27 +62,32 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 Package: lastpage 2013/01/28 v1.2l Refers to last page's name (HMM; JPG)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2013/12/03 3.9h The Babel package
+Package: babel 2014/03/24 3.9k The Babel package
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel-french/frenchb.ldf
-Language: frenchb 2013/12/30 v2.6g French support from the babel system
+Language: frenchb 2014/03/14 v3.0b French support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2013/12/03 3.9h Babel common definitions
+File: babel.def 2014/03/24 3.9k Babel common definitions
 \babel@savecnt=\count90
 \U@D=\dimen103
 )
+\l@acadian = a dialect from \language\l@french 
+\l@canadien = a dialect from \language\l@french 
+\FBcolonskip=\skip43
+\FBthinskip=\skip44
 \FB@interchartokenstateORI=\count91
-Package babel Info: Making : an active character on input line 244.
-Package babel Info: Making ; an active character on input line 245.
-Package babel Info: Making ! an active character on input line 246.
-Package babel Info: Making ? an active character on input line 247.
+Package babel Info: Making : an active character on input line 367.
+Package babel Info: Making ; an active character on input line 368.
+Package babel Info: Making ! an active character on input line 369.
+Package babel Info: Making ? an active character on input line 370.
+\FBguillskip=\skip45
 \FB@Mht=\dimen104
 \std@mcc=\count92
 \dec@mcc=\count93
-\listindentFB=\skip43
-\labelwidthFB=\skip44
-\leftmarginFB=\skip45
+\listindentFB=\skip46
+\labelwidthFB=\skip47
+\leftmarginFB=\skip48
 \parindentFFN=\dimen105
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
@@ -92,7 +97,7 @@ Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip46
+\@mathmargin=\skip49
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -142,8 +147,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \totwidth@=\dimen113
 \lineht@=\dimen114
 \@envbody=\toks25
-\multlinegap=\skip47
-\multlinetaggap=\skip48
+\multlinegap=\skip50
+\multlinetaggap=\skip51
 \mathdisplay@stack=\toks26
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
@@ -160,12 +165,12 @@ Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Bcount=\count107
 \calc@Adimen=\dimen115
 \calc@Bdimen=\dimen116
-\calc@Askip=\skip49
-\calc@Bskip=\skip50
+\calc@Askip=\skip52
+\calc@Bskip=\skip53
 LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count108
-\calc@Cskip=\skip51
+\calc@Cskip=\skip54
 )
 (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
@@ -183,7 +188,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 ))
-(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
@@ -230,7 +235,7 @@ File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
 \c@AM@survey=\count110
 \AM@templatesizebox=\box31
 )
-(/usr/share/texmf/tex/latex/lm/lmodern.sty
+(/usr/share/texlive/texmf-dist/tex/latex/lm/lmodern.sty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -294,8 +299,8 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen119
 \extrarowheight=\dimen120
 \NC@list=\toks29
-\extratabsurround=\skip52
-\backup@length=\skip53
+\extratabsurround=\skip55
+\backup@length=\skip56
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen121
@@ -304,7 +309,7 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 Package: algorithme 
 \@float@every@algorithmfloat=\toks30
 \c@algorithmfloat=\count111
-\alglength=\skip54
+\alglength=\skip57
 )
 (/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
@@ -313,13 +318,13 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \c@ALG@line=\count112
 \c@ALG@rem=\count113
 \c@ALG@nested=\count114
-\ALG@tlm=\skip55
-\ALG@thistlm=\skip56
+\ALG@tlm=\skip58
+\ALG@thistlm=\skip59
 \c@ALG@Lnr=\count115
 \c@ALG@blocknr=\count116
 \c@ALG@storecount=\count117
 \c@ALG@tmpcounter=\count118
-\ALG@tmplength=\skip57
+\ALG@tmplength=\skip60
 ) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
@@ -332,8 +337,8 @@ Package: mtcmess 2006/03/14
 Package minitoc Info: I0001
 (minitoc)             *** minitoc package, version 60 ***.
 \tf@mtc=\write3
-\mtcindent=\skip58
-\mtcskipamount=\skip59
+\mtcindent=\skip61
+\mtcskipamount=\skip62
 Package minitoc Info: I0005
 (minitoc)             compatible with hyperref.
 Package minitoc Info: I0023
@@ -363,7 +368,7 @@ Package minitoc Info: I0031
 \c@minitocdepth=\count120
 \c@ptc=\count121
 \c@parttocdepth=\count122
-\ptcindent=\skip60
+\ptcindent=\skip63
 Package minitoc Info: I0010
 (minitoc)             The english language is selected.
 (minitoc)              on input line 4910.
@@ -398,8 +403,8 @@ Loading lettrine.cfg
 (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \ttl@box=\box36
-\beforetitleunit=\skip61
-\aftertitleunit=\skip62
+\beforetitleunit=\skip64
+\aftertitleunit=\skip65
 \ttl@plus=\dimen134
 \ttl@minus=\dimen135
 \ttl@toksa=\toks32
@@ -457,25 +462,25 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fncychap/fncychap.sty
 Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
-\RW=\skip63
-\mylen=\skip64
-\myhi=\skip65
-\px=\skip66
-\py=\skip67
-\pyy=\skip68
-\pxx=\skip69
-\backskip=\skip70
+\RW=\skip66
+\mylen=\skip67
+\myhi=\skip68
+\px=\skip69
+\py=\skip70
+\pyy=\skip71
+\pxx=\skip72
+\backskip=\skip73
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip71
-\f@ncyO@elh=\skip72
-\f@ncyO@erh=\skip73
-\f@ncyO@olh=\skip74
-\f@ncyO@orh=\skip75
-\f@ncyO@elf=\skip76
-\f@ncyO@erf=\skip77
-\f@ncyO@olf=\skip78
-\f@ncyO@orf=\skip79
+\fancy@headwidth=\skip74
+\f@ncyO@elh=\skip75
+\f@ncyO@erh=\skip76
+\f@ncyO@olh=\skip77
+\f@ncyO@orh=\skip78
+\f@ncyO@elf=\skip79
+\f@ncyO@erf=\skip80
+\f@ncyO@olf=\skip81
+\f@ncyO@orf=\skip82
 ) (./main.aux
 (./Chapters/Introduction.aux) (./Chapters/Chapter1.aux
 
@@ -590,7 +595,8 @@ LaTeX Font Info:    ... okay on input line 83.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
 LaTeX Font Info:    ... okay on input line 83.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 83.
- (/usr/share/texmf/tex/latex/lm/t1lmr.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
@@ -605,14 +611,12 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             ! on input line 83.
 LaTeX Info: Redefining \degres on input line 83.
 LaTeX Info: Redefining \dots on input line 83.
-
-
-Package frenchb.ldf Warning: Setting StandardEnumerateEnv=true for
-(frenchb.ldf)                compatibility with enumerate package,
-(frenchb.ldf)                 on input line 83.
-
+Package frenchb.ldf Info: Setting StandardEnumerateEnv=true for
+(frenchb.ldf)             compatibility with enumerate package,
+(frenchb.ldf)              on input line 83.
 LaTeX Info: Redefining \up on input line 83.
 \AtBeginShipoutBox=\box37
+
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count130
@@ -727,24 +731,24 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 87.
-(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+(/usr/share/texlive/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 87.
 
-(/usr/share/texmf/tex/latex/lm/omllmm.fd
+(/usr/share/texlive/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 87.
 
 
-(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+(/usr/share/texlive/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OMX+lmex on input line 87.
 
 
-(/usr/share/texmf/tex/latex/lm/omxlmex.fd
+(/usr/share/texlive/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -766,7 +770,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./main.toc
+{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}] (./main.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 4.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1766,26 +1770,28 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 11065 strings out of 494940
- 154261 string characters out of 6178600
- 338827 words of memory out of 5000000
- 13772 multiletter control sequences out of 15000+600000
+ 11217 strings out of 494996
+ 156739 string characters out of 6180247
+ 340163 words of memory out of 5000000
+ 13913 multiletter control sequences out of 15000+600000
  89187 words of font info for 65 fonts, out of 8000000 for 9000
- 38 hyphenation exceptions out of 8191
+ 14 hyphenation exceptions out of 8191
  38i,52n,43p,1043b,1426s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share
-/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/lm
-/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-mi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fo
-nts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb
-></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmro12.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
-ols/msbm10.pfb>
-Output written on main.pdf (52 pages, 7785743 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/t
+exlive/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texlive/texmf-dist/f
+onts/enc/dvips/lm/lm-ec.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/l
+m-mathit.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/lm/lmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/lm/lmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr12.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/lm/lmri12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/lm/lmro12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (52 pages, 7843936 bytes).
 PDF statistics:
  292 PDF objects out of 1000 (max. 8388607)
  163 compressed objects within 2 object streams

@@ -3,7 +3,9 @@
 \chapter{Représentation sémantique d'images} % Main chapter title
 
 \section{Introduction}
-	Dans ce chapitre nous allons présenter nos différentes approches pour la réalisation d'une recherche d'image par le contenu (CBIR) basée exemple. Contrairement aux techniques traditionnelles qui utilisent les formes, textures, couleurs, etc. pour comparer les images (calculer la ressemblance), nous allons utiliser dans nos approches des techniques de l'apprentissage profond. Parmi les techniques d'apprentissage profond sur lesquels nous allons nous intéresser sont: Les réseaux à convolution (ConvNets) et les Deep AutoEncoders. 
+	Dans ce chapitre nous allons présenter nos différentes approches pour la réalisation d'une recherche d'image par le contenu (CBIR) basée exemple. Contrairement aux techniques traditionnelles qui utilisent les formes, textures, couleurs, etc. pour comparer les images (calculer la ressemblance), nous allons utiliser dans nos approches des techniques d'apprentissage profond. Parmi les techniques d'apprentissage profond sur lesquels nous allons nous intéresser: Les réseaux à convolution (ConvNets) et les Deep AutoEncoders. 
+	
+	Les premières tentatives consisteront en l'exploration de différentes méthodes d'extraire la description d'une image a partir d'un réseau a convolution. Puis nous allons renduire les descripteur vers un même espace de représentation (1000 valeurs réels), et observer ce que cette réduction apporte en terme de performance. Enfin, nous tenterons d'introduire des descripteur de texture au représentations extraites par les réseaux profond et voir si cela apporte des amélioration en terme d'extraction d'images ressemblantes.
 	
 	Nous allons aussi donner pour chacune de nos approches, des interprétations bien fondées des différents résultats que nous avons obtenu, ainsi qu'une étude comparative avec des systèmes connus de recherche d'images par le contenu qui utilisent les descripteurs d'images traditionnels.
 	

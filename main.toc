@@ -13,24 +13,24 @@
 \contentsline {section}{\numberline {2.6}Probl\IeC {\`e}me du Semantic Gap}{6}
 \contentsline {chapter}{\numberline {3}Apprentissage profond}{7}
 \contentsline {section}{\numberline {3.1}Introduction}{7}
-\contentsline {section}{\numberline {3.2}Apprentissage automatique:}{7}
-\contentsline {section}{\numberline {3.3}Concept de base de l'apprentissage:}{8}
-\contentsline {subsection}{\numberline {3.3.1}Les t\IeC {\^a}ches \textit {T}:}{8}
-\contentsline {subsection}{\numberline {3.3.2}Les mesures de performance \textit {P}:}{9}
-\contentsline {subsection}{\numberline {3.3.3}L\IeC {\textquoteright }exp\IeC {\'e}rience \textit {E}:}{9}
-\contentsline {subsection}{\numberline {3.3.4}Exemple d'algorithme d'apprentissage: R\IeC {\'e}seaux de neurones :}{9}
+\contentsline {section}{\numberline {3.2}Apprentissage automatique}{7}
+\contentsline {section}{\numberline {3.3}Concepts de base de l'apprentissage automatique}{8}
+\contentsline {subsection}{\numberline {3.3.1}Les t\IeC {\^a}ches \textit {T}}{8}
+\contentsline {subsection}{\numberline {3.3.2}Les mesures de performance \textit {P}}{9}
+\contentsline {subsection}{\numberline {3.3.3}L\IeC {\textquoteright }exp\IeC {\'e}rience \textit {E}}{9}
+\contentsline {subsection}{\numberline {3.3.4}Exemple d'algorithme d'apprentissage: Les r\IeC {\'e}seaux de neurones}{9}
 \contentsline {section}{\numberline {3.4}Introduction \IeC {\`a} l'apprentissage profond}{11}
-\contentsline {section}{\numberline {3.5}Les Architectures de l'apprentissage profond:}{12}
-\contentsline {subsection}{\numberline {3.5.1}Deep Belief Networks}{12}
+\contentsline {section}{\numberline {3.5}Les Architectures de l'apprentissage profond}{12}
+\contentsline {subsection}{\numberline {3.5.1}Deep Belief Networks}{13}
 \contentsline {subsection}{\numberline {3.5.2}R\IeC {\'e}seau de neurones \IeC {\`a} convolution}{13}
 \contentsline {subsubsection}{La convolution}{13}
-\contentsline {subsubsection}{Le padding}{13}
+\contentsline {subsubsection}{Le padding}{14}
 \contentsline {subsubsection}{Le sous-\IeC {\'e}chantillonnage}{14}
-\contentsline {subsubsection}{Normalisation}{14}
-\contentsline {subsubsection}{Perceptron multicouche enti\IeC {\`e}rement connect\IeC {\'e}:}{15}
+\contentsline {subsubsection}{Normalisation}{15}
+\contentsline {subsubsection}{Perceptron multicouche enti\IeC {\`e}rement connect\IeC {\'e}}{15}
 \contentsline {subsubsection}{Dropout}{15}
-\contentsline {subsection}{\numberline {3.5.3}Deep Auto-encoders}{15}
-\contentsline {section}{\numberline {3.6}Les exploits des techniques d'apprentissage profond [Jia 14]}{16}
+\contentsline {subsection}{\numberline {3.5.3}Deep AutoEncoders}{15}
+\contentsline {section}{\numberline {3.6}Les exploits des techniques d'apprentissage profond [Site2]}{16}
 \contentsline {section}{\numberline {3.7}Conclusion}{17}
 \contentsline {chapter}{\numberline {4}Recherche s\IeC {\'e}mantique d'images}{18}
 \contentsline {section}{\numberline {4.1}Introduction}{18}
@@ -39,8 +39,8 @@
 \contentsline {section}{\numberline {4.4}Entra\IeC {\^\i }nement du r\IeC {\'e}seau}{24}
 \contentsline {section}{\numberline {4.5}Extraction des caract\IeC {\'e}ristiques}{25}
 \contentsline {subsection}{\numberline {4.5.1}Derni\IeC {\`e}re couche Soft-max 1000}{25}
-\contentsline {subsection}{\numberline {4.5.2}Avant avant derni\IeC {\`e}re couche de 4096 valeurs}{26}
-\contentsline {subsection}{\numberline {4.5.3}Avant derni\IeC {\`e}re couche de 4096 valeurs}{27}
+\contentsline {subsection}{\numberline {4.5.2}Avant avant derni\IeC {\`e}re couche 4096a}{26}
+\contentsline {subsection}{\numberline {4.5.3}Avant derni\IeC {\`e}re couche 4096b}{27}
 \contentsline {subsection}{\numberline {4.5.4}R\IeC {\'e}sultats}{27}
 \contentsline {section}{\numberline {4.6}La description s\IeC {\'e}mantique}{28}
 \contentsline {subsection}{\numberline {4.6.1}R\IeC {\'e}seau \IeC {\`a} d\IeC {\'e}convolution}{28}

@@ -1,10 +1,10 @@
 \select@language {french}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Recherche d'image par contenu}{1}
+\contentsline {xchapter}{Recherche d'image par le contenu}{1}
 \contentsline {figure}{\numberline {1.1}{\ignorespaces An Electron}}{1}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces An Electron}}{2}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces An Electron}}{3}
-\contentsline {figure}{\numberline {1.4}{\ignorespaces An Electron}}{4}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces An Electron}}{4}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces An Electron}}{5}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Apprentissage profond}{6}
 \contentsline {figure}{\numberline {2.1}{\ignorespaces An Electron}}{7}
@@ -19,17 +19,26 @@
 \contentsline {figure}{\numberline {2.10}{\ignorespaces An Electron}}{15}
 \contentsline {figure}{\numberline {2.11}{\ignorespaces An Electron}}{15}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Impl\IeC {\'e}mentation}{16}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces An Electron}}{16}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces An Electron}}{17}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces An Electron}}{18}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces An Electron}}{19}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces An Electron}}{21}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces An Electron}}{22}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces An Electron}}{22}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces An Electron}}{23}
+\contentsline {xchapter}{Recherche s\IeC {\'e}mantique d'images}{17}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces An Electron}}{20}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces An Electron}}{21}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces An Electron}}{22}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces An Electron}}{23}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces comp7}}{27}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Res}}{28}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Res}}{28}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Res}}{29}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces An Electron}}{31}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces An Electron}}{32}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces An Electron}}{33}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces comp7}}{34}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Res}}{35}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces An Electron}}{36}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces comp7}}{37}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces An Electron}}{39}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Application}{24}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Res}}{26}
+\contentsline {xchapter}{Application}{41}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces TheanoGraph}}{42}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Menu principal}}{43}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Introduction / Conclusion}{27}
+\contentsline {xchapter}{Introduction / Conclusion}{45}

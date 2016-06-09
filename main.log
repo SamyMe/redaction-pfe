@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.6)  9 JUN 2016 05:14
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.6)  9 JUN 2016 10:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -521,6 +521,9 @@ LaTeX Warning: Label `fig:Electron' multiply defined.
 
 LaTeX Warning: Label `fig:Electron' multiply defined.
 
+
+LaTeX Warning: Label `fig:Electron' multiply defined.
+
 ) (./Chapters/Chapter3.aux
 
 LaTeX Warning: Label `fig:Electron' multiply defined.
@@ -901,6 +904,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -908,6 +925,45 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8 <./Figures/OneLearningAlgoAndreNg.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -917,15 +973,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [9] <Figures/mlp.png, id=60, 286.06876pt x 130.4875pt>
 File: Figures/mlp.png Graphic file (type png)
  <use Figures/mlp.png>
-Package pdftex.def Info: Figures/mlp.png used on input line 84.
+Package pdftex.def Info: Figures/mlp.png used on input line 83.
 (pdftex.def)             Requested size: 216.81pt x 98.89674pt.
-
-<Figures/image024.png, id=61, 402.50375pt x 293.095pt>
-File: Figures/image024.png Graphic file (type png)
-
-<use Figures/image024.png>
-Package pdftex.def Info: Figures/image024.png used on input line 110.
-(pdftex.def)             Requested size: 216.81pt x 157.87537pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -934,15 +983,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [10 <./Figures/mlp.png>]
-<Figures/highVariation.jpg, id=68, 1003.75pt x 1420.30624pt>
-File: Figures/highVariation.jpg Graphic file (type jpg)
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
-<use Figures/highVariation.jpg>
-Package pdftex.def Info: Figures/highVariation.jpg used on input line 131.
-(pdftex.def)             Requested size: 216.81pt x 306.76857pt.
+ []
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+
+ []
+
+<Figures/image024.png, id=67, 402.50375pt x 293.095pt>
+File: Figures/image024.png Graphic file (type png)
+
+<use Figures/image024.png>
+Package pdftex.def Info: Figures/image024.png used on input line 109.
+(pdftex.def)             Requested size: 216.81pt x 157.87537pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -951,8 +1011,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [11 <./Figures/image024.png>]
-Underfull \vbox (badness 2418) has occurred while \output is active []
+<Figures/highVariation.jpg, id=72, 1003.75pt x 1420.30624pt>
+File: Figures/highVariation.jpg Graphic file (type jpg)
 
+<use Figures/highVariation.jpg>
+Package pdftex.def Info: Figures/highVariation.jpg used on input line 129.
+(pdftex.def)             Requested size: 216.81pt x 306.76857pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -968,15 +1032,18 @@ File: uni-1.def 2013/05/13 UCS: Unicode data U+0100..U+01FF
 File: Figures/Mylenet.png Graphic file (type png)
 
 <use Figures/Mylenet.png>
-Package pdftex.def Info: Figures/Mylenet.png used on input line 160.
+Package pdftex.def Info: Figures/Mylenet.png used on input line 158.
 (pdftex.def)             Requested size: 361.34999pt x 84.45952pt.
 
 <Figures/convAouat.png, id=77, 1017.8025pt x 499.8675pt>
 File: Figures/convAouat.png Graphic file (type png)
 
 <use Figures/convAouat.png>
-Package pdftex.def Info: Figures/convAouat.png used on input line 174.
+Package pdftex.def Info: Figures/convAouat.png used on input line 172.
 (pdftex.def)             Requested size: 361.34999pt x 177.46564pt.
+
+Underfull \vbox (badness 1888) has occurred while \output is active []
+
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -984,20 +1051,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13 <./Figures/Mylenet.png> <./Figures/convAouat.png>]
-<Figures/zero-padding.png, id=83, 768.8725pt x 380.42125pt>
+[13 <./Figures/Mylenet.png>]
+<Figures/zero-padding.png, id=82, 768.8725pt x 380.42125pt>
 File: Figures/zero-padding.png Graphic file (type png)
 
 <use Figures/zero-padding.png>
-Package pdftex.def Info: Figures/zero-padding.png used on input line 190.
+Package pdftex.def Info: Figures/zero-padding.png used on input line 188.
 (pdftex.def)             Requested size: 361.34999pt x 178.79219pt.
-
-<Figures/maxpool.jpeg, id=84, 789.95125pt x 369.38pt>
-File: Figures/maxpool.jpeg Graphic file (type jpg)
-
-<use Figures/maxpool.jpeg>
-Package pdftex.def Info: Figures/maxpool.jpeg used on input line 207.
-(pdftex.def)             Requested size: 361.34999pt x 168.96432pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1005,7 +1065,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14 <./Figures/zero-padding.png>]
+[14 <./Figures/convAouat.png> <./Figures/zero-padding.png>]
+<Figures/maxpool.jpeg, id=87, 789.95125pt x 369.38pt>
+File: Figures/maxpool.jpeg Graphic file (type jpg)
+
+<use Figures/maxpool.jpeg>
+Package pdftex.def Info: Figures/maxpool.jpeg used on input line 205.
+(pdftex.def)             Requested size: 361.34999pt x 168.96432pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1017,14 +1084,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: Figures/deep_autoencoder.png Graphic file (type png)
 
 <use Figures/deep_autoencoder.png>
-Package pdftex.def Info: Figures/deep_autoencoder.png used on input line 237.
+Package pdftex.def Info: Figures/deep_autoencoder.png used on input line 235.
 (pdftex.def)             Requested size: 216.81pt x 146.54489pt.
 
 <Figures/randomImageGEn.JPG, id=92, 616.3025pt x 384.43625pt>
 File: Figures/randomImageGEn.JPG Graphic file (type jpg)
 
 <use Figures/randomImageGEn.JPG>
-Package pdftex.def Info: Figures/randomImageGEn.JPG used on input line 246.
+Package pdftex.def Info: Figures/randomImageGEn.JPG used on input line 244.
 (pdftex.def)             Requested size: 216.81pt x 135.24101pt.
 
 
@@ -1038,9 +1105,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: Figures/clairifaiIMAGENET.png Graphic file (type png)
 
 <use Figures/clairifaiIMAGENET.png>
-Package pdftex.def Info: Figures/clairifaiIMAGENET.png used on input line 263.
+Package pdftex.def Info: Figures/clairifaiIMAGENET.png used on input line 261.
 (pdftex.def)             Requested size: 361.34999pt x 205.66995pt.
-)
+
+Underfull \hbox (badness 10000) in paragraph at lines 266--267
+
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1048,6 +1119,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [17 <./Figures/clairifaiIMAGENET.png (PNG copy)>]
+<Figures/selfDriving.png, id=102, 1506.62875pt x 1053.9375pt>
+File: Figures/selfDriving.png Graphic file (type png)
+
+<use Figures/selfDriving.png>
+Package pdftex.def Info: Figures/selfDriving.png used on input line 272.
+(pdftex.def)             Requested size: 361.34999pt x 252.77327pt.
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[18 <./Figures/selfDriving.png>]
 \openout2 = `Chapters/Chapter3.aux'.
 
  (./Chapters/Chapter3.tex
@@ -1080,7 +1165,7 @@ Overfull \hbox (28.46642pt too wide) in paragraph at lines 20--62
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18
+ [19
 
 
 
@@ -1091,7 +1176,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19]
+[20]
 
 LaTeX Warning: Command \' invalid in math mode on input line 73.
 
@@ -1110,12 +1195,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20]
+[21]
 Overfull \hbox (50.90411pt too wide) in paragraph at lines 99--108
  [] 
  []
 
-<Figures/conv.jpg, id=112, 833.1125pt x 250.9375pt>
+<Figures/conv.jpg, id=117, 833.1125pt x 250.9375pt>
 File: Figures/conv.jpg Graphic file (type jpg)
  <use Figures/conv.jpg>
 Package pdftex.def Info: Figures/conv.jpg used on input line 125.
@@ -1134,7 +1219,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21 <./Figures/conv.jpg>] <Figures/pool.jpg, id=116, 770.88pt x 261.97874pt>
+[22 <./Figures/conv.jpg>] <Figures/pool.jpg, id=122, 770.88pt x 261.97874pt>
 File: Figures/pool.jpg Graphic file (type jpg)
 
 <use Figures/pool.jpg>
@@ -1145,7 +1230,7 @@ Overfull \hbox (36.41951pt too wide) in paragraph at lines 141--142
  [][] 
  []
 
-<Figures/flattening.jpg, id=117, 393.47pt x 572.1375pt>
+<Figures/flattening.jpg, id=123, 393.47pt x 572.1375pt>
 File: Figures/flattening.jpg Graphic file (type jpg)
 
 <use Figures/flattening.jpg>
@@ -1158,8 +1243,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22 <./Figures/pool.jpg>]
-<Figures/architectureVGG.jpg, id=122, 1128.215pt x 1327.96124pt>
+[23 <./Figures/pool.jpg>]
+<Figures/architectureVGG.jpg, id=127, 1128.215pt x 1327.96124pt>
 File: Figures/architectureVGG.jpg Graphic file (type jpg)
 
 <use Figures/architectureVGG.jpg>
@@ -1175,7 +1260,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23 <./Figures/flattening.jpg>]
+[24 <./Figures/flattening.jpg>]
 Overfull \hbox (7.92165pt too wide) in paragraph at lines 184--185
 []\T1/lmr/m/n/12 La base uti-li-sée pour l'en-traî-ne-ment (ap-pren-tis-sage) d
 e ce ré-seau à convo-lu-tion est ILSVRC-
@@ -1187,7 +1272,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24 <./Figures/architectureVGG.jpg>]
+[25 <./Figures/architectureVGG.jpg>]
 Underfull \vbox (badness 2443) has occurred while \output is active []
 
 
@@ -1197,21 +1282,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25]
+[26]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.35403pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26] <Figures/results/res-wang1.png, id=135, 586.8324pt x 442.2924pt>
+[27] <Figures/results/res-wang1.png, id=140, 586.8324pt x 442.2924pt>
 File: Figures/results/res-wang1.png Graphic file (type png)
 
 <use Figures/results/res-wang1.png>
 Package pdftex.def Info: Figures/results/res-wang1.png used on input line 294.
 (pdftex.def)             Requested size: 256.0748pt x 193.00304pt.
 
-<Figures/results/res-caltech1.png, id=136, 586.8324pt x 442.2924pt>
+<Figures/results/res-caltech1.png, id=141, 586.8324pt x 442.2924pt>
 File: Figures/results/res-caltech1.png Graphic file (type png)
 
 <use Figures/results/res-caltech1.png>
@@ -1229,7 +1314,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27] <Figures/arch.png, id=140, 700.2963pt x 172.0026pt>
+[28] <Figures/arch.png, id=146, 700.2963pt x 172.0026pt>
 File: Figures/arch.png Graphic file (type png)
 
 <use Figures/arch.png>
@@ -1245,8 +1330,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28 <./Figures/results/res-wang1.png> <./Figures/results/res-caltech1.png>]
-<Figures/unpooling.png, id=147, 867.24pt x 317.2653pt>
+[29 <./Figures/results/res-wang1.png> <./Figures/results/res-caltech1.png>]
+<Figures/unpooling.png, id=152, 867.24pt x 317.2653pt>
 File: Figures/unpooling.png Graphic file (type png)
 
 <use Figures/unpooling.png>
@@ -1259,8 +1344,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29 <./Figures/arch.png> <./Figures/unpooling.png>]
-<Figures/visualisation.png, id=153, 727.0362pt x 1006.7211pt>
+[30 <./Figures/arch.png> <./Figures/unpooling.png>]
+<Figures/visualisation.png, id=158, 727.0362pt x 1006.7211pt>
 File: Figures/visualisation.png Graphic file (type png)
 
 <use Figures/visualisation.png>
@@ -1273,8 +1358,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30 <./Figures/visualisation.png>]
-<Figures/ae/414.jpg, id=158, 424.58624pt x 453.695pt>
+[31 <./Figures/visualisation.png>]
+<Figures/ae/414.jpg, id=163, 424.58624pt x 453.695pt>
 File: Figures/ae/414.jpg Graphic file (type jpg)
  <use Figures/ae/414.jpg>
 Package pdftex.def Info: Figures/ae/414.jpg used on input line 383.
@@ -1289,7 +1374,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[31] <Figures/ae/42124.jpg, id=162, 424.58624pt x 458.71375pt>
+[32] <Figures/ae/42124.jpg, id=167, 424.58624pt x 458.71375pt>
 File: Figures/ae/42124.jpg Graphic file (type jpg)
 
 <use Figures/ae/42124.jpg>
@@ -1305,8 +1390,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[32 <./Figures/ae/414.jpg>]
-<Figures/ae/denoising.jpg, id=166, 600.2425pt x 472.76625pt>
+[33 <./Figures/ae/414.jpg>]
+<Figures/ae/denoising.jpg, id=171, 600.2425pt x 472.76625pt>
 File: Figures/ae/denoising.jpg Graphic file (type jpg)
 
 <use Figures/ae/denoising.jpg>
@@ -1319,15 +1404,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[33 <./Figures/ae/42124.jpg>]
-<Figures/results/res-wang2.png, id=170, 586.8324pt x 442.2924pt>
+[34 <./Figures/ae/42124.jpg>]
+<Figures/results/res-wang2.png, id=176, 586.8324pt x 442.2924pt>
 File: Figures/results/res-wang2.png Graphic file (type png)
 
 <use Figures/results/res-wang2.png>
 Package pdftex.def Info: Figures/results/res-wang2.png used on input line 498.
 (pdftex.def)             Requested size: 256.0748pt x 193.00304pt.
 
-<Figures/results/res-caltech2.png, id=171, 586.8324pt x 442.2924pt>
+<Figures/results/res-caltech2.png, id=177, 586.8324pt x 442.2924pt>
 File: Figures/results/res-caltech2.png Graphic file (type png)
 
 <use Figures/results/res-caltech2.png>
@@ -1349,13 +1434,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[34 <./Figures/ae/denoising.jpg>]
+[35 <./Figures/ae/denoising.jpg>]
 Overfull \hbox (9.00072pt too wide) in paragraph at lines 506--507
 []\T1/lmr/m/n/12 Nos deux pre-mières ar-chi-tec-tures d'Au-toen-co-ders qui son
 t Au-toen-co-der 4x1x4 et 4x2x1x2x4
  []
 
-<Figures/manifold.png, id=176, 643.40375pt x 656.4525pt>
+<Figures/manifold.png, id=181, 643.40375pt x 656.4525pt>
 File: Figures/manifold.png Graphic file (type png)
 
 <use Figures/manifold.png>
@@ -1371,15 +1456,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[35 <./Figures/results/res-wang2.png> <./Figures/results/res-caltech2.png>]
+[36 <./Figures/results/res-wang2.png> <./Figures/results/res-caltech2.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.35403pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36 <./Figures/manifold.png>]
-<Figures/ae/AE-Descripteur.jpg, id=186, 590.205pt x 554.07pt>
+[37 <./Figures/manifold.png>]
+<Figures/ae/AE-Descripteur.jpg, id=191, 590.205pt x 554.07pt>
 File: Figures/ae/AE-Descripteur.jpg Graphic file (type jpg)
 
 <use Figures/ae/AE-Descripteur.jpg>
@@ -1392,15 +1477,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[37 <./Figures/ae/AE-Descripteur.jpg>]
-<Figures/results/res-wang3.png, id=190, 586.8324pt x 442.2924pt>
+[38 <./Figures/ae/AE-Descripteur.jpg>]
+<Figures/results/res-wang3.png, id=195, 586.8324pt x 442.2924pt>
 File: Figures/results/res-wang3.png Graphic file (type png)
 
 <use Figures/results/res-wang3.png>
 Package pdftex.def Info: Figures/results/res-wang3.png used on input line 604.
 (pdftex.def)             Requested size: 256.0748pt x 193.00304pt.
 
-<Figures/results/res-caltech3.png, id=191, 586.8324pt x 442.2924pt>
+<Figures/results/res-caltech3.png, id=196, 586.8324pt x 442.2924pt>
 File: Figures/results/res-caltech3.png Graphic file (type png)
 
 <use Figures/results/res-caltech3.png>
@@ -1418,7 +1503,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38 <./Figures/results/res-wang3.png> <./Figures/results/res-caltech3.png>]
+[39 <./Figures/results/res-wang3.png> <./Figures/results/res-caltech3.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1428,7 +1513,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39] <Figures/results/res-wang4.png, id=200, 586.8324pt x 442.2924pt>
+[40] <Figures/results/res-wang4.png, id=206, 586.8324pt x 442.2924pt>
 File: Figures/results/res-wang4.png Graphic file (type png)
 
 <use Figures/results/res-wang4.png>
@@ -1444,14 +1529,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40 <./Figures/results/res-wang4.png>])
+[41 <./Figures/results/res-wang4.png>])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.35403pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[41]
+[42]
 \openout2 = `Chapters/Chapter4.aux'.
 
  (./Chapters/Chapter4.tex
@@ -1481,7 +1566,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
-[42
+[43
 
 
 
@@ -1495,7 +1580,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
-<Figures/yGraph.png, id=212, 373.395pt x 276.03125pt>
+<Figures/yGraph.png, id=217, 373.395pt x 276.03125pt>
 File: Figures/yGraph.png Graphic file (type png)
  <use Figures/yGraph.png>
 Package pdftex.def Info: Figures/yGraph.png used on input line 47.
@@ -1546,7 +1631,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[43 <./Figures/yGraph.png>]
+[44 <./Figures/yGraph.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
@@ -1571,14 +1656,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
-<Figures/mainMenu.png, id=217, 656.4525pt x 698.61pt>
+<Figures/mainMenu.png, id=222, 656.4525pt x 698.61pt>
 File: Figures/mainMenu.png Graphic file (type png)
 
 <use Figures/mainMenu.png>
 Package pdftex.def Info: Figures/mainMenu.png used on input line 96.
 (pdftex.def)             Requested size: 216.81pt x 230.73389pt.
 
-<Figures/search.png, id=218, 1016.79875pt x 836.12375pt>
+<Figures/search.png, id=223, 1016.79875pt x 836.12375pt>
 File: Figures/search.png Graphic file (type png)
 
 <use Figures/search.png>
@@ -1591,14 +1676,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[44 <./Figures/mainMenu.png>])
+[45 <./Figures/mainMenu.png>])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[45 <./Figures/search.png>]
+[46 <./Figures/search.png>]
 \openout2 = `Chapters/Conclusion.aux'.
 
  (./Chapters/Conclusion.tex
@@ -1610,7 +1695,7 @@ Package ucs Warning: This text contains LRM/RLM/LRE/RLE characters.
 (ucs)                characters instead to ensure correct order.
 (ucs)                 on input line 18.
 
-[46
+[47
 
 
 
@@ -1627,7 +1712,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[47] 
+[48] 
 AED: lastpage setting LastPage
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
@@ -1670,7 +1755,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[48
+[49
 
 
 ] (./main.aux (./Chapters/Introduction.aux) (./Chapters/Chapter1.aux)
@@ -1681,10 +1766,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 11058 strings out of 494940
- 154112 string characters out of 6178600
+ 11065 strings out of 494940
+ 154261 string characters out of 6178600
  338827 words of memory out of 5000000
- 13766 multiletter control sequences out of 15000+600000
+ 13772 multiletter control sequences out of 15000+600000
  89187 words of font info for 65 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  38i,52n,43p,1043b,1426s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1700,10 +1785,10 @@ nts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb
 share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
 ols/msbm10.pfb>
-Output written on main.pdf (51 pages, 5579568 bytes).
+Output written on main.pdf (52 pages, 7785743 bytes).
 PDF statistics:
- 287 PDF objects out of 1000 (max. 8388607)
- 161 compressed objects within 2 object streams
+ 292 PDF objects out of 1000 (max. 8388607)
+ 163 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 186 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 191 words of extra memory for PDF output out of 10000 (max. 10000000)
 

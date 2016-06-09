@@ -38,20 +38,19 @@
 	La description des notions d'expérience, tâche et performance comme donné dans le livre [Goo et al. 16] est très claire et peut être vue comme suit :
 
 \subsection{Les tâches \textit{T}} 
-	L'apprentissage automatique intervient dans des tâches où l'algorithmique classique est incapable de donner des résultats satisfaisants, ou prendrait simplement trop de temps. Ces tâches peuvent être par exemple des tâches de:
+	L'apprentissage automatique intervient dans des tâches où l'algorithmique classique est incapable de donner des résultats satisfaisants, ou prendrait simplement trop de temps. Ces tâches peuvent être par exemple des tâches de:\\
 
-\textbf{Classification:} Où le programme doit trouver la classe $c \in C$ à laquelle une entrée \textit{X} appartient. En d'autres termes, on cherche à apprendre une fonction $F : \mathbb{R}^{n} \rightarrow C$ (C étant un ensemble discret ${1..k}$).
+\textbf{Classification:} Où le programme doit trouver la classe $c \in C$ à laquelle une entrée \textit{X} appartient. En d'autres termes, on cherche à apprendre une fonction $F : \mathbb{R}^{n} \rightarrow C$ (C étant un ensemble discret ${1..k}$).\\
 
-\textbf{Classification avec manque de données:} Elle rajoute un niveau de difficulté à la tâche de classification en supposant que certaines données peuvent être manquantes. Le classifieur devrait dans ce cas apprendre plusieurs fonctions avec différents sous ensembles des attributs de l'entrée \textit{X}.
+\textbf{Classification avec manque de données:} Elle rajoute un niveau de difficulté à la tâche de classification en supposant que certaines données peuvent être manquantes. Le classifieur devrait dans ce cas apprendre plusieurs fonctions avec différents sous ensembles des attributs de l'entrée \textit{X}.\\
 
-\textbf{Régression:} Cette tâche ressemble à une classification, sauf que le résultat qui fut la classe devient une valeur numérique, et l'espace de sortie devient continu. Nous cherchons donc à trouver une fonction $F : \mathbb{R}^{n} \rightarrow \mathbb{R}$.
+\textbf{Régression:} Cette tâche ressemble à une classification, sauf que le résultat qui fut la classe devient une valeur numérique, et l'espace de sortie devient continu. Nous cherchons donc à trouver une fonction $F : \mathbb{R}^{n} \rightarrow \mathbb{R}$.\\
 
-\textbf{Transcription:} Elle ressemble encore à la classification, sauf que ce que nous cherchons en sortie au lieu d’être une classe, est une séquence de symboles. Comme par exemple la traduction d'une phrase dans une autre langue.
+\textbf{Transcription:} Elle ressemble encore à la classification, sauf que ce que nous cherchons en sortie au lieu d’être une classe, est une séquence de symboles. Comme par exemple la traduction d'une phrase dans une autre langue.\\
 
-\textbf{Détection d'anomalie:} Où le programme examine constamment une série d’événements ou de données d'entrée et signale s'il trouve quelque chose d'inhabituel. Une de ses applications est la détection de fraude dans l'utilisation de carte de crédit.
+\textbf{Détection d'anomalie:} Où le programme examine constamment une série d’événements ou de données d'entrée et signale s'il trouve quelque chose d'inhabituel. Une de ses applications est la détection de fraude dans l'utilisation de carte de crédit.\\
 
-\textbf{Dé-bruitage:} Permet d'apprendre à "nettoyer" une entrée \textit{X'} qui pourrait être corrompue par un certain processus de corruption, en retournant l'entrée originale \textit{X} .
-
+\textbf{Dé-bruitage:} Permet d'apprendre à "nettoyer" une entrée \textit{X'} qui pourrait être corrompue par un certain processus de corruption, en retournant l'entrée originale \textit{X}.\\
 
 \subsection{Les mesures de performance \textit{P}}
 
@@ -63,13 +62,13 @@
 
 \subsection{L’expérience \textit{E}}
 
-	L'expérience peut être définie par un scénario que le programme est sensé suivre durant son apprentissage, ce scénario est appelé un algorithme d'apprentissage. Ces algorithmes se divisent en trois grandes catégories:
+	L'expérience peut être définie par un scénario que le programme est sensé suivre durant son apprentissage, ce scénario est appelé un algorithme d'apprentissage. Ces algorithmes se divisent en trois grandes catégories:\\
 	
-\textbf{Non-supervisé:} Le programme reçoit un ensemble de données (des exemples) qu'il se doit d'étudier pour satisfaire une tâche précise qui revient soit à minimiser un coût (pour augmenter la performance), soit à trouver des caractéristiques qui lient les attributs des exemples entre eux, afin de trouver une manière de regrouper ces derniers en catégories. Par exemple: clustering, PCA, etc.
+\textbf{Non-supervisé:} Le programme reçoit un ensemble de données (des exemples) qu'il se doit d'étudier pour satisfaire une tâche précise qui revient soit à minimiser un coût (pour augmenter la performance), soit à trouver des caractéristiques qui lient les attributs des exemples entre eux, afin de trouver une manière de regrouper ces derniers en catégories. Par exemple: clustering, PCA, etc.\\
 
-\textbf{Supervisé:} Le résultat du traitement de chaque exemple est connu à l'avance. À chaque fois que le programme retourne une valeur de la fonction à apprendre, il compare cette dernière avec la valeur juste (connue), si elle est conforme le programme est sur la bonne voie, sinon des modifications sur les la fonction apprise (paramètres appris) doivent être effectuées. Par exemple: Les réseaux de neurones, SVM, arbre de décision, etc.
+\textbf{Supervisé:} Le résultat du traitement de chaque exemple est connu à l'avance. À chaque fois que le programme retourne une valeur de la fonction à apprendre, il compare cette dernière avec la valeur juste (connue), si elle est conforme le programme est sur la bonne voie, sinon des modifications sur les la fonction apprise (paramètres appris) doivent être effectuées. Par exemple: Les réseaux de neurones, SVM, arbre de décision, etc.\\
 
-\textbf{Apprentissage par renforcement:} c'est un type différent des deux premiers dans le sens où le programme est perçu comme un agent qui interagie dans un environnement, et qui reçoit des feedbacks (réponse ou retour d'information) lui permettant d’établir une "politique" qui vise à maximiser ses "gains" ou "récompenses". Par exemple: Q-learning.
+\textbf{Apprentissage par renforcement:} c'est un type différent des deux premiers dans le sens où le programme est perçu comme un agent qui interagie dans un environnement, et qui reçoit des feedbacks (réponse ou retour d'information) lui permettant d’établir une "politique" qui vise à maximiser ses "gains" ou "récompenses". Par exemple: Q-learning.\\
 
 
 \subsection{Exemple d'algorithme d'apprentissage: Les réseaux de neurones}
@@ -98,11 +97,11 @@ $$f(x) = G( b^{(2)} + W^{(2)}( s( b^{(1)} + W^{(1)} x)))$$
 	Nous allons ensuite réaliser un apprentissage du réseau de neurones et donc essayer de se rapprocher de la fonction qu'on souhaite apprendre. Les paramètres à apprendre (\textit{w1}, \textit{ w2}, \textit{b1} et \textit{b2}) seront changés à chaque itération grâce à différents algorithmes, le plus utilisé étant l'algorithme rétro-propagation du gradient (backpropagation of errors). 
 	Ayant le résultat souhaité (réel) et le résultat retourné, l'idée est de définir une fonction "coût" (l'inverse de la performance) qui décrira à quelle point la fonction \textit{f} serait-elle loin de ce qui est recherché. Ensuite dériver \textit{f} en fonction de chacun de ses paramètres, et changer ces derniers dans le sens qu'il faut (rajouter à sa valeur, ou en soustraire), dans le but de faire diminuer la valeur du coût.
 
-	Comme mentionné précédemment, l'apprentissage d'une tâche \textit{T} est sensé permettre une application de ce qui a été acquis sur de nouvelles données, ceci est appelé la capacité de généralisation. La généralisation d'un apprentissage peut faire face à plusieurs problèmes, les plus majeurs sont:
+	Comme mentionné précédemment, l'apprentissage d'une tâche \textit{T} est sensé permettre une application de ce qui a été acquis sur de nouvelles données, ceci est appelé la capacité de généralisation. La généralisation d'un apprentissage peut faire face à plusieurs problèmes, les plus majeurs sont:\\
 
-\textbf{Le sur-apprentissage:} Quand le programme retourne de bon résultats sur les données d'apprentissage, mais n'arrive pas à généraliser sur des données qu'il n'a jamais rencontré auparavant.
+\textbf{Le sur-apprentissage:} Quand le programme retourne de bon résultats sur les données d'apprentissage, mais n'arrive pas à généraliser sur des données qu'il n'a jamais rencontré auparavant.\\
 
-\textbf{Le sous-apprentissage :} Dans le cas où le programme n'arrive même pas à trouver un modèle qui satisfait les données de l'apprentissage.
+\textbf{Le sous-apprentissage :} Dans le cas où le programme n'arrive même pas à trouver un modèle qui satisfait les données de l'apprentissage.\\
 
 
 \begin{figure}[H]
@@ -119,7 +118,6 @@ $$f(x) = G( b^{(2)} + W^{(2)}( s( b^{(1)} + W^{(1)} x)))$$
 
 	Principalement en raison de la faible puissance de calcul des machines, les algorithmes d'apprentissage n'étaient pas très complexes et puissants. Mais grâce à l'évolution exponentielle de la puissance de traitement (loi de Moore [Moo 65]) de nouvelles perspectives ont été mises en lumière.
 Depuis 2010, l'utilisation de la puissance des GPUs pour les calculs est devenue accessible pour le grand public, les scientifiques sont en mesure d'effectuer efficacement des calculs parallèles sur de très grosses matrices, et donc, ils ont réussi à élargir leurs modèles d'algorithme d'apprentissage pour atteindre de manière significative de meilleures résultats et performances.
-
 
 	L'apprentissage profond permet de développer des approches d'apprentissage automatique de plus en plus profondes (plus volumineuses et donc plus complexes), mais il permet aussi une très grande flexibilité qui lui permet de combiner plusieurs techniques différentes. Pourtant, beaucoup de problèmes restent à être réglés, un des plus gros étant la soi-disant curse of dimentionality (la malédiction de la dimensionnalité). En fait, les données en entrée à un algorithme d'apprentissage sont de haute dimensionnalité. Une image par exemple, est une matrice de milliers, ou peut-être même de millions de pixels, chacun peut prendre des centaines de valeurs différentes (les valeurs RGB). Si nous prenons par exemple une image de $100 \times 100$, le nombre de configurations distinctes qu'elle peut prendre est:
 $256^{3} \times 100 \times 100 = 1 677 721 600$.
@@ -262,6 +260,17 @@ Ainsi, l'espace des images significatives forme seulement une fraction de l'espa
 	\centering
 		\includegraphics[width=5in]{Figures/clairifaiIMAGENET.png}
 	\caption[An Electron]{Résultats du concours d'ImageNet. [Site2]}
+	\label{fig:Electron}
+\end{figure}
+
+En voyant ces résultats phénoménaux, beaucoup de laboratoires ce sont converti vers ces approches et y consacrent une grande partie de leurs efforts. On peut citer les laboratoires de grandes université tel que: Universite de Berkeley, Stanford, Bonn, Berlin, Oxford, Monteral, Toronto. Mais aussi les laboratoires de grande entreprises tel que: Facebook AI Research, Google Research, Twitter’s Deep Learning Group, Microsoft Research.\\
+
+L’Intérêt croissant des entreprises au domaine fait naître des initiatives et des prototypes pour des produits plus intéressant les uns que les autres et pousse donc la recherche. Parmi ces produit on peut noter les véhicule autonomes avec \textbf{Google Self-Driving Car}, mais aussi le lancement du \textbf{Tesla Autopilo} sur les nouvelle voiture Tesla depuis deja quelques mois. Et enfin les testes échelle réel d'un convois d'une douzaine de gros camions auto-pilotés des grand constructeurs Volvo, Daimler, Iveco, MAN, DAF et Scania. Le convoi a parcouru 2000km a travers l’Europe et fut un grand succès.
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=5in]{Figures/selfDriving.png}
+	\caption[An Electron]{Respectivement de gauche a droite, et de haut en bas: \textbf{Google Self-Driving Car}; \textbf{Tesla Autopilo}; Le convois des camions auto-pilotés; le parcours des camions a travers l'Europe.}
 	\label{fig:Electron}
 \end{figure}
 

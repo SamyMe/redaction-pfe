@@ -10,6 +10,7 @@
 \contentsline {subsection}{\numberline {1.4.4}Bas\IeC {\'e}e-Feedback :}{3}
 \contentsline {section}{\numberline {1.5}Syst\IeC {\`e}mes et applications existants}{3}
 \contentsline {section}{\numberline {1.6}Probl\IeC {\`e}me du Semantic Gap}{5}
+\contentsline {section}{\numberline {1.7}Conclusion}{5}
 \contentsline {chapter}{\numberline {2}Apprentissage profond}{6}
 \contentsline {section}{\numberline {2.1}Introduction}{6}
 \contentsline {section}{\numberline {2.2}Apprentissage automatique}{6}
@@ -66,4 +67,4 @@
 \contentsline {section}{\numberline {4.4}Tests}{44}
 \contentsline {section}{\numberline {4.5}Conclusion}{44}
 \contentsline {chapter}{\numberline {5}Introduction / Conclusion}{45}
-\contentsline {chapter}{Bibliographie }{47}
+\contentsline {chapter}{Bibliographie }{48}

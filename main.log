@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.5.19)  9 JUN 2016 03:03
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.5.19)  9 JUN 2016 12:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1589,31 +1589,38 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
  (./Chapters/Conclusion.tex
 Chapitre 5.
-
-Package ucs Warning: This text contains LRM/RLM/LRE/RLE characters.
-(ucs)                Note that these are ignored because of incomplete
-(ucs)                right-to-left capability. Try using LRO/RLO/PDF
-(ucs)                characters instead to ensure correct order.
-(ucs)                 on input line 23.
-
 [45
 
 
 
 ]
-Overfull \hbox (32.76884pt too wide) in paragraph at lines 37--38
+
+Package ucs Warning: This text contains LRM/RLM/LRE/RLE characters.
+(ucs)                Note that these are ignored because of incomplete
+(ucs)                right-to-left capability. Try using LRO/RLO/PDF
+(ucs)                characters instead to ensure correct order.
+(ucs)                 on input line 49.
+
+
+Overfull \hbox (32.76884pt too wide) in paragraph at lines 63--64
 []\T1/lmr/m/n/12 [Site2] Li Jiang, Mu-sings on Deep Lear-ning https ://medium.c
 om/global-silicon-valley/machine-
  []
 
-)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[46] 
+[46])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[47] 
 AED: lastpage setting LastPage
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
@@ -1656,7 +1663,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[47
+[48
 
 
 ] (./main.aux (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux)
@@ -1667,10 +1674,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 11047 strings out of 494958
- 153905 string characters out of 6179213
+ 11049 strings out of 494958
+ 153928 string characters out of 6179213
  338164 words of memory out of 5000000
- 13757 multiletter control sequences out of 15000+600000
+ 13759 multiletter control sequences out of 15000+600000
  89187 words of font info for 65 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  38i,52n,43p,1043b,1426s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1686,10 +1693,10 @@ nts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb
 share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
 ols/msbm10.pfb>
-Output written on main.pdf (50 pages, 5602452 bytes).
+Output written on main.pdf (51 pages, 5603967 bytes).
 PDF statistics:
- 284 PDF objects out of 1000 (max. 8388607)
- 159 compressed objects within 2 object streams
+ 287 PDF objects out of 1000 (max. 8388607)
+ 161 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  186 words of extra memory for PDF output out of 10000 (max. 10000000)
 

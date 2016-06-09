@@ -74,9 +74,9 @@ Pour les autoencoders, nous avons utilisé Blocks [Bart et al. 15], un autre fra
 Dans notre cas, au lieu de le définir couche par couche, l'autoencoder 414 est défini simplement par:\\
 
 >> ae = MLP([Tanh(), Tanh()], [4096, 1000, 4096],
-              weights_init=IsotropicGaussian(0.01),
+$              weights_init=IsotropicGaussian(0.01),
               biases_init=Constant(0))\\
-              
+ $             
 
 Puis, initialisé par:\\
 

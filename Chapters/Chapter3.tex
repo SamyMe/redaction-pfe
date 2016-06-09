@@ -229,7 +229,7 @@ Les deux premières couches entièrement connectées ont 4096 neurones chacune, 
 
 
 
-\subsection{Avant avant dernière couche de 4096 valeurs} 
+\subsection{Avant avant dernière couche 4096a} 
 	Dans cette deuxième approche nous intéresserons à l'avant avant dernière couche du réseau à convolution, c'est la première couche entièrement connecté qui se trouvent après les piles de convolution. Cette couche contient 4096 valeur, par conséquent on la notera comme la couche \textbf{4096a}.
 	Contrairement à l'approche précédente, cette couche n'est pas une soft-max donc elle ne contient pas la classification de la base ILSVRC-2012 en 4096 classes, mais plutôt elle contient une représentation de l’aplatissement des 512 matrices 6x6 obtenues à partir des piles de convolutions (cumul des apprentissages des convolutions), et elle a été transformée en 4096 valeurs dans cette couche. En utilisant les 4096 valeurs de cette couche pour le calcul des ressemblance, nous avons obtenu les résultats suivants:
 
@@ -256,7 +256,7 @@ Les deux premières couches entièrement connectées ont 4096 neurones chacune, 
 %C'est la première couche de neurones entièrement connectés (4096 neurones), celle qui se trouvent juste après les couches de convolution. Cette couche cumule donc l'apprentissage des dernières convolutions qui ont été effectué sur l'image.
 %SUPPOSITION: Cumuler les informations sémantiques qui sont traitées moins profondément.
 
-\subsection{Avant dernière couche de 4096 valeurs}
+\subsection{Avant dernière couche 4096b}
 	La couche qui sera utilisée pour notre troisième approche est l'avant dernière couche entièrement connectée du réseau à convolution. Elle contient 4096 valeurs et se trouvent entre la couche Soft-max 1000 et la couche 4096a, on la notera donc comme la couche \textbf{4096b}.
 	
 	La couche 4096b ajoute un traitement plus avancé des connaissances acquises à partir de la couche 4096a qui la précède, et n'étant pas une Soft-max donc elle ne donne pas une représentation en classes, elle est par conséquent moins spécialisé que la dernière couche Soft-max 1000.

@@ -1,15 +1,11 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.6)  10 JUN 2016 04:21
-=======
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.5.19)  10 JUN 2016 04:26
->>>>>>> 7a8fc93047e2ca7f64d72f65e21daf87cf95c921
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.6)  10 JUN 2016 05:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 6 languages loaded.
+Babel <3.9h> and hyphenation patterns for 7 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
@@ -599,7 +595,7 @@ LaTeX Warning: Label `fig:Electron' multiply defined.
 
 LaTeX Warning: Label `fig:Electron' multiply defined.
 
-) (./Chapters/Conclusion.aux))
+) (./Chapters/Conclusion.aux) (./Chapters/Ref.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
@@ -615,7 +611,8 @@ LaTeX Font Info:    ... okay on input line 83.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
 LaTeX Font Info:    ... okay on input line 83.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 83.
- (/usr/share/texmf/tex/latex/lm/t1lmr.fd
+
+(/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
@@ -751,39 +748,39 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 87.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 88.
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 87.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 88.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 87.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 88.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 87.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 88.
 
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 87.
+(Font)              <14.4> on input line 88.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 87.
+(Font)              <10> on input line 88.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 87.
-LaTeX Font Info:    Try loading font information for U+msa on input line 87.
+(Font)              <7> on input line 88.
+LaTeX Font Info:    Try loading font information for U+msa on input line 88.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 87.
+LaTeX Font Info:    Try loading font information for U+msb on input line 88.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -813,7 +810,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [3]
 Package minitoc Info: I0024
-(minitoc)             PREPARING MINITOCS FROM main.toc on input line 99.
+(minitoc)             PREPARING MINITOCS FROM main.toc on input line 100.
 \openout2 = `Chapters/Introduction.aux'.
 
  (./Chapters/Introduction.tex
@@ -833,6 +830,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
@@ -1444,7 +1446,7 @@ File: Figures/visualisation.png Graphic file (type png)
 Package pdftex.def Info: Figures/visualisation.png used on input line 372.
 (pdftex.def)             Requested size: 361.34999pt x 500.3485pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 365--366
+Underfull \hbox (badness 10000) in paragraph at lines 380--381
 
  []
 
@@ -1698,18 +1700,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
-<Figures/beforeOptimization.png, id=218, 928.46875pt x 727.71875pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--69
+
+ []
+
+<Figures/beforeOptimization.png, id=230, 928.46875pt x 727.71875pt>
 File: Figures/beforeOptimization.png Graphic file (type png)
 
-<<<<<<< HEAD
 <use Figures/beforeOptimization.png>
-Package pdftex.def Info: Figures/beforeOptimization.png used on input line 66.
+Package pdftex.def Info: Figures/beforeOptimization.png used on input line 74.
 (pdftex.def)             Requested size: 361.34999pt x 283.22064pt.
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
->>>>>>> 7a8fc93047e2ca7f64d72f65e21daf87cf95c921
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4467) has occurred while \output is active []
 
 
 
@@ -1718,87 +1726,52 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[44 <./Figures/yGraph.png>]
-<Figures/afterOptimization.png, id=223, 401.5pt x 276.03125pt>
+[46 <./Figures/yGraph.png>]
+<Figures/afterOptimization.png, id=236, 401.5pt x 276.03125pt>
 File: Figures/afterOptimization.png Graphic file (type png)
 
 <use Figures/afterOptimization.png>
-Package pdftex.def Info: Figures/afterOptimization.png used on input line 79.
+Package pdftex.def Info: Figures/afterOptimization.png used on input line 87.
 (pdftex.def)             Requested size: 216.81pt x 149.05885pt.
 
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 67--69
->>>>>>> 7a8fc93047e2ca7f64d72f65e21daf87cf95c921
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
 
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
->>>>>>> 7a8fc93047e2ca7f64d72f65e21daf87cf95c921
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--93
-
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-<<<<<<< HEAD
-[45 <./Figures/beforeOptimization.png> <./Figures/afterOptimization.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 94--95
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
-=======
-[46 <./Figures/yGraph.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 77--79
->>>>>>> 7a8fc93047e2ca7f64d72f65e21daf87cf95c921
+Underfull \hbox (badness 10000) in paragraph at lines 99--101
 
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 98--101
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
->>>>>>> 7a8fc93047e2ca7f64d72f65e21daf87cf95c921
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[47 <./Figures/beforeOptimization.png> <./Figures/afterOptimization.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
-=======
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
->>>>>>> 7a8fc93047e2ca7f64d72f65e21daf87cf95c921
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
  []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
-=======
-Overfull \hbox (4.01846pt too wide) in paragraph at lines 84--88
+Overfull \hbox (4.01846pt too wide) in paragraph at lines 106--110
 []\T1/lmr/m/n/12 >> \T1/lmr/m/it/12 ae = MLP([Tanh(), Tanh()], [4096, 1000, 409
 6], weights_init=IsotropicGaussian(0.01),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--88
->>>>>>> 7a8fc93047e2ca7f64d72f65e21daf87cf95c921
+Underfull \hbox (badness 10000) in paragraph at lines 106--110
 
  []
 
@@ -1807,24 +1780,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
-<<<<<<< HEAD
-<Figures/mainMenu.png, id=228, 656.4525pt x 698.61pt>
-File: Figures/mainMenu.png Graphic file (type png)
 
-<use Figures/mainMenu.png>
-Package pdftex.def Info: Figures/mainMenu.png used on input line 118.
-=======
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
-<Figures/mainMenu.png, id=235, 656.4525pt x 698.61pt>
+<Figures/mainMenu.png, id=242, 656.4525pt x 698.61pt>
 File: Figures/mainMenu.png Graphic file (type png)
 
 <use Figures/mainMenu.png>
-Package pdftex.def Info: Figures/mainMenu.png used on input line 104.
->>>>>>> 7a8fc93047e2ca7f64d72f65e21daf87cf95c921
+Package pdftex.def Info: Figures/mainMenu.png used on input line 126.
 (pdftex.def)             Requested size: 216.81pt x 230.73389pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1836,91 +1801,66 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-<<<<<<< HEAD
-[46] <Figures/search.png, id=233, 1016.79875pt x 836.12375pt>
+[48] <Figures/search.png, id=246, 1016.79875pt x 836.12375pt>
 File: Figures/search.png Graphic file (type png)
 
 <use Figures/search.png>
-Package pdftex.def Info: Figures/search.png used on input line 129.
-(pdftex.def)             Requested size: 361.34999pt x 297.13858pt.
-)
-=======
-[47] <Figures/search.png, id=240, 1016.79875pt x 836.12375pt>
-File: Figures/search.png Graphic file (type png)
-
-<use Figures/search.png>
-Package pdftex.def Info: Figures/search.png used on input line 116.
+Package pdftex.def Info: Figures/search.png used on input line 138.
 (pdftex.def)             Requested size: 361.34999pt x 297.13858pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
->>>>>>> 7a8fc93047e2ca7f64d72f65e21daf87cf95c921
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-<<<<<<< HEAD
-[47 <./Figures/mainMenu.png> <./Figures/search.png>]
-=======
-[48 <./Figures/mainMenu.png>])
->>>>>>> 7a8fc93047e2ca7f64d72f65e21daf87cf95c921
+[49 <./Figures/mainMenu.png>])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-<<<<<<< HEAD
-[48]
-=======
-[49 <./Figures/search.png>]
->>>>>>> 7a8fc93047e2ca7f64d72f65e21daf87cf95c921
+[50 <./Figures/search.png>]
 \openout2 = `Chapters/Conclusion.aux'.
 
- (./Chapters/Conclusion.tex
-Chapitre 5.
+ (./Chapters/Conclusion.tex) [51
+
+
+
+]
+\openout2 = `Chapters/Ref.aux'.
+
+
+(./Chapters/Ref.tex
 
 Package ucs Warning: This text contains LRM/RLM/LRE/RLE characters.
 (ucs)                Note that these are ignored because of incomplete
 (ucs)                right-to-left capability. Try using LRO/RLO/PDF
 (ucs)                characters instead to ensure correct order.
-(ucs)                 on input line 25.
+(ucs)                 on input line 14.
 
-<<<<<<< HEAD
-[49
-=======
-[50
->>>>>>> 7a8fc93047e2ca7f64d72f65e21daf87cf95c921
+[52
 
 
 
 ]
-Overfull \hbox (32.76884pt too wide) in paragraph at lines 69--70
+Overfull \hbox (32.76884pt too wide) in paragraph at lines 58--59
 []\T1/lmr/m/n/12 [Site2] Li Jiang, Mu-sings on Deep Lear-ning https ://medium.c
 om/global-silicon-valley/machine-
  []
 
+)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-<<<<<<< HEAD
-[50] 
-=======
-[51])
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[52] 
->>>>>>> 7a8fc93047e2ca7f64d72f65e21daf87cf95c921
+[53] 
 AED: lastpage setting LastPage
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
@@ -1963,34 +1903,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-<<<<<<< HEAD
-[51
-=======
-[53
->>>>>>> 7a8fc93047e2ca7f64d72f65e21daf87cf95c921
+[54
 
 
 ] (./main.aux (./Chapters/Introduction.aux) (./Chapters/Chapter1.aux)
 (./Chapters/Chapter2.aux) (./Chapters/Chapter3.aux) (./Chapters/Chapter4.aux)
-(./Chapters/Conclusion.aux))
+(./Chapters/Conclusion.aux) (./Chapters/Ref.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 11075 strings out of 494940
- 154578 string characters out of 6178600
- 338827 words of memory out of 5000000
- 13780 multiletter control sequences out of 15000+600000
-=======
- 11087 strings out of 494958
- 154806 string characters out of 6179213
- 338735 words of memory out of 5000000
- 13784 multiletter control sequences out of 15000+600000
->>>>>>> 7a8fc93047e2ca7f64d72f65e21daf87cf95c921
+ 11102 strings out of 494940
+ 155228 string characters out of 6178600
+ 339399 words of memory out of 5000000
+ 13801 multiletter control sequences out of 15000+600000
  89187 words of font info for 65 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
+ 38 hyphenation exceptions out of 8191
  38i,52n,43p,967b,1430s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
 c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
@@ -2004,19 +1933,10 @@ nts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb
 share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
 ols/msbm10.pfb>
-<<<<<<< HEAD
-Output written on main.pdf (54 pages, 7859482 bytes).
+Output written on main.pdf (57 pages, 9083852 bytes).
 PDF statistics:
- 301 PDF objects out of 1000 (max. 8388607)
- 167 compressed objects within 2 object streams
+ 317 PDF objects out of 1000 (max. 8388607)
+ 174 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 201 words of extra memory for PDF output out of 10000 (max. 10000000)
-=======
-Output written on main.pdf (56 pages, 9010142 bytes).
-PDF statistics:
- 311 PDF objects out of 1000 (max. 8388607)
- 172 compressed objects within 2 object streams
- 0 named destinations out of 1000 (max. 500000)
- 216 words of extra memory for PDF output out of 10000 (max. 10000000)
->>>>>>> 7a8fc93047e2ca7f64d72f65e21daf87cf95c921
+ 226 words of extra memory for PDF output out of 10000 (max. 10000000)
 

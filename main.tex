@@ -66,9 +66,11 @@
 \renewcommand\headrulewidth{1pt}
 \fancyhead[R]{\slshape \leftmark } % pour avoir le nom et numéro du chapitre en cours en haut à gauche dans l’entete.
 \fancyhead[L]{ } % à droite de l’entete
-\renewcommand\footrulewidth{1pt}
-\fancyfoot[C]{ }
 \fancyfoot[C]{\thepage}
+
+\fancyhf{}
+\renewcommand{\headrulewidth}{1pt}
+\fancyfoot [C]{\thepage }
 
 \titleformat{\chapter}[display]  
 {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{0pt}{\Huge}  

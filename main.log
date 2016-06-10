@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.5.19)  10 JUN 2016 06:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.10)  10 JUN 2016 19:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 6 languages loaded.
+Babel <3.9h> and hyphenation patterns for 9 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
@@ -455,28 +455,79 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen153
 \Gm@dimlist=\toks33
 )
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/arabtex.sty
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/aconfig.sty
+LaTeX2e detected 
+BABEL detected
+\a@moduledate=\count130
+\a@maindate=\count131
+)
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/arabaux.sty)
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 551.
+
+(/usr/share/texmf/tex/latex/lm/t1lmr.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/acmd.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/afonts.sty
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/afonts2.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/ascan.sty
+(ArabTeX) scanner for code `arabtex' installed.
+(ArabTeX) input encoding set to ArabTeX standard conventions.)
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/aparse.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/awrite.sty
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/xarbsymb.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/arabskel.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/xarbskel.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/aboxes.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/arabtoks.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/arabchrs.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/aligs.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/aoutput.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/abidir.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/atrans.sty
+(ArabTeX) ZDMG transliteration.)
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/alatex.sty
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/afoot.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/abjad.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/apatch.sty
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/alists.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/asect.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/atabg.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/alocal.sty
+(ArabTeX) 3.11 local stub, 26.02.2006))
+Arabic processor `ArabTeX' [20060702 patch level 3.11s (02.07.2006)]
+(ArabTeX) ... now be patient ... )
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/utf8.sty
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/utfcode.sty
+Package: utfcode 2002/03/07  3.10a Arabic+Hebrew segment of UTF-8
+\u@lb=\count161
+\u@lq=\count162
+)
+Package: utf8 2000/06/13  3.10 UTF-8 input encoding 
+
+(ArabTeX) scanner for code UTF-8 installed.)
 (/usr/share/texlive/texmf-dist/tex/latex/fncychap/fncychap.sty
 Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
-\RW=\skip63
-\mylen=\skip64
-\myhi=\skip65
-\px=\skip66
-\py=\skip67
-\pyy=\skip68
-\pxx=\skip69
-\backskip=\skip70
+\RW=\skip65
+\mylen=\skip66
+\myhi=\skip67
+\px=\skip68
+\py=\skip69
+\pyy=\skip70
+\pxx=\skip71
+\backskip=\skip72
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip71
-\f@ncyO@elh=\skip72
-\f@ncyO@erh=\skip73
-\f@ncyO@olh=\skip74
-\f@ncyO@orh=\skip75
-\f@ncyO@elf=\skip76
-\f@ncyO@erf=\skip77
-\f@ncyO@olf=\skip78
-\f@ncyO@orf=\skip79
+\fancy@headwidth=\skip73
+\f@ncyO@elh=\skip74
+\f@ncyO@erh=\skip75
+\f@ncyO@olh=\skip76
+\f@ncyO@orh=\skip77
+\f@ncyO@elf=\skip78
+\f@ncyO@erf=\skip79
+\f@ncyO@olf=\skip80
+\f@ncyO@orf=\skip81
 ) (./main.aux
+(./Chapters/abstract.aux) (./Chapters/remerciement.aux)
 (./Chapters/Introduction.aux) (./Chapters/Chapter1.aux
 
 LaTeX Warning: Label `fig:Electron' multiply defined.
@@ -598,23 +649,19 @@ LaTeX Warning: Label `fig:Electron' multiply defined.
 ) (./Chapters/Conclusion.aux) (./Chapters/Ref.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 85.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
 
-(/usr/share/texmf/tex/latex/lm/t1lmr.fd
-File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
@@ -624,30 +671,30 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
-(lastpage)             ! on input line 85.
-LaTeX Info: Redefining \degres on input line 85.
-LaTeX Info: Redefining \dots on input line 85.
+(lastpage)             ! on input line 89.
+LaTeX Info: Redefining \degres on input line 89.
+LaTeX Info: Redefining \dots on input line 89.
 
 
 Package frenchb.ldf Warning: Setting StandardEnumerateEnv=true for
 (frenchb.ldf)                compatibility with enumerate package,
-(frenchb.ldf)                 on input line 85.
+(frenchb.ldf)                 on input line 89.
 
-LaTeX Info: Redefining \up on input line 85.
-\AtBeginShipoutBox=\box37
+LaTeX Info: Redefining \up on input line 89.
+\AtBeginShipoutBox=\box52
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count130
-\scratchdimen=\dimen154
-\scratchbox=\box38
-\nofMPsegments=\count131
-\nofMParguments=\count132
-\everyMPshowfont=\toks34
-\MPscratchCnt=\count133
-\MPscratchDim=\dimen155
-\MPnumerator=\count134
-\makeMPintoPDFobject=\count135
-\everyMPtoPDFconversion=\toks35
+\scratchcounter=\count163
+\scratchdimen=\dimen176
+\scratchbox=\box53
+\nofMPsegments=\count164
+\nofMParguments=\count165
+\everyMPshowfont=\toks54
+\MPscratchCnt=\count166
+\MPscratchDim=\dimen177
+\MPnumerator=\count167
+\makeMPintoPDFobject=\count168
+\everyMPtoPDFconversion=\toks55
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -748,39 +795,49 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 90.
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/apatch.sty
+\a@lines=\count169
+\a@Lwidth=\dimen178
+\a@displaywidth=\dimen179
+
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/alocal.sty
+(ArabTeX) 3.11 local stub, 26.02.2006)
+(ArabTeX) version 3.11s (02.07.2006): second phase of patching)
+(ArabTeX) input encoding set to UTF-8 conventions
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 95.
+
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 90.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 95.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 90.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 95.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 90.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 95.
 
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 90.
+(Font)              <14.4> on input line 95.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 90.
+(Font)              <10> on input line 95.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 90.
-LaTeX Font Info:    Try loading font information for U+msa on input line 90.
+(Font)              <7> on input line 95.
+LaTeX Font Info:    Try loading font information for U+msa on input line 95.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 90.
+LaTeX Font Info:    Try loading font information for U+msb on input line 95.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -798,22 +855,55 @@ LaTeX Font Info:    External font `lmex10' loaded for size
  [2
 
 ])
-\tf@toc=\write4
-\openout4 = `main.toc'.
+\tf@toc=\write6
+\openout6 = `main.toc'.
 
  [3]
 Package minitoc Info: I0024
-(minitoc)             PREPARING MINITOCS FROM main.toc on input line 102.
-\openout2 = `Chapters/Introduction.aux'.
+(minitoc)             PREPARING MINITOCS FROM main.toc on input line 107.
+\openout2 = `Chapters/abstract.aux'.
 
 
-(./Chapters/Introduction.tex
+(./Chapters/abstract.tex
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+
+ []
+
+LaTeX Font Info:    Try loading font information for U+xnsh on input line 28.
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/Uxnsh.fd
+File: uxnsh.fd  1999/10/19 v3.10 ArabTeX Naskh extd. font definitions
+)
+LaTeX Font Info:    Font shape `U/xnsh/m/n' will be
+(Font)              scaled to size 35.82726pt on input line 28.
+LaTeX Font Info:    Font shape `U/xnsh/m/n' will be
+(Font)              scaled to size 17.28003pt on input line 32.
+) [1
+
+
+
+]
+\openout2 = `Chapters/remerciement.aux'.
+
+
+(./Chapters/remerciement.tex) [2
+
+
+
+]
+\openout2 = `Chapters/Introduction.aux'.
+
+ (./Chapters/Introduction.tex
 Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
@@ -828,7 +918,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
-) [1
+) [3
 
 
 
@@ -837,45 +927,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  (./Chapters/Chapter1.tex
 Chapitre 1.
-<Figures/googleImage2.png, id=19, 629.35126pt x 440.64626pt>
+<Figures/googleImage2.png, id=26, 629.35126pt x 440.64626pt>
 File: Figures/googleImage2.png Graphic file (type png)
 
 <use Figures/googleImage2.png>
 Package pdftex.def Info: Figures/googleImage2.png used on input line 18.
 (pdftex.def)             Requested size: 252.94499pt x 177.10255pt.
 
-<Figures/textBasedIR.png, id=21, 667.49374pt x 543.02875pt>
+<Figures/textBasedIR.png, id=28, 667.49374pt x 543.02875pt>
 File: Figures/textBasedIR.png Graphic file (type png)
 
 <use Figures/textBasedIR.png>
 Package pdftex.def Info: Figures/textBasedIR.png used on input line 27.
 (pdftex.def)             Requested size: 216.81pt x 176.38281pt.
- [2
+ [4
 
 
 
  <./Figures/googleImage2.png> <./Figures/textBasedIR.png>] <Figures/cbir.JPG, i
-d=28, 874.01532pt x 569.87906pt>
+d=36, 874.01532pt x 569.87906pt>
 File: Figures/cbir.JPG Graphic file (type jpg)
 
 <use Figures/cbir.JPG>
 Package pdftex.def Info: Figures/cbir.JPG used on input line 36.
 (pdftex.def)             Requested size: 252.94499pt x 164.92155pt.
- [3 <./Figures/cbir.JPG>] [4]
-<Figures/cbirMedic.jpg, id=36, 762.85pt x 642.4pt>
+ [5 <./Figures/cbir.JPG>] [6]
+<Figures/cbirMedic.jpg, id=43, 762.85pt x 642.4pt>
 File: Figures/cbirMedic.jpg Graphic file (type jpg)
  <use Figures/cbirMedic.jpg>
 Package pdftex.def Info: Figures/cbirMedic.jpg used on input line 105.
 (pdftex.def)             Requested size: 180.67499pt x 152.14029pt.
 
-<Figures/qbic-demo.jpg, id=37, 576.1525pt x 673.51625pt>
+<Figures/qbic-demo.jpg, id=44, 576.1525pt x 673.51625pt>
 File: Figures/qbic-demo.jpg Graphic file (type jpg)
 
 <use Figures/qbic-demo.jpg>
 Package pdftex.def Info: Figures/qbic-demo.jpg used on input line 117.
 (pdftex.def)             Requested size: 216.81pt x 253.4518pt.
- [5 <./Figures/cbirMedic.jpg>]
-<Figures/lire-demo.png, id=41, 990.70125pt x 692.5875pt>
+ [7 <./Figures/cbirMedic.jpg>]
+<Figures/lire-demo.png, id=48, 990.70125pt x 692.5875pt>
 File: Figures/lire-demo.png Graphic file (type png)
 
 <use Figures/lire-demo.png>
@@ -884,20 +974,20 @@ Package pdftex.def Info: Figures/lire-demo.png used on input line 129.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6 <./Figures/qbic-demo.jpg> <./Figures/lire-demo.png>]
-<Figures/fire-demo.png, id=46, 520.94624pt x 350.30875pt>
+ [8 <./Figures/qbic-demo.jpg> <./Figures/lire-demo.png>]
+<Figures/fire-demo.png, id=53, 520.94624pt x 350.30875pt>
 File: Figures/fire-demo.png Graphic file (type png)
 
 <use Figures/fire-demo.png>
 Package pdftex.def Info: Figures/fire-demo.png used on input line 143.
 (pdftex.def)             Requested size: 361.34999pt x 242.99081pt.
-) [7 <./Figures/fire-demo.png>]
+) [9 <./Figures/fire-demo.png>]
 \openout2 = `Chapters/Chapter2.aux'.
 
 
 (./Chapters/Chapter2.tex
 Chapitre 2.
-<Figures/OneLearningAlgoAndreNg.jpg, id=50, 638.385pt x 428.60126pt>
+<Figures/OneLearningAlgoAndreNg.jpg, id=57, 638.385pt x 428.60126pt>
 File: Figures/OneLearningAlgoAndreNg.jpg Graphic file (type jpg)
 
 <use Figures/OneLearningAlgoAndreNg.jpg>
@@ -907,7 +997,7 @@ Package pdftex.def Info: Figures/OneLearningAlgoAndreNg.jpg used on input line
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8
+ [10
 
 
 
@@ -926,7 +1016,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
  []
 
-[9 <./Figures/OneLearningAlgoAndreNg.jpg>]
+[11 <./Figures/OneLearningAlgoAndreNg.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
@@ -966,7 +1056,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
-[10] <Figures/mlp.png, id=67, 286.06876pt x 130.4875pt>
+[12] <Figures/mlp.png, id=74, 286.06876pt x 130.4875pt>
 File: Figures/mlp.png Graphic file (type png)
  <use Figures/mlp.png>
 Package pdftex.def Info: Figures/mlp.png used on input line 83.
@@ -976,7 +1066,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
-[11 <./Figures/mlp.png>]
+[13 <./Figures/mlp.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
@@ -986,14 +1076,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
  []
 
-<Figures/image024.png, id=73, 402.50375pt x 293.095pt>
+<Figures/image024.png, id=80, 402.50375pt x 293.095pt>
 File: Figures/image024.png Graphic file (type png)
 
 <use Figures/image024.png>
 Package pdftex.def Info: Figures/image024.png used on input line 109.
 (pdftex.def)             Requested size: 216.81pt x 157.87537pt.
- [12 <./Figures/image024.png>]
-<Figures/highVariation.jpg, id=78, 1003.75pt x 1420.30624pt>
+ [14 <./Figures/image024.png>]
+<Figures/highVariation.jpg, id=85, 1003.75pt x 1420.30624pt>
 File: Figures/highVariation.jpg Graphic file (type jpg)
 
 <use Figures/highVariation.jpg>
@@ -1002,18 +1092,18 @@ Package pdftex.def Info: Figures/highVariation.jpg used on input line 129.
 
 Underfull \vbox (badness 2913) has occurred while \output is active []
 
- [13 <./Figures/highVariation.jpg>]
+ [15 <./Figures/highVariation.jpg>]
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-1.def
 File: uni-1.def 2013/05/13 UCS: Unicode data U+0100..U+01FF
 )
-<Figures/Mylenet.png, id=82, 544.1931pt x 127.1952pt>
+<Figures/Mylenet.png, id=89, 544.1931pt x 127.1952pt>
 File: Figures/Mylenet.png Graphic file (type png)
 
 <use Figures/Mylenet.png>
 Package pdftex.def Info: Figures/Mylenet.png used on input line 158.
 (pdftex.def)             Requested size: 361.34999pt x 84.45952pt.
 
-<Figures/convAouat.png, id=83, 1017.8025pt x 499.8675pt>
+<Figures/convAouat.png, id=90, 1017.8025pt x 499.8675pt>
 File: Figures/convAouat.png Graphic file (type png)
 
 <use Figures/convAouat.png>
@@ -1022,36 +1112,36 @@ Package pdftex.def Info: Figures/convAouat.png used on input line 172.
 
 Underfull \vbox (badness 1888) has occurred while \output is active []
 
- [14 <./Figures/Mylenet.png>] <Figures/zero-padding.png, id=88, 768.8725pt x 38
+ [16 <./Figures/Mylenet.png>] <Figures/zero-padding.png, id=96, 768.8725pt x 38
 0.42125pt>
 File: Figures/zero-padding.png Graphic file (type png)
 
 <use Figures/zero-padding.png>
 Package pdftex.def Info: Figures/zero-padding.png used on input line 188.
 (pdftex.def)             Requested size: 361.34999pt x 178.79219pt.
- [15 <./Figures/convAouat.png> <./Figures/zero-padding.png>] <Figures/maxpool.j
-peg, id=93, 789.95125pt x 369.38pt>
+ [17 <./Figures/convAouat.png> <./Figures/zero-padding.png>] <Figures/maxpool.j
+peg, id=101, 789.95125pt x 369.38pt>
 File: Figures/maxpool.jpeg Graphic file (type jpg)
 
 <use Figures/maxpool.jpeg>
 Package pdftex.def Info: Figures/maxpool.jpeg used on input line 205.
 (pdftex.def)             Requested size: 361.34999pt x 168.96432pt.
- [16 <./Figures/maxpool.jpeg>]
-<Figures/deep_autoencoder.png, id=98, 542.025pt x 366.36874pt>
+ [18 <./Figures/maxpool.jpeg>]
+<Figures/deep_autoencoder.png, id=105, 542.025pt x 366.36874pt>
 File: Figures/deep_autoencoder.png Graphic file (type png)
 
 <use Figures/deep_autoencoder.png>
 Package pdftex.def Info: Figures/deep_autoencoder.png used on input line 235.
 (pdftex.def)             Requested size: 216.81pt x 146.54489pt.
 
-<Figures/randomImageGEn.JPG, id=99, 616.3025pt x 384.43625pt>
+<Figures/randomImageGEn.JPG, id=106, 616.3025pt x 384.43625pt>
 File: Figures/randomImageGEn.JPG Graphic file (type jpg)
 
 <use Figures/randomImageGEn.JPG>
 Package pdftex.def Info: Figures/randomImageGEn.JPG used on input line 244.
 (pdftex.def)             Requested size: 216.81pt x 135.24101pt.
- [17 <./Figures/deep_autoencoder.png> <./Figures/randomImageGEn.JPG>]
-<Figures/clairifaiIMAGENET.png, id=104, 1204.5pt x 685.56125pt>
+ [19 <./Figures/deep_autoencoder.png> <./Figures/randomImageGEn.JPG>]
+<Figures/clairifaiIMAGENET.png, id=111, 1204.5pt x 685.56125pt>
 File: Figures/clairifaiIMAGENET.png Graphic file (type png)
 
 <use Figures/clairifaiIMAGENET.png>
@@ -1062,20 +1152,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 266--267
 
  []
 
-[18 <./Figures/clairifaiIMAGENET.png (PNG copy)>]
-<Figures/selfDriving.png, id=108, 1506.62875pt x 1053.9375pt>
+[20 <./Figures/clairifaiIMAGENET.png (PNG copy)>]
+<Figures/selfDriving.png, id=115, 1506.62875pt x 1053.9375pt>
 File: Figures/selfDriving.png Graphic file (type png)
 
 <use Figures/selfDriving.png>
 Package pdftex.def Info: Figures/selfDriving.png used on input line 272.
 (pdftex.def)             Requested size: 361.34999pt x 252.77327pt.
-) [19 <./Figures/selfDriving.png>]
+) [21 <./Figures/selfDriving.png>]
 \openout2 = `Chapters/Chapter3.aux'.
 
 
 (./Chapters/Chapter3.tex
 Chapitre 3.
-<Figures/wang.jpg, id=113, 2125.9425pt x 764.8575pt>
+<Figures/wang.jpg, id=120, 2125.9425pt x 764.8575pt>
 File: Figures/wang.jpg Graphic file (type jpg)
  <use Figures/wang.jpg>
 Package pdftex.def Info: Figures/wang.jpg used on input line 18.
@@ -1085,12 +1175,12 @@ Overfull \hbox (36.41951pt too wide) in paragraph at lines 18--19
  [][] 
  []
 
-[20
+[22
 
 
 
  <./Figures/wang.jpg>]
-<Figures/caltech101.jpg, id=117, 1324.95pt x 283.0575pt>
+<Figures/caltech101.jpg, id=125, 1324.95pt x 283.0575pt>
 File: Figures/caltech101.jpg Graphic file (type jpg)
 
 <use Figures/caltech101.jpg>
@@ -1121,7 +1211,7 @@ Overfull \hbox (28.46642pt too wide) in paragraph at lines 38--80
  [] 
  []
 
-[21 <./Figures/caltech101.jpg>]
+[23 <./Figures/caltech101.jpg>]
 
 LaTeX Warning: Command \' invalid in math mode on input line 91.
 
@@ -1134,12 +1224,12 @@ LaTeX Warning: Command \' invalid in math mode on input line 91.
 
 LaTeX Warning: Command \' invalid in math mode on input line 93.
 
-[22]
+[24]
 Overfull \hbox (50.90411pt too wide) in paragraph at lines 114--123
  [] 
  []
 
-<Figures/conv.jpg, id=126, 833.1125pt x 250.9375pt>
+<Figures/conv.jpg, id=133, 833.1125pt x 250.9375pt>
 File: Figures/conv.jpg Graphic file (type jpg)
  <use Figures/conv.jpg>
 Package pdftex.def Info: Figures/conv.jpg used on input line 140.
@@ -1149,11 +1239,11 @@ Overfull \hbox (72.5545pt too wide) in paragraph at lines 140--141
  [][] 
  []
 
-[23 <./Figures/conv.jpg>]
+[25 <./Figures/conv.jpg>]
 
 LaTeX Warning: Command \` invalid in math mode on input line 147.
 
-<Figures/pool.jpg, id=130, 770.88pt x 261.97874pt>
+<Figures/pool.jpg, id=137, 770.88pt x 261.97874pt>
 File: Figures/pool.jpg Graphic file (type jpg)
  <use Figures/pool.jpg>
 Package pdftex.def Info: Figures/pool.jpg used on input line 156.
@@ -1163,15 +1253,15 @@ Overfull \hbox (36.41951pt too wide) in paragraph at lines 156--157
  [][] 
  []
 
-[24 <./Figures/pool.jpg>]
-<Figures/flattening.jpg, id=134, 393.47pt x 572.1375pt>
+[26 <./Figures/pool.jpg>]
+<Figures/flattening.jpg, id=141, 393.47pt x 572.1375pt>
 File: Figures/flattening.jpg Graphic file (type jpg)
 
 <use Figures/flattening.jpg>
 Package pdftex.def Info: Figures/flattening.jpg used on input line 176.
 (pdftex.def)             Requested size: 252.94499pt x 367.79927pt.
 
-<Figures/architectureVGG.jpg, id=135, 1128.215pt x 1327.96124pt>
+<Figures/architectureVGG.jpg, id=142, 1128.215pt x 1327.96124pt>
 File: Figures/architectureVGG.jpg Graphic file (type jpg)
 
 <use Figures/architectureVGG.jpg>
@@ -1180,24 +1270,24 @@ Package pdftex.def Info: Figures/architectureVGG.jpg used on input line 189.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25 <./Figures/flattening.jpg>]
+ [27 <./Figures/flattening.jpg>]
 Overfull \hbox (7.92165pt too wide) in paragraph at lines 199--200
 []\T1/lmr/m/n/12 La base uti-li-sée pour l'en-traî-ne-ment (ap-pren-tis-sage) d
 e ce ré-seau à convo-lu-tion est ILSVRC-
  []
 
-[26 <./Figures/architectureVGG.jpg>]
+[28 <./Figures/architectureVGG.jpg>]
 Underfull \vbox (badness 2443) has occurred while \output is active []
 
- [27]
-[28] <Figures/results/res-wang1.png, id=149, 586.8324pt x 442.2924pt>
+ [29]
+[30] <Figures/results/res-wang1.png, id=156, 586.8324pt x 442.2924pt>
 File: Figures/results/res-wang1.png Graphic file (type png)
 
 <use Figures/results/res-wang1.png>
 Package pdftex.def Info: Figures/results/res-wang1.png used on input line 309.
 (pdftex.def)             Requested size: 256.0748pt x 193.00304pt.
 
-<Figures/results/res-caltech1.png, id=150, 586.8324pt x 442.2924pt>
+<Figures/results/res-caltech1.png, id=157, 586.8324pt x 442.2924pt>
 File: Figures/results/res-caltech1.png Graphic file (type png)
 
 <use Figures/results/res-caltech1.png>
@@ -1209,7 +1299,7 @@ Overfull \hbox (66.67911pt too wide) in paragraph at lines 306--314
  [][] 
  []
 
-[29] <Figures/arch.png, id=154, 700.2963pt x 172.0026pt>
+[31] <Figures/arch.png, id=161, 700.2963pt x 172.0026pt>
 File: Figures/arch.png Graphic file (type png)
 
 <use Figures/arch.png>
@@ -1218,15 +1308,15 @@ Package pdftex.def Info: Figures/arch.png used on input line 340.
 
 Underfull \vbox (badness 1152) has occurred while \output is active []
 
- [30 <./Figures/results/res-wang1.png> <./Figures/results/res-caltech1.png>]
-<Figures/unpooling.png, id=160, 867.24pt x 317.2653pt>
+ [32 <./Figures/results/res-wang1.png> <./Figures/results/res-caltech1.png>]
+<Figures/unpooling.png, id=167, 867.24pt x 317.2653pt>
 File: Figures/unpooling.png Graphic file (type png)
 
 <use Figures/unpooling.png>
 Package pdftex.def Info: Figures/unpooling.png used on input line 354.
 (pdftex.def)             Requested size: 361.34999pt x 132.19516pt.
- [31 <./Figures/arch.png> <./Figures/unpooling.png>] <Figures/visualisation.png
-, id=166, 727.0362pt x 1006.7211pt>
+ [33 <./Figures/arch.png> <./Figures/unpooling.png>] <Figures/visualisation.png
+, id=173, 727.0362pt x 1006.7211pt>
 File: Figures/visualisation.png Graphic file (type png)
 
 <use Figures/visualisation.png>
@@ -1237,8 +1327,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 380--381
 
  []
 
-[32 <./Figures/visualisation.png>]
-<Figures/ae/414.jpg, id=171, 424.58624pt x 453.695pt>
+[34 <./Figures/visualisation.png>]
+<Figures/ae/414.jpg, id=179, 424.58624pt x 453.695pt>
 File: Figures/ae/414.jpg Graphic file (type jpg)
  <use Figures/ae/414.jpg>
 Package pdftex.def Info: Figures/ae/414.jpg used on input line 398.
@@ -1246,8 +1336,8 @@ Package pdftex.def Info: Figures/ae/414.jpg used on input line 398.
 
 Underfull \vbox (badness 1221) has occurred while \output is active []
 
- [33]
-<Figures/ae/42124.jpg, id=175, 424.58624pt x 458.71375pt>
+ [35]
+<Figures/ae/42124.jpg, id=183, 424.58624pt x 458.71375pt>
 File: Figures/ae/42124.jpg Graphic file (type jpg)
 
 <use Figures/ae/42124.jpg>
@@ -1256,22 +1346,22 @@ Package pdftex.def Info: Figures/ae/42124.jpg used on input line 436.
 
 Underfull \vbox (badness 5064) has occurred while \output is active []
 
- [34 <./Figures/ae/414.jpg>] <Figures/ae/denoising.jpg, id=180, 600.2425pt x 47
+ [36 <./Figures/ae/414.jpg>] <Figures/ae/denoising.jpg, id=187, 600.2425pt x 47
 2.76625pt>
 File: Figures/ae/denoising.jpg Graphic file (type jpg)
 
 <use Figures/ae/denoising.jpg>
 Package pdftex.def Info: Figures/ae/denoising.jpg used on input line 472.
 (pdftex.def)             Requested size: 216.81pt x 170.76561pt.
- [35 <./Figures/ae/42124.jpg>]
-<Figures/results/res-wang2.png, id=184, 586.8324pt x 442.2924pt>
+ [37 <./Figures/ae/42124.jpg>]
+<Figures/results/res-wang2.png, id=191, 586.8324pt x 442.2924pt>
 File: Figures/results/res-wang2.png Graphic file (type png)
 
 <use Figures/results/res-wang2.png>
 Package pdftex.def Info: Figures/results/res-wang2.png used on input line 513.
 (pdftex.def)             Requested size: 256.0748pt x 193.00304pt.
 
-<Figures/results/res-caltech2.png, id=185, 586.8324pt x 442.2924pt>
+<Figures/results/res-caltech2.png, id=192, 586.8324pt x 442.2924pt>
 File: Figures/results/res-caltech2.png Graphic file (type png)
 
 <use Figures/results/res-caltech2.png>
@@ -1286,13 +1376,13 @@ Overfull \hbox (66.67911pt too wide) in paragraph at lines 510--518
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36 <./Figures/ae/denoising.jpg>]
+ [38 <./Figures/ae/denoising.jpg>]
 Overfull \hbox (9.00072pt too wide) in paragraph at lines 521--522
 []\T1/lmr/m/n/12 Nos deux pre-mières ar-chi-tec-tures d'Au-toen-co-ders qui son
 t Au-toen-co-der 4x1x4 et 4x2x1x2x4
  []
 
-<Figures/manifold.png, id=189, 643.40375pt x 656.4525pt>
+<Figures/manifold.png, id=196, 643.40375pt x 656.4525pt>
 File: Figures/manifold.png Graphic file (type png)
 
 <use Figures/manifold.png>
@@ -1301,23 +1391,23 @@ Package pdftex.def Info: Figures/manifold.png used on input line 539.
 
 Underfull \vbox (badness 7273) has occurred while \output is active []
 
- [37 <./Figures/results/res-wang2.png> <./Figures/results/res-caltech2.png>] [3
-8 <./Figures/manifold.png>] <Figures/ae/AE-Descripteur.jpg, id=199, 590.205pt x
+ [39 <./Figures/results/res-wang2.png> <./Figures/results/res-caltech2.png>] [4
+0 <./Figures/manifold.png>] <Figures/ae/AE-Descripteur.jpg, id=207, 590.205pt x
  554.07pt>
 File: Figures/ae/AE-Descripteur.jpg Graphic file (type jpg)
 
 <use Figures/ae/AE-Descripteur.jpg>
 Package pdftex.def Info: Figures/ae/AE-Descripteur.jpg used on input line 581.
 (pdftex.def)             Requested size: 216.81pt x 203.53162pt.
- [39 <./Figures/ae/AE-Descripteur.jpg>]
-<Figures/results/res-wang3.png, id=203, 586.8324pt x 442.2924pt>
+ [41 <./Figures/ae/AE-Descripteur.jpg>]
+<Figures/results/res-wang3.png, id=211, 586.8324pt x 442.2924pt>
 File: Figures/results/res-wang3.png Graphic file (type png)
 
 <use Figures/results/res-wang3.png>
 Package pdftex.def Info: Figures/results/res-wang3.png used on input line 619.
 (pdftex.def)             Requested size: 256.0748pt x 193.00304pt.
 
-<Figures/results/res-caltech3.png, id=204, 586.8324pt x 442.2924pt>
+<Figures/results/res-caltech3.png, id=212, 586.8324pt x 442.2924pt>
 File: Figures/results/res-caltech3.png Graphic file (type png)
 
 <use Figures/results/res-caltech3.png>
@@ -1329,8 +1419,8 @@ Overfull \hbox (66.67911pt too wide) in paragraph at lines 616--624
  [][] 
  []
 
-[40 <./Figures/results/res-wang3.png> <./Figures/results/res-caltech3.png>]
-[41]
+[42 <./Figures/results/res-wang3.png> <./Figures/results/res-caltech3.png>]
+[43]
 Overfull \hbox (49.77814pt too wide) in paragraph at lines 702--719
  [] 
  []
@@ -1340,7 +1430,7 @@ Overfull \hbox (49.93866pt too wide) in paragraph at lines 727--736
  [] 
  []
 
-<Figures/results/res-wang5.png, id=214, 586.8324pt x 442.2924pt>
+<Figures/results/res-wang5.png, id=221, 586.8324pt x 442.2924pt>
 File: Figures/results/res-wang5.png Graphic file (type png)
 
 <use Figures/results/res-wang5.png>
@@ -1349,8 +1439,8 @@ Package pdftex.def Info: Figures/results/res-wang5.png used on input line 747.
 
 Underfull \vbox (badness 7256) has occurred while \output is active []
 
- [42])
-[43 <./Figures/results/res-wang5.png>]
+ [44])
+[45 <./Figures/results/res-wang5.png>]
 \openout2 = `Chapters/Chapter4.aux'.
 
  (./Chapters/Chapter4.tex
@@ -1365,7 +1455,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
-[44
+[46
 
 
 
@@ -1394,7 +1484,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
-<Figures/yGraph.png, id=225, 373.395pt x 276.03125pt>
+<Figures/yGraph.png, id=233, 373.395pt x 276.03125pt>
 File: Figures/yGraph.png Graphic file (type png)
  <use Figures/yGraph.png>
 Package pdftex.def Info: Figures/yGraph.png used on input line 54.
@@ -1414,7 +1504,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
-<Figures/beforeOptimization.png, id=226, 928.46875pt x 727.71875pt>
+<Figures/beforeOptimization.png, id=234, 928.46875pt x 727.71875pt>
 File: Figures/beforeOptimization.png Graphic file (type png)
 
 <use Figures/beforeOptimization.png>
@@ -1423,7 +1513,7 @@ Package pdftex.def Info: Figures/beforeOptimization.png used on input line 74.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [45 <./Figures/yGraph.png>]
+ [47 <./Figures/yGraph.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
@@ -1433,7 +1523,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
-<Figures/afterOptimization.png, id=231, 401.5pt x 276.03125pt>
+<Figures/afterOptimization.png, id=240, 401.5pt x 276.03125pt>
 File: Figures/afterOptimization.png Graphic file (type png)
 
 <use Figures/afterOptimization.png>
@@ -1449,7 +1539,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
-[46 <./Figures/beforeOptimization.png> <./Figures/afterOptimization.png>]
+[48 <./Figures/beforeOptimization.png> <./Figures/afterOptimization.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 101--103
 
  []
@@ -1485,7 +1575,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
-<Figures/mainMenu.png, id=237, 656.4525pt x 698.61pt>
+<Figures/mainMenu.png, id=245, 656.4525pt x 698.61pt>
 File: Figures/mainMenu.png Graphic file (type png)
 
 <use Figures/mainMenu.png>
@@ -1494,8 +1584,8 @@ Package pdftex.def Info: Figures/mainMenu.png used on input line 128.
 
 Underfull \vbox (badness 4713) has occurred while \output is active []
 
- [47]
-<Figures/search.png, id=242, 1016.79875pt x 836.12375pt>
+ [49]
+<Figures/search.png, id=249, 1016.79875pt x 836.12375pt>
 File: Figures/search.png Graphic file (type png)
 
 <use Figures/search.png>
@@ -1504,11 +1594,11 @@ Package pdftex.def Info: Figures/search.png used on input line 140.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [48 <./Figures/mainMenu.png>]) [49 <./Figures/search.png>]
+ [50 <./Figures/mainMenu.png>]) [51 <./Figures/search.png>]
 \openout2 = `Chapters/Conclusion.aux'.
 
  (./Chapters/Conclusion.tex)
-[50
+[52
 
 
 
@@ -1523,7 +1613,7 @@ Package ucs Warning: This text contains LRM/RLM/LRE/RLE characters.
 (ucs)                characters instead to ensure correct order.
 (ucs)                 on input line 14.
 
-[51
+[53
 
 
 
@@ -1533,7 +1623,7 @@ Overfull \hbox (32.76884pt too wide) in paragraph at lines 58--59
 om/global-silicon-valley/machine-
  []
 
-) [52] 
+) [54] 
 AED: lastpage setting LastPage
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
@@ -1570,24 +1660,198 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the main.log file.
 
-[53
+[55
 
 
-] (./main.aux (./Chapters/Introduction.aux) (./Chapters/Chapter1.aux)
+] (./main.aux (./Chapters/abstract.aux) (./Chapters/remerciement.aux)
+(./Chapters/Introduction.aux) (./Chapters/Chapter1.aux)
 (./Chapters/Chapter2.aux) (./Chapters/Chapter3.aux) (./Chapters/Chapter4.aux)
 (./Chapters/Conclusion.aux) (./Chapters/Ref.aux))
+
+ *File List*
+    book.cls    2007/10/19 v1.4h Standard LaTeX document class
+    bk12.clo    2007/10/19 v1.4h Standard LaTeX file (size option)
+inputenc.sty    2008/03/30 v1.1d Input encoding file
+   utf8x.def    2004/10/17 UCS: Input encoding UTF-8
+     ucs.sty    2013/05/11 v2.2 UCS: Unicode input support
+uni-global.def    2013/05/13 UCS: Unicode global data
+ fontenc.sty
+   t1enc.def    2005/09/27 v1.99g Standard LaTeX file
+   float.sty    2001/11/08 v1.3d Float enhancements (AL)
+lastpage.sty    2013/01/28 v1.2l Refers to last page's name (HMM; JPG)
+   babel.sty    2013/12/03 3.9h The Babel package
+ frenchb.ldf    2013/12/30 v2.6g French support from the babel system
+scalefnt.sty    
+  keyval.sty    1999/03/16 v1.13 key=value parser (DPC)
+ amsmath.sty    2013/01/14 v2.14 AMS math features
+ amstext.sty    2000/06/29 v2.01
+  amsgen.sty    1999/11/30 v2.0
+  amsbsy.sty    1999/11/29 v1.2d
+  amsopn.sty    1999/12/14 v2.01 operator names
+pdfpages.sty    2013/08/25 v0.4v Insert pages of external PDF documents (AM)
+  ifthen.sty    2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+    calc.sty    2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+ eso-pic.sty    2013/10/06 v2.0d eso-pic (RN)
+atbegshi.sty    2011/10/05 v1.16 At begin shipout hook (HO)
+infwarerr.sty    2010/04/08 v1.3 Providing info/warning/error messages (HO)
+ ltxcmds.sty    2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+   ifpdf.sty    2011/01/30 v2.3 Provides the ifpdf switch (HO)
+  xcolor.sty    2007/01/21 v2.11 LaTeX color extensions (UK)
+   color.cfg    2007/01/18 v1.5 color configuration of teTeX/TeXLive
+  pdftex.def    2011/05/27 v0.06d Graphics/color for pdfTeX
+graphicx.sty    1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+graphics.sty    2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+    trig.sty    1999/03/16 v1.09 sin cos tan (DPC)
+graphics.cfg    2010/04/23 v1.9 graphics configuration of TeX Live
+pppdftex.def    2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
+ lmodern.sty    2009/10/30 v1.6 Latin Modern Fonts
+amsfonts.sty    2013/01/14 v3.01 Basic AMSFonts support
+ fontenc.sty
+   t1enc.def    2005/09/27 v1.99g Standard LaTeX file
+enumerate.sty    1999/03/05 v3.00 enumerate extensions (DPC)
+ amssymb.sty    2013/01/14 v3.01 AMS font symbols
+ makeidx.sty    2000/03/29 v1.0m Standard LaTeX package
+   array.sty    2008/09/09 v2.4c Tabular extension package (FMi)
+multirow.sty    
+algorithme.sty    
+algorithmicx.sty    2005/04/27 v1.2 Algorithmicx
+setspace.sty    2011/12/19 v6.7a set line spacing
+ minitoc.sty    2008/07/16 v60 Package minitoc (JPFD)
+ mtcmess.sty    2006/03/14
+    main.mtc0
+ english.mld    2006/01/13
+ english.mld    2006/01/13
+lettrine.sty    2013/03/14 v1.64 (Daniel Flipo)
+lettrine.cfg
+titlesec.sty    2011/12/15 v2.10.0 Sectioning titles
+ sectsty.sty    2002/02/25 v2.0.2 Commands to change all sectional heading styl
+es
+  lipsum.sty    2011/04/14 v1.2 150 paragraphs of Lorem Ipsum dummy text
+ caption.sty    2013/05/02 v3.3-89 Customizing captions (AR)
+caption3.sty    2013/05/02 v1.6-88 caption3 kernel (AR)
+geometry.sty    2010/09/12 v5.6 Page Geometry
+  ifvtex.sty    2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+ ifxetex.sty    2010/09/12 v0.6 Provides ifxetex conditional
+ arabtex.sty    2003/08/22  3.11 ArabTeX main module
+ arabaux.sty    2003/05/21  3.11 auxiliary macros for ArabTeX
+   t1lmr.fd    2009/10/30 v1.6 Font defs for Latin Modern
+    acmd.sty    2003/08/20  3.11 Arabic command processing 
+  afonts.sty    1995/11/16  3.04 define Naskh font 
+ afonts2.sty    1998/10/19  3.10 define Naskh fonts for LaTeX2e
+   ascan.sty    2003/08/22  3.11 standard ZDMG input encoding 
+  aparse.sty    2003/05/26  3.11 get syllables 
+  awrite.sty    2003/06/05  3.11 build output word 
+xarbsymb.sty    1998/07/15  3.07 symbolic output encoding 
+arabskel.sty    2000/06/04  3.10 character skeleton definitions 
+xarbskel.sty    1999/07/17  3.09 character skeleton definitions 
+  aboxes.sty    2003/05/28  3.11 build output boxes
+arabtoks.sty    1999/07/17  3.09 ArabTeX CS token definitions 
+arabchrs.sty    1998/07/11  3.07 letter token definitions 
+   aligs.sty    2003/05/26  3.11 compute ligatures
+ aoutput.sty    2000/06/04  3.10 build output lines
+  abidir.sty    2003/08/22  3.11 bidirectional linebreaking
+  atrans.sty    2003/06/14  3.11 generate the transliteration 
+  alatex.sty    2003/05/04  3.11 ArabTeX extensions for LaTeX 
+   afoot.sty    2003/05/12  3.11 ArabTeX footnotes
+   abjad.sty    2003/04/26  3.11 abjad numerals 
+  apatch.sty    2006/07/02  3.11s last minute patches 
+  alists.sty    2003/04/26  3.11 inverted list macros
+   asect.sty    2003/04/26  3.11 section macros for Arabic
+   atabg.sty    1997/01/21  3.05 LaTeX tabbing macros for Arabic
+    utf8.sty    2000/06/13  3.10 UTF-8 input encoding 
+ utfcode.sty    2002/03/07  3.10a Arabic+Hebrew segment of UTF-8
+fncychap.sty    2007/07/30 v1.34 LaTeX package (Revised chapters)
+fancyhdr.sty    
+ ucsencs.def    2011/01/21 Fixes to fontencodings LGR, T3
+supp-pdf.mkii
+pdftexcmds.sty    2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
+ifluatex.sty    2010/03/01 v1.3 Provides the ifluatex switch (HO)
+epstopdf-base.sty    2010/02/09 v2.5 Base part for package epstopdf
+  grfext.sty    2010/08/19 v1.1 Manage graphics extensions (HO)
+kvdefinekeys.sty    2011/04/07 v1.3 Define keys (HO)
+kvoptions.sty    2011/06/30 v3.11 Key value format for package options (HO)
+kvsetkeys.sty    2012/04/25 v1.16 Key value parser (HO)
+etexcmds.sty    2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+epstopdf-sys.cfg    2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+  apatch.sty    2006/07/02  3.11s last minute patches 
+  ot1lmr.fd    2009/10/30 v1.6 Font defs for Latin Modern
+  omllmm.fd    2009/10/30 v1.6 Font defs for Latin Modern
+ omslmsy.fd    2009/10/30 v1.6 Font defs for Latin Modern
+ omxlmex.fd    2009/10/30 v1.6 Font defs for Latin Modern
+    umsa.fd    2013/01/14 v3.01 AMS symbols A
+    umsb.fd    2013/01/14 v3.01 AMS symbols B
+Chapters/abstract.tex
+   uni-0.def    2013/05/13 UCS: Unicode data U+0000..U+00FF
+  uni-32.def    2013/05/13 UCS: Unicode data U+2000..U+20FF
+   Uxnsh.fd
+Chapters/remerciement.tex
+Chapters/Introduction.tex
+Chapters/Chapter1.tex
+Figures/googleImage2.png
+Figures/textBasedIR.png
+Figures/cbir.JPG
+Figures/cbirMedic.jpg
+Figures/qbic-demo.jpg
+Figures/lire-demo.png
+Figures/fire-demo.png
+Chapters/Chapter2.tex
+Figures/OneLearningAlgoAndreNg.jpg
+Figures/mlp.png
+Figures/image024.png
+Figures/highVariation.jpg
+   uni-1.def    2013/05/13 UCS: Unicode data U+0100..U+01FF
+Figures/Mylenet.png
+Figures/convAouat.png
+Figures/zero-padding.png
+Figures/maxpool.jpeg
+Figures/deep_autoencoder.png
+Figures/randomImageGEn.JPG
+Figures/clairifaiIMAGENET.png
+Figures/selfDriving.png
+Chapters/Chapter3.tex
+Figures/wang.jpg
+Figures/caltech101.jpg
+Figures/conv.jpg
+Figures/pool.jpg
+Figures/flattening.jpg
+Figures/architectureVGG.jpg
+Figures/results/res-wang1.png
+Figures/results/res-caltech1.png
+Figures/arch.png
+Figures/unpooling.png
+Figures/visualisation.png
+Figures/ae/414.jpg
+Figures/ae/42124.jpg
+Figures/ae/denoising.jpg
+Figures/results/res-wang2.png
+Figures/results/res-caltech2.png
+Figures/manifold.png
+Figures/ae/AE-Descripteur.jpg
+Figures/results/res-wang3.png
+Figures/results/res-caltech3.png
+Figures/results/res-wang5.png
+Chapters/Chapter4.tex
+Figures/yGraph.png
+Figures/beforeOptimization.png
+Figures/afterOptimization.png
+Figures/mainMenu.png
+Figures/search.png
+Chapters/Conclusion.tex
+Chapters/Ref.tex
+ ***********
+
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 11100 strings out of 494958
- 155205 string characters out of 6179213
- 339303 words of memory out of 5000000
- 13792 multiletter control sequences out of 15000+600000
- 86157 words of font info for 64 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
- 38i,52n,43p,967b,1425s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 13465 strings out of 494931
+ 178409 string characters out of 6178299
+ 388489 words of memory out of 5000000
+ 16059 multiletter control sequences out of 15000+600000
+ 86791 words of font info for 66 fonts, out of 8000000 for 9000
+ 38 hyphenation exceptions out of 8191
+ 39i,52n,43p,1025b,1456s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
 c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm
@@ -1598,11 +1862,12 @@ nts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb
 ></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1
 /public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (56 pages, 9060190 bytes).
+s/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/arabtex/xnsh14.pfb>
+Output written on main.pdf (58 pages, 9080914 bytes).
 PDF statistics:
- 310 PDF objects out of 1000 (max. 8388607)
- 169 compressed objects within 2 object streams
+ 320 PDF objects out of 1000 (max. 8388607)
+ 176 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  226 words of extra memory for PDF output out of 10000 (max. 10000000)
 

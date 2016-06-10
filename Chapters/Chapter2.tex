@@ -85,12 +85,12 @@
 	\label{fig:Electron}
 \end{figure}
 
-	Un réseau de neurones fonctionne comme suit: La couche d'entrée reçoit d'abord une combinaison de valeurs qu'elle va transmettre à tous les neurones, de la couche cachée, qui la suivent. Chaque neurone de la couche cachée reçoit en entrée une combinaison linéaire d'entrées (vecteur de valeurs), la multiplie par le poids \textit{w} du neurone, et y rajoute un biais \textit{b}. Le résultat sera ensuite envoyé à une fonction d'activation \textit{s} qui peut être par exemple la fonction $Sigmoide(x) = 1/(1+e^{x})$ ).
+	Un réseau de neurones fonctionne comme suit: La couche d'entrée reçoit d'abord une combinaison de valeurs qu'elle va transmettre à tous les neurones, de la couche cachée, qui la suivent. Chaque neurone de la couche cachée reçoit en entrée une combinaison linéaire d'entrées (vecteur de valeurs), la multiplie par le poids \textit{w} du neurone, et y rajoute un biais \textit{b}. Le résultat sera ensuite envoyé à une fonction d'activation \textit{s} qui peut être par exemple la fonction $Sigmoide(x) = 1/(1+e^{x})$.
 	
 	Une fonction d'activation de la couche de sortie \textit{G} est choisie, cette dernière est choisie selon la tâche voulue (par exemple: régression, classification, etc.).
 Tout le processus est schématisé par un calcul matriciel. L’expression de la fonction \textit{f} que le réseau de neurones essaye d'apprendre est comme suit:
 
-$$f(x) = G( b^{(2)} + W^{(2)}( s( b^{(1)} + W^{(1)} x)))$$
+$$f(x) = G( b^{(2)} + W^{(2)}\times( s( b^{(1)} + W^{(1)}\times x)))$$
 
 	Avec \textit{x} vecteur d'entrée et \textit{w1}, \textit{ b1}, \textit{w2} et \textit{b2} étant les matrices de poids et vecteur biais entre respectivement la couche d'entrée et la couche cachée, et entre la couche cachée et la couche de sortie. Ce sont ces paramètres qui seront appris.
 	
@@ -169,12 +169,12 @@ Les réseaux profonds de croyance sont utilisés pour le pré-apprentissage non-
 
 \begin{figure}[H]
 	\centering
-		\includegraphics[width=5in]{Figures/convAouat.png}
+		\includegraphics[width=5in]{Figures/convExample.png}
 	\caption[An Electron]{Exemple de convolution.}
 	\label{fig:Electron}
 \end{figure}
 
-	Soit une image \textit{I} et un filtre de convolution \textit{h}, appliquer un filtre de convolution sur un pixel, par exemple le pixel \textit{$a_{33}$}, signifie donner une nouvelle valeur à ce pixel en appliquant le filtre sur ce pixel et ses voisins, comme le montre la formule de la figure.
+	Soit une image \textit{I} et un filtre de convolution \textit{h}, appliquer un filtre de convolution sur un pixel, par exemple le pixel au centre avec la valeur 52, signifie donner une nouvelle valeur (égale à 42) à ce pixel en appliquant le filtre sur ce pixel et ses voisins, comme le montre la figure [Figure 2.6].
 	
 	Les couches de piles de convolution appliquent simplement une multitude de convolutions sur les couches du réseau en utilisant différents filtres.
 
@@ -270,7 +270,7 @@ Ainsi, l'espace des images significatives forme seulement une fraction de l'espa
 \begin{figure}[H]
 	\centering
 		\includegraphics[width=5in]{Figures/selfDriving.png}
-	\caption[An Electron]{Respectivement de gauche à droite, et de haut en bas: \textbf{Google Self-Driving Car}; \textbf{Tesla Autopilot}; Le convoi des camions auto-pilotés; le parcours des camions à travers l'Europe.}
+	\caption[An Electron]{Respectivement de gauche à droite, et de haut en bas: Google Self-Driving Car; Tesla Autopilot; Le convoi des camions auto-pilotés; le parcours des camions à travers l'Europe.}
 	\label{fig:Electron}
 \end{figure}
 

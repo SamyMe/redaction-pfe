@@ -3,18 +3,19 @@
 \chapter{Représentation sémantique d'images} % Main chapter title
 
 \section{Introduction}
-	Dans ce chapitre nous allons présenter nos différentes approches pour la réalisation d'une recherche d'image par le contenu (CBIR) basée exemple. Contrairement aux techniques traditionnelles qui utilisent les formes, textures, couleurs, etc. pour comparer les images (calculer la ressemblance), nous allons utiliser dans nos approches des techniques d'apprentissage profond. Parmi les techniques d'apprentissage profond sur lesquels nous allons nous intéresser: Les réseaux à convolution (ConvNets) et les Deep AutoEncoders. 
+	Dans ce chapitre nous allons présenter nos différentes approches pour la réalisation d'une recherche d'image par le contenu (CBIR) basée exemple. Contrairement aux techniques traditionnelles qui utilisent les formes, textures, couleurs, etc. pour comparer les images (calculer la ressemblance), nous allons utiliser dans nos approches des techniques de l'apprentissage profond. Parmi les techniques d'apprentissage profond auxquelles nous allons nous intéresser se trouvent les réseaux à convolution (ConvNets) et les Deep AutoEncoders. 
 	
-	Les premières tentatives consisteront en l'exploration de différentes méthodes d'extraire la description d'une image a partir d'un réseau a convolution. Puis nous allons renduire les descripteur vers un même espace de représentation (1000 valeurs réels), et observer ce que cette réduction apporte en terme de performance. Enfin, nous tenterons d'introduire des descripteur de texture au représentations extraites par les réseaux profond et voir si cela apporte des amélioration en terme d'extraction d'images ressemblantes.
+	Nos premières tentatives consisteront en l'exploration de différentes méthodes permettant d'extraire la description d'une image à partir d'un réseau à convolution. Puis nous allons essayer réduire cette description vers un espace de représentation plus petit à l'aide des Deep Autoencoders, et observer ce que cette réduction apporte en terme de performance. Enfin, nous introduirons des descripteurs de texture à nos descriptions extraites par les technique d'apprentissage profond et constater si cela apporte des améliorations dans l'extraction des images ressemblantes.	
+
+	Nous allons aussi donner pour chacune de nos approches, des interprétations bien fondées des différents résultats que nous avons obtenus, ainsi qu'une étude comparative avec des systèmes connus de recherche d'images par le contenu qui utilisent les descripteurs d'images traditionnels.
 	
-	Nous allons aussi donner pour chacune de nos approches, des interprétations bien fondées des différents résultats que nous avons obtenu, ainsi qu'une étude comparative avec des systèmes connus de recherche d'images par le contenu qui utilisent les descripteurs d'images traditionnels.
 	
 
 
-\section{Recherche d'image par le contenu basée exemple}
-	Parmi les types de la recherche d'image par le contenu mentionnées au chapitre 1, nous avons choisi celle basée exemple pour sa facilité d'implémentation.
+\section{Recherche d'images par le contenu basée exemple}
+	Parmi les types de la recherche d'images par le contenu mentionnés au chapitre 1, nous avons choisi celui basée-exemple pour sa facilité d'implémentation.
 	
-	Notre algorithme de recherche d'image par le contenu basée exemple nécessite une grande base d'image, pour cela nous avons utilisé deux bases différentes, la première est celle de WANG [Wan et al.,01][Li et Wan.,03] contenant 1000 images (10 classes de 100 images) [Figure 3.1], et la deuxième est Caltech101 (100 classes) [Fei et al. 04] contenant plus de 9000 images [Figure 3.2]. Nous avons choisi ces deux bases d'images pour la simple raison que les images sont déjà classées (une classe unique pour une image), ce qui facilitera le calcul des mesures de performance, on pourra donc vérifier facilement si deux images appartiennent à la même classe.
+	Notre algorithme de recherche d'image par le contenu basée exemple nécessite une grande base d'images, pour cela nous avons utilisé deux bases différentes, la première est celle de WANG [Wan et al.,01][Li et Wan.,03] contenant 1000 images (10 classes de 100 images) [Figure 3.1], et la deuxième est Caltech101 (100 classes) [Fei et al. 04] contenant plus de 9000 images [Figure 3.2]. Nous avons choisi ces deux bases d'images pour la simple raison que les images sont déjà classées (une classe unique pour une image), ce qui facilitera le calcul des mesures de performance, on pourra donc vérifier facilement si deux images appartiennent à la même classe.
 	
 \begin{figure}[H]
 	\centering
@@ -102,9 +103,9 @@ $$Taux d'erreur = 1 - \textit{1-Précision}$$
 
 	
 \section{Architecture du réseau à convolution}
-	Comme nous l'avons cité précédemment, notre approche utilisera des techniques d'apprentissage profond pour la comparaison des images à la places des techniques traditionnelles (texture, forme, couleur, etc.). Pour cela, nous avons utilisé les réseaux à convolution (ConvNets) introduits dans le chapitre précédent.
+	Comme nous l'avons cité précédemment, notre approche utilisera des techniques d'apprentissage profond pour la comparaison des images à la place des techniques traditionnelles (texture, forme, couleur, etc.). Pour cela, nous avons utilisé les réseaux à convolution (ConvNets) introduits dans le chapitre précédent.
 	
-	L'architecture VGG-CNN-S du réseau à convolution que nous avons utilisé dans notre algorithme, a été proposée par l'équipe de recherche Visual Geometry Group Department of Engineering Science, Université d'Oxford (VGG) [Cha et al.14]. Lors de la compétition ImageNet 2014 (introduite au chapitre 2) ils ont pu obtenir une erreur de classification (top-5) de 7.405\%. L'architecture VGG-CNN-S du ConvNets a été entraîné sur une base d'image très grande ILSVRC-2012 (plus de 1.2 millions d'images [Rus et al.15]). Cette base contient 1000 classes différentes, elle inclue une très grande variété d'images et a donc beaucoup de potentiel pour être généralisable, c’est-à-dire elle peut donner aussi de bons résultats sur d'autres bases d'images qui sont plus petites que celle ILSVRC-2012.
+	L'architecture VGG-CNN-S du réseau à convolution que nous avons utilisé dans notre algorithme, a été proposée par l'équipe de recherche Visual Geometry Group Department of Engineering Science, Université d'Oxford (VGG) [Cha et al.14]. Lors de la compétition ImageNet 2014 (introduite au chapitre 2) ils ont pu obtenir une erreur de classification (top-5) de 7.405\%. L'architecture VGG-CNN-S du ConvNets a été entraînée sur une base d'images très grande ILSVRC-2012 (plus de 1.2 millions d'images [Rus et al.15]). Cette base contient 1000 classes différentes, elle inclut une très grande variété d'images et a donc beaucoup de potentiel pour être généralisable, c’est-à-dire elle peut donner aussi de bons résultats sur d'autres bases d'images qui sont plus petites que celles de ILSVRC-2012.
 	
 	Nous allons donc commencer par décrire l'architecture VGG-CNN-S du réseau à convolution que nous avons utilisée. Le tableau ci-dessous donne une descriptions de chacune des couches de l'architecture du ConvNets utilisé qui est comme suit:
 
@@ -130,7 +131,7 @@ LRN,x3 pool & x2 pool & - & - & x3 pool & out & out & max\\
   }
 \end{table}
 
-	Ce réseau à convolution comporte une couche d'entrée (non incluse dans le tableau), 7 couches cachées et une couche de sortie (la dernière colonne du tableau). Les données en entrée au réseau à convolution sont des images ayant une taille fixe de 224 x 224 pixels RGB. Pour forcer cette taille à toutes les images, elles seront d'abord redimensionnées de tel sorte à ce que la plus petite des deux dimensions (longueur ou bien largeur) soit égale à 256 pixels, ensuite on prendra les 224 x 224 pixels qui sont au centre de ces images. Le choix de la valeur de 224 pixels est nécessaire pour que les données en entrée s'adaptent à l'architecture proposée. Le seul pré-traitement effectué est la soustraction de la valeur moyenne RGB de chaque pixel de l'image, son interprétation géométrique est de centrer le nuage de donnée autours d'une origine [CS231n 16].
+	Ce réseau à convolution comporte une couche d'entrée (non incluse dans le tableau), 7 couches cachées et une couche de sortie (la dernière colonne du tableau). Les données en entrée au réseau à convolution sont des images ayant une taille fixe de 224 x 224 pixels RGB. Pour forcer cette taille à toutes les images, elles seront d'abord redimensionnées de telle sorte à ce que la plus petite des deux dimensions (longueur ou bien largeur) soit égale à 256 pixels, ensuite on prendra les 224 x 224 pixels qui sont au centre de ces images. Le choix de la valeur de 224 pixels est nécessaire pour que les données en entrée s'adaptent à l'architecture proposée. Le seul pré-traitement effectué est la soustraction de la valeur moyenne RGB de chaque pixel de l'image, son interprétation géométrique est de centrer le nuage de données autour d'une origine [CS231n 16].
 
 	L'image passe premièrement à travers des piles de couches de convolution où nous appliquons plusieurs filtres. La première couche de convolution applique 96 filtres différents de taille $7x7$ pixels avec un stride de 2 et sans zero-padding, comme le montre la figure suivante:
 
@@ -145,7 +146,7 @@ LRN,x3 pool & x2 pool & - & - & x3 pool & out & out & max\\
 $$W_{2} = (W_{1} - F + 2*P)/S + 1$$
 $$Exemple de la première convolution: (224 - 7 + 2*0)/1 +1 = 109.5$$
 	
-	Si on obtient un nombre non entier (avec une virgule) comme l'exemple ci-dessus, ce qui représente une opération de convolution incomplète, on prend donc que la partie entière. Comme les images en entrée ont la même largeur et longueur (images carrées), il suffit seulement de calculer cette valeur (nouvelle dimension) pour une seule dimension.
+	Si on obtient un nombre non entier (avec une virgule) comme l'exemple ci-dessus, ce qui représente une opération de convolution incomplète, on ne prend alors que la partie entière. Comme les images en entrée ont la même largeur et longueur (images carrées), il suffit seulement de calculer cette valeur (nouvelle dimension) pour une seule dimension.
 	Cette première couche de convolution est la seule couche sur laquelle on applique une normalisation [Kri et al.,12].
 	
 	Après cela, on applique un max-pooling sur la sortie résultante des convolutions, comme le montre la figure suivante:
@@ -162,7 +163,7 @@ $$Exemple de la première convolution: (224 - 7 + 2*0)/1 +1 = 109.5$$
 $$W_{2} = (W_{1} - F )/S + 1$$
 Exemple du premier max-pooling: $$(109 - 3)/3 +1 = 36.33$$
 
-	Ces étapes sont presque les mêmes pour chaque couche de convolution, chacune applique des filtres de convolution d'une certaine taille, suivi ou non d'un max-pooling. On remarque sur la figure qui va suivre dans la troisième couche de convolution, que la taille de l'entrée est de 17x17 et de la sortie 17x17, comme on a dit dans le chapitre précédent cela est dû au zero-padding qui permet de contrôler la dimension des sorties. On remarque aussi que la plus petite taille des filtres de convolution est de 3x3 pixels, et cela pour capturer la notion de gauche / droite, haut / bas, au centre.
+	Ces étapes sont presque les mêmes pour chaque couche de convolution, chacune applique des filtres de convolution d'une certaine taille, suivis ou non d'un max-pooling. On remarque sur la figure qui va suivre dans la troisième couche de convolution, que la taille de l'entrée est de 17x17 et de la sortie 17x17, comme on a dit dans le chapitre précédent cela est dû au zero-padding qui permet de contrôler la dimension des sorties. On remarque aussi que la plus petite taille des filtres de convolution est de 3x3 pixels, et cela pour capturer la notion de gauche / droite, haut / bas, au centre.
 
 	Les sorties obtenues après le passage d'une image sur ces couches de convolutions sont 512 matrices de taille 6x6 pixels, 512 étant le nombre de filtres appliqués lors de la dernière convolution, et la taille 6x6 pixels est la taille de la sortie de cette même couche après application des filtres de convolution et du max-pooling.
 
@@ -193,12 +194,12 @@ Les deux premières couches entièrement connectées ont 4096 neurones chacune, 
 
 
 \section{Entraînement du réseau}
-	Comme pour un réseau de neurones ordinaire, un réseau de neurones à convolution a besoin d'être entraîné sur une base d'exemple (base d'images dans notre cas), plus le réseau a une grande taille (plusieurs poids) plus on aura besoin d'un plus grand nombre d'exemples pour son entraînement. 
+	Comme pour un réseau de neurones ordinaire, un réseau de neurones à convolution a besoin d'être entraîné sur une base d'exemples (base d'images dans notre cas), plus le réseau a une grande taille (plusieurs poids) plus on aura besoin d'un plus grand nombre d'exemples pour son entraînement. 
 	
-	La base utilisée pour l’entraînement (apprentissage) de ce réseau à convolution est ILSVRC-2012 (plus de 1.2 million d'images), et l'apprentissage s'est fait avec une descente du gradient stochastique avec moment. Les paramètre empiriques (hyper-paramètres) sont comme suit: Un moment de $0.9$, une dégradation des pondérations (weight decay) de $5*10^{-4}$, et un taux d'apprentissage initial (learning rate) de $10^{-2}$. [Cha et al.14]
+	La base utilisée pour l’entraînement (apprentissage) de ce réseau à convolution est ILSVRC-2012 (plus de 1.2 million d'images), et l'apprentissage s'est fait avec une descente du gradient stochastique avec moment. Les paramètres empiriques (hyper-paramètres) sont comme suit: Un moment de $0.9$, une dégradation des pondérations (weight decay) de $5*10^{-4}$, et un taux d'apprentissage initial (learning rate) de $10^{-2}$. [Cha et al.14]
 	
 	Les valeurs initiales des poids ne peuvent pas être toutes égales à zéro (ou une autre valeur), puisque tous les poids vont calculer le même gradient lors de la rétro-propagation, ce qui résultera en l'application des mêmes mis-à-jours sur tous les poids. En d'autres termes, il n'y aura pas d’asymétrie entre les valeurs des poids si elles sont toutes initialisées à une même valeur. [CS231n 16]	
-	Il serait donc plus judicieux d'initialiser les valeurs des poids à des valeurs aléatoires proches de zéro. Pour l'architecture VGG-CNN-S, les valeurs des poids de chaque couches ont été initialisées avec une distribution Gaussienne avec une moyenne de 0 et une variance de $10^{-2}$. [Cha et al.14]
+	Il serait donc plus judicieux d'initialiser les valeurs des poids à des valeurs aléatoires proches de zéro. Pour l'architecture VGG-CNN-S, les valeurs des poids de chaque couche ont été initialisées avec une distribution Gaussienne avec une moyenne de 0 et une variance de $10^{-2}$. [Cha et al.14]
 	
 	Il est évident que pour réaliser l’entraînement d'un aussi grand réseau requiert de très grands temps de calculs et une très grande puissance CPU/GPU de calculs. L'équipe Visual Geometry Group a utilisé pour cela une carte graphique NVIDIA GTX Titan, l'entraînement du réseau à convolution a duré pendant 3 semaines, sans inclure le temps de paramétrage des hyper-paramètres (moment, learning rate, etc.).
 	
@@ -206,14 +207,14 @@ Les deux premières couches entièrement connectées ont 4096 neurones chacune, 
 
 
 \section{Extraction des caractéristiques}
-	L'architecture du réseau à convolution utilisée contient une succession de piles de convolutions qui se termine par des couches entièrement connectées, nous allons nous intéresser à ses dernières dans nos approches de comparaisons pour notre algorithme de recherche d'image par le contenu.
+	L'architecture du réseau à convolution utilisée contient une succession de piles de convolutions qui se termine par des couches entièrement connectées, nous allons nous intéresser à ces dernières dans nos approches de comparaisons pour notre algorithme de recherche d'image par le contenu.
 
-	Pour cela nous allons prendre chaque image et l'envoyer en entrée du réseau à convolution, et comme nous avons les différents poids de l'architecture VGG-CNN-S, nous pourrons ainsi récupérer les différentes valeurs que prends une image dans chaque couche du réseau à convolution. Comme les dernières couches du ConvNets sont des couches entièrement connectées, et donc seront sous le format d'une liste de valeurs réelles, nous pourrons manipuler les valeurs obtenues dans ces dernières couches. Le but étant de comparer une même couche de deux images différentes, la comparaison (calcul de ressemblance) se fait en calculant la distance (distance euclidienne) entre ces deux listes de nombre réel.
+	Pour cela nous allons prendre chaque image et l'envoyer en entrée du réseau à convolution, et comme nous avons les différents poids de l'architecture VGG-CNN-S, nous pourrons ainsi récupérer les différentes valeurs que prend une image dans chaque couche du réseau à convolution. Comme les dernières couches du ConvNets sont des couches entièrement connectées, et donc seront sous le format d'une liste de valeurs réelles, nous pourrons manipuler les valeurs obtenues dans ces dernières couches. Le but étant de comparer une même couche de deux images différentes, la comparaison (calcul de ressemblance) se fait en calculant la distance (distance euclidienne) entre ces deux listes de nombres réels.
 	
-	Nous allons maintenant présenter nos résultats obtenus (mesures de performance) de notre algorithme de recherche d'image par le contenu décrit au début de ce chapitre, en utilisant les trois dernières couches de l'architecture du réseau à convolution (les couches entièrement connectées) comme méthode de comparaison des images. Rappelons aussi que les bases utilisée dans notre algorithme sont les bases WANG et Caltech-101, nos premières approches sont donc comme suit:
+	Nous allons maintenant présenter nos résultats obtenus (mesures de performance) de notre algorithme de recherche d'image par le contenu décrit au début de ce chapitre, en utilisant les trois dernières couches de l'architecture du réseau à convolution (les couches entièrement connectées) comme méthode de comparaison des images. Rappelons aussi que les bases utilisées dans notre algorithme sont les bases WANG et Caltech-101, nos premières approches sont donc comme suit:
 
 \subsection{Dernière couche Soft-max 1000}
-	Pour notre première approche, nous avons utilisé pour comparer les images la dernière couche du réseau à convolution qui est la couche Soft-max, cette couche contient 1000 valeurs (une valeur pour chaque classe de ILSVRC-2012) rappelons que cette couche contient les probabilités d'appartenance d'une image aux 1000 classes. Nos résultats obtenus sont comme suit:	
+	Pour notre première approche, nous avons utilisé pour comparer les images la dernière couche du réseau à convolution qui est la couche Soft-max, cette couche contient 1000 valeurs (une valeur pour chaque classe de ILSVRC-2012) rappelons que cette couche contient les probabilités d'appartenance d'une image aux 1000 classes. Les résultats que nous avons obtenu sont comme suit:
 
 \begin{table}[H]
 \begin{center}
@@ -630,10 +631,7 @@ On pourrait aussi dire que les informations d'une image qu'offrent les descripte
 
 	Dans cette partie nous allons comparer nos meilleures approches qui sont la description sémantique de la couche 4096b, et la description du Denoising Autoencoder 4x1x4 sans descripteurs. Comme exemple de système de recherche d'image par le contenu, nous avons choisi deux systèmes de recherche qui sont FIRE [Des et al. 08] et LIRE [Lux et al. 13], parce-que ces deux systèmes ont utilisé des descripteurs traditionnels pour donner une description des images, et ont présenté les mesures de performances que leurs systèmes ont obtenus sur la base WANG [Li et Wan.,03][Wan et al.,01]. Parmi ces mesures de performances ils utilisent le taux d'erreur (événement inverse de la 1-Précision) pour comparer leurs différentes approches.
 	
-	Rappelons que la base WANG contient 1000 images (10 classes des 100 images), contrairement à notre algorithme de recherche d'image par le contenu où nous avons divisé la base WANG en deux parties, les approches des deux systèmes sont un peu différentes. Ils calculent le taux d'erreur pour les 1000 images et non pas 200 requêtes comme dans notre algorithme, pour cela ils prennent chaque image et ils la comparent avec les 999 autres images, si l'image la plus ressemblante appartient à la même classe, le taux d'erreur sera égal à 0 sinon à 1 dans le cas contraire.
-
-	Le choix du taux d'erreur comme mesure pour comparer les différents modèles de recherche d'image par le contenu, est du au fait qu'un utilisateur quand il cherche les images ressemblantes à son image, il s'intéresse principalement au top-5 des images ressemblante, et principalement au top-1, donc il est plus important de donner les bonnes images pertinentes en premier que de retourner plusieurs images qui ne sont pas toutes forcément pertinentes.
-	Nous avons donc implémenté un nouvel algorithme qui utilise la même manière que les deux systèmes pour mesurer les performances sur la base WANG. Les résultats que des deux systèmes sont représentés dans les deux tableaux suivants:
+	Les résultats des deux systèmes LIRE et FIRE sont représentés dans les deux tableaux suivants:
 	
 	
 \begin{table}[H]
@@ -693,16 +691,65 @@ Tamura & 0.601\\
 \caption{Résultats du système LIRE.}
 \end{table}
 
-	Nous allons prendre les approches des descripteurs qui ont donné les plus petits taux d'erreur pour les deux systèmes de recherche, color histogram pour FIRE et Auto color correlogram pour LIRE, et les comparer avec nos deux meilleures approches comme le montre le graphe suivant:
+	Rappelons que la base WANG contient 1000 images (10 classes des 100 images), contrairement à notre algorithme de recherche d'image par le contenu où nous avons divisé la base WANG en deux parties (la première contenant 20\% des images et la deuxième le reste des 80\%), les approches des deux systèmes sont un peu différentes. Ils calculent le taux d'erreur pour les 1000 images et non pas 200 requêtes comme dans notre algorithme, pour cela ils prennent chaque image et ils la comparent avec les 999 autres images, si l'image la plus ressemblante appartient à la même classe, le taux d'erreur sera égal à 0 sinon à 1 dans le cas contraire.
+
+	Le choix du taux d'erreur comme mesure pour comparer les différents modèles de recherche d'image par le contenu, est dû au fait que quand un utilisateur cherche les images ressemblantes à son image (à partir d'un smartphone par exemple), il s'intéresse généralement au top-5 des images ressemblantes, et principalement au top-1, donc il est plus important de donner les bonnes images pertinentes en premier que de retourner plusieurs images qui ne sont pas toutes forcément pertinentes.
+	
+	Nous avons donc implémenté un nouvel algorithme qui utilise la même manière de comparaison que les deux systèmes LIRE et FIRE (1 image requête comparée avec les 999 autres images), pour nous permettre de les comparer avec nos approches, les résultats sont comme suit:
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+	Comp & 1000 & 4096a & 4096b & AE414 & AE42124 & Denosing & 4096b+Desc & Denoising+Desc\\
+\hline
+	\multicolumn{9}{|c|}{1-Précision}\\
+\hline
+	20\%-80\% & 0.86 & 0.84 & 0.97 & 0.925 & 0.95 & 0.965 & 0.97 & 0.96\\
+\hline
+	1-999 & 0.885 & 0.87 & 0.964 & 0.935 & 0.953 & 0.966 & 0.964 & 0.967\\
+\hline
+	\multicolumn{9}{|c|}{Rappel}\\
+\hline
+	20\%-80\% & 0.442 & 0.514 & 0.716 & 0.637 & 0.756 & 0.808 & 0.717 & 0.811\\
+\hline
+	1-999 & 0.413 & 0.520 & 0.713 & 0.641 & 0.758 & 0.806 & 0.713 & 0.807\\
+\hline
+\end{tabular}
+\end{center}
+\caption{Comparaison des mesures obtenues entre les deux manières de comparaison.}
+\end{table}
+
+	Avant de comparer nos résultats avec les bases LIRE et FIRE, nous allons d'abord comparer nos deux manières de comparaison de la base WANG que nous avons implémenté, nous remarquons que les 1-Précision et Rappels des deux manières de comparaison sont très similaires, avec une différence rare de 3\% au maximum. On peut donc dire que les mesures de performance sur une partie aléatoire d'une base d'image, sont approximativement les mêmes que les mesures sur la totalité de la base. Le tableau [Tableau 3.13] ci-dessous donne les valeurs des taux d'erreur avec la manière (1 avec 999) :
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+	Mesure & 1000 & 4096a & 4096b & AE414 & AE42124 & Denosing & 4096b+Desc & Denoising+Desc\\
+\hline
+	1-Préc & 0.885 & 0.87 & 0.964 & 0.935 & 0.953 & 0.966 & 0.964 & 0.966\\
+\hline
+	Taux-Err & 0.115 & 0.13 & 0.036 & 0.065 & 0.047 & 0.034 & 0.036 & 0.034\\
+\hline
+\end{tabular}
+\end{center}
+\caption{Les mesures obtenues avec la nouvelle manière de comparaison (1 avec 999).}
+\end{table}
+
+
+
+
+	Nous allons comparer tous nos approches avec les descripteurs de LIRE et FIRE qui ont donné les plus petits taux d'erreur, color histogram pour FIRE et Auto color correlogram pour LIRE, les résultats sont présentés sur le graphe suivant:
 	
 \begin{figure}[H]
 \centering
-\includegraphics[width=5in]{Figures/results/res-wang4.png}
+\includegraphics[width=5in]{Figures/results/res-wang5.png}
 \caption[An Electron]{Comparaison de nos approches avec FIRE et LIRE.}
 \label{fig:Electron}
 \end{figure}
 	
-	Il est clair que les taux d'erreur de nos approches sont très largement petits par rapport à ceux des deux systèmes LIRE et FIRE, cela confirme la puissance de la descriptions sémantique ainsi que la puissance des Deep Autoencoders. Nos techniques utilisée offrent une meilleure alternative aux descripteurs d'images traditionnels.
+	Il est clair que les taux d'erreur de nos approches sont très largement petits par rapport à ceux des deux systèmes LIRE et FIRE, sauf pour les approches de la couche Soft-max 1000 (par étiquette) et la couche 4096a (sémantique mais non profonde). Cela confirme la puissance de la description sémantique profonde ainsi que la puissance des Deep Autoencoders. Nos techniques utilisée offrent donc une meilleure alternative aux descripteurs d'images traditionnels.
 	
 \section{Conclusion}
 

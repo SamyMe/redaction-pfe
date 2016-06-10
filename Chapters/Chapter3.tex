@@ -5,7 +5,7 @@
 \section{Introduction}
 	Dans ce chapitre nous allons présenter nos différentes approches pour la réalisation d'une recherche d'image par le contenu (CBIR) basée exemple. Contrairement aux techniques traditionnelles qui utilisent les formes, textures, couleurs, etc. pour comparer les images (calculer la ressemblance), nous allons utiliser dans nos approches des techniques de l'apprentissage profond. Parmi les techniques d'apprentissage profond auxquelles nous allons nous intéresser se trouvent les réseaux à convolution (ConvNets) et les Deep AutoEncoders. 
 	
-	Nos premières tentatives consisteront en l'exploration de différentes méthodes permettant d'extraire la description d'une image à partir d'un réseau à convolution. Puis nous allons essayer réduire cette description vers un espace de représentation plus petit à l'aide des Deep Autoencoders, et observer ce que cette réduction apporte en terme de performance. Enfin, nous introduirons des descripteurs de texture à nos descriptions extraites par les technique d'apprentissage profond et constater si cela apporte des améliorations dans l'extraction des images ressemblantes. Nous allons aussi donner pour chacune de nos approches, des interprétations bien fondées des différents résultats que nous avons obtenus, ainsi qu'une étude comparative avec des systèmes connus de recherche d'images par le contenu qui utilisent les descripteurs d'images traditionnels.
+	Nos premières tentatives consisteront en l'exploration de différentes méthodes permettant d'extraire la description d'une image à partir d'un réseau à convolution. Puis nous allons essayer réduire cette description vers un espace de représentation plus petit à l'aide des Deep Autoencoders, et observer ce que cette réduction apporte en terme de performance. Enfin, nous introduirons des descripteurs de textures à nos descriptions extraites par les technique d'apprentissage profond et constater si cela apporte des améliorations dans l'extraction des images ressemblantes. Nous allons aussi donner pour chacune de nos approches, des interprétations bien fondées des différents résultats que nous avons obtenus, ainsi qu'une étude comparative avec des systèmes connus de recherche d'images par le contenu qui utilisent les descripteurs d'images traditionnels.
 	
 	
 
@@ -180,7 +180,7 @@ Exemple du premier max-pooling: $$(109 - 3)/3 +1 = 36.33$$
 
 	Le vecteur unidimensionnel sera composé de la succession des lignes de la première matrice, ensuite les lignes de la deuxième matrice, et ainsi de suite jusqu'à la dernière matrice. Donc dans notre cas, à partir de 512 matrices de 6x6 nous aurons un vecteur unidimensionnel de taille: $512*6*6 = 18432$.
 
-Les deux premières couches entièrement connectées ont 4096 neurones chacune, la troisième et dernière couche du réseau est la couche soft-max. Elle réalise la classification de la base d'image ILSVRC-2012 et contient donc 1000 neurones (un pour chaque classe), cette couche soft-max donnera comme sortie un vecteur de 1000 valeurs contenant les probabilités d'appartenance d'une image aux 1000 classes.
+Les deux premières couches entièrement connectées ont 4096 neurones chacune, la troisième et dernière couche du réseau est la couche soft-max. Elle réalise la classification de la base d'images ILSVRC-2012 et contient donc 1000 neurones (un pour chaque classe), cette couche soft-max donnera comme sortie un vecteur de 1000 valeurs contenant les probabilités d'appartenance d'une image aux 1000 classes.
 
 	La figure suivante montre l'architecture complète contenant la taille de chaque entrée et sortie de chaque couche du réseau à convolution:
 
@@ -204,7 +204,29 @@ Les deux premières couches entièrement connectées ont 4096 neurones chacune, 
 	Il est évident que pour réaliser l’entraînement d'un aussi grand réseau requiert de très grands temps de calculs et une très grande puissance CPU/GPU de calculs. L'équipe Visual Geometry Group a utilisé pour cela une carte graphique NVIDIA GTX Titan, l'entraînement du réseau à convolution a duré pendant 3 semaines, sans inclure le temps de paramétrage des hyper-paramètres (moment, learning rate, etc.).
 	
 	Comme dans notre cas, nous ne disposons pas d'une aussi grande puissance de calcul ni le temps nécessaire pour paramétrer le réseau à convolution, nous ne pouvons pas réaliser l’entraînement de ce réseau. L'équipe VGG a eu donc la courtoisie de publier pour les chercheurs les poids que leurs réseaux (VGG-CNN-S et autres) ont appris durant la phase entraînement, nous n'avons donc pas eu à refaire ce qui a été fait.
+	
+	Nos contributions à la recherche d'image par le contenu, peuvent être résumées sur les trois schémas suivant:
+	
+	\begin{figure}[H]
+	\centering
+		\includegraphics[width=5in]{Figures/diagramme1.png}
+	\caption[An Electron]{Approches de l'extraction des caractéristiques.}
+	\label{fig:Electron}
+\end{figure} 
 
+	\begin{figure}[H]
+	\centering
+		\includegraphics[width=5in]{Figures/diagramme2.png}
+	\caption[An Electron]{Approches de la compression avec les Autoencoders.}
+	\label{fig:Electron}
+\end{figure} 
+
+	\begin{figure}[H]
+	\centering
+		\includegraphics[width=6in]{Figures/diagramme3.png}
+	\caption[An Electron]{Approches de l'ajout des descripteurs de textures.}
+	\label{fig:Electron}
+\end{figure} 
 
 \section{Extraction des caractéristiques}
 	L'architecture du réseau à convolution utilisée contient une succession de piles de convolutions qui se termine par des couches entièrement connectées, nous allons nous intéresser à ces dernières dans nos approches de comparaisons pour notre algorithme de recherche d'image par le contenu.
@@ -263,18 +285,18 @@ Les deux premières couches entièrement connectées ont 4096 neurones chacune, 
 \caption{Résultats obtenus avec la couche 4096a.}
 \end{table}
 
-	Nous remarquons que ces résultats sont assez différents de ceux obtenus avec la couche soft-max de 1000. Pour la base WANG: la 1-Précision, 5-Précision et 10-Précision ont diminué de 2\% à 5\%, mais à partir de 20-Précision jusqu'au Rappel nous avons une augmentation de reconnaissance, donc l'algorithme a plus de difficulté à trouver les images les plus ressemblantes, mais arrive à trouver mieux toutes les images ressemblante de la même classe.
+	Nous remarquons que ces résultats sont assez différents de ceux obtenus avec la couche soft-max de 1000. Pour la base WANG: la 1-Précision, 5-Précision et 10-Précision ont diminué de 2\% à 5\%, mais à partir de 20-Précision jusqu'au Rappel nous avons une augmentation de reconnaissance, donc l'algorithme a plus de difficulté à trouver les images les plus ressemblantes, mais arrive à trouver mieux toutes les images ressemblantes de la même classe.
 	Quant à la base Caltech-101: c'est le contraire, il arrive mieux à retrouver les images les plus ressemblantes mais moins toutes les images ressemblantes de la même classe.
 	
-	En résumé la couche 4096a ne donne pas forcément de meilleurs résultats que la couche soft-max 1000. Cela dépend du nombre de classes et d'exemples de chaque base d'images. On peut dire que contrairement à la recherche par étiquette effectuée dans la couche Soft-max 1000, nous effectuons avec la 4096a ce que nous appelons comme recherche sémantique. Sémantique parce-que elle compare les images grâce aux informations cumulées à partir des piles de convolutions.
+	En résumé la couche 4096a ne donne pas forcément de meilleurs résultats que la couche soft-max 1000. Cela dépend du nombre de classes et d'exemples de chaque base d'images. On peut dire que contrairement à la recherche par étiquette effectuée dans la couche Soft-max 1000, nous effectuons avec la 4096a ce que nous appelons comme recherche sémantique. Sémantique parce-qu'elle compare les images grâce aux informations cumulées à partir des piles de convolutions.
 
 %C'est la première couche de neurones entièrement connectés (4096 neurones), celle qui se trouvent juste après les couches de convolution. Cette couche cumule donc l'apprentissage des dernières convolutions qui ont été effectué sur l'image.
 %SUPPOSITION: Cumuler les informations sémantiques qui sont traitées moins profondément.
 
 \subsection{Avant dernière couche 4096b}
-	La couche qui sera utilisée pour notre troisième approche est l'avant dernière couche entièrement connectée du réseau à convolution. Elle contient 4096 valeurs et se trouvent entre la couche Soft-max 1000 et la couche 4096a, on la notera donc comme la couche \textbf{4096b}.
+	La couche qui sera utilisée pour notre troisième approche est l'avant dernière couche entièrement connectée du réseau à convolution. Elle contient 4096 valeurs et se trouve entre la couche Soft-max 1000 et la couche 4096a, on la notera donc comme la couche \textbf{4096b}.
 	
-	La couche 4096b ajoute un traitement plus avancé des connaissances acquises à partir de la couche 4096a qui la précède, et n'étant pas une Soft-max donc elle ne donne pas une représentation en classes, elle est par conséquent moins spécialisé que la dernière couche Soft-max 1000.
+	La couche 4096b ajoute un traitement plus avancé des connaissances acquises à partir de la couche 4096a qui la précède, et n'étant pas une Soft-max donc elle ne donne pas une représentation en classes, elle est par conséquent moins spécialisée que la dernière couche Soft-max 1000.
 
 
 \begin{table}[H]
@@ -292,14 +314,14 @@ Les deux premières couches entièrement connectées ont 4096 neurones chacune, 
 \caption{Résultats obtenus avec la couche 4096b.}
 \end{table}
 
-	Les résultats des mesures de performances en utilisant cette couche pour la comparaison sont nettement meilleurs qu'en utilisant les couches des deux approches précédentes, pour les deux bases WANG et Caltech-101 nous avons une très grande amélioration dans chacune des N-Précisions ainsi que le Rappel. Ces amélioration varient de 10\% jusqu'à plus de 20\% d'augmentation.
+	Les résultats des mesures de performances en utilisant cette couche pour la comparaison sont nettement meilleurs qu'en utilisant les couches des deux approches précédentes, pour les deux bases WANG et Caltech-101 nous avons une très grande amélioration dans chacune des N-Précisions ainsi que le Rappel. Ces améliorations vont de 10\% jusqu'à plus de 20\% d'augmentation.
 	
-	Pour la base WANG nous avons une 1-Précision de 97\%, l'algorithme avec à trouver presque dans tous les cas la bonne image la plus ressemblante. Quand aux résultats de la base Caltech-101, ils ne sont pas aussi bons que ceux de WANG mais nous obtenons de très bonnes améliorations sur toutes les mesures de performance. 
-	Nous remarquons donc que la couche 4096b est la meilleure couche pour comparer les images avec notre algorithme, mais nous pouvons dire aussi que c'est la meilleure couche qui permet de donner la meilleure description d'une image donnée, une description sémantique qui ne dépend pas de la classe de l'image mais de l'information sémantique de son contenu. Avec cette couche nous arrivons à mieux rassembler les informations sémantiques obtenus des convolutions et de la couche 4096a sans être spécialisée en classes comme la couche Soft-max 1000.
+	Pour la base WANG nous avons une 1-Précision de 97\%, l'algorithme arrive à trouver presque dans tous les cas la bonne image la plus ressemblante. Quand aux résultats de la base Caltech-101, ils ne sont pas aussi bons que ceux de WANG mais nous obtenons de très bonnes améliorations sur toutes les mesures de performance. 
+	Nous remarquons donc que la couche 4096b est la meilleure couche pour comparer les images avec notre algorithme, mais nous pouvons dire aussi que c'est la meilleure couche qui permet de donner la meilleure description d'une image donnée, une description sémantique qui ne dépend pas de la classe de l'image mais de l'information sémantique de son contenu. Avec cette couche nous arrivons à mieux rassembler les informations sémantiques obtenues des convolutions et de la couche 4096a sans être spécialisée en classes comme la couche Soft-max 1000.
 	
 \subsection{Résultats}
 
-	Pour mieux visualiser les résultats obtenus des approches de l'extraction des caractéristiques et voir la différence entre elles, voici les deux graphes suivants qui montrent le récapitulatif des résultats obtenus avec les trois approches:
+	Pour mieux visualiser les résultats obtenus des approches de l'extraction des caractéristiques et voir la différence entre elles, voici les deux graphes suivants qui montrent le récapitulatif des résultats que nous avons obtenu avec les trois approches:
 
 \begin{figure}[H]
 \centering
@@ -314,7 +336,7 @@ WANG & Caltech-101\\
 \caption[comp7]{Résultats obtenus sur les deux bases.}
 \end{figure}
 
-	Il est clair que la représentation sémantique profonde de la couche 4096b dépasse de loin la représentation sémantique non profonde de la couche 4096a mais aussi la représentation en étiquette de la couche Soft-max 1000.	
+	Il est clair que la représentation sémantique profonde de la couche 4096b dépasse de loin la représentation sémantique non profonde de la couche 4096a mais aussi la représentation en étiquette de la couche Soft-max 1000.
 
 %Cette l'avant dernière couche du ConvNets, elle se trouve donc entre les deux couches précédemment utilisées. C'est une couche entièrement connectée qui contient 4096 neurones.
 %Cette couche ajoute un traitement plus avancé des connaissances acquises de la couche qui la précède (4096a) mais elle est moins spécialisé que la dernière couche (1000 neurones par classes)
@@ -328,23 +350,23 @@ WANG & Caltech-101\\
 
 	L'approche de Matthew Zeiler [Zei et al. 14] nous a permis de trouver une théorie bien fondée pour expliquer l'apprentissage qu'effectuent les réseaux à convolution dans les parties contenant les piles de convolutions. Il montre dans sa recherche au fur et à mesure de la phase d'apprentissage, comment les valeurs des différents masques de convolutions changent et finissent à la fin par se spécialiser en apprenant à reconnaître un motif précis.
 	
-	Les filtres des premières couches de convolutions apprennent à reconnaître des motifs très simples par exemple: des traits, des coins, etc.	Les motifs deviennent de plus en plus complexe plus on avance à travers les couches de convolutions, jusqu'à arriver aux filtres de convolution des couches les profondes du réseau, qui apprennent à reconnaître des motifs beaucoup plus complexes en combinant les résultats des couches de convolution précédentes. Ces motifs complexes représenterons l'information sémantique que les réseaux à convolution reconnaissent.
-Ainsi, on trouve qu'un réseau à convolution imite finalement bien le comportement observé dans le cerveau.
+	Les filtres des premières couches de convolutions apprennent à reconnaître des motifs très simples par exemple: des traits, des coins, etc.	Les motifs deviennent de plus en plus complexes plus on avance à travers les couches de convolutions, jusqu'à arriver aux filtres de convolution des couches les plus profondes du réseau, qui apprennent à reconnaître des motifs beaucoup plus complexes en combinant les résultats des couches de convolution précédentes. Ces motifs complexes représenterons l'information sémantique que les réseaux à convolution reconnaissent.
+Ainsi, on découvre qu'un réseau à convolution imite finalement bien le comportement observé dans le cerveau.
 
 \subsection{Réseau à déconvolution}
 
-	Matthew Zeiler réalise donc deux architectures, la première est un réseau à convolution qu'il à implémenté en se basant sur LeNet de LeCun [LeCun et al. 89] et AlNet de Krizhevsky [Kri et al. 12], comme le montre la figure suivante:
+	Matthew Zeiler réalise donc deux architectures, la première est un réseau à convolution qu'il a implémenté en se basant sur LeNet de LeCun [LeCun et al. 89] et AlNet de Krizhevsky [Kri et al. 12], comme le montre la figure suivante:
 
 \begin{figure}[H]
 	\centering
 		\includegraphics[width=5in]{Figures/arch.png}
-	\caption[Res]{Architecture utilisé pour le conv net. [Zei et al. 14]}
+	\caption[Res]{Architecture utilisée pour le conv net. [Zei et al. 14]}
 	\label{fig:Electron}
 \end{figure}
 
-	Il a entraîné ce réseau à convolution sur la base d'image de ILSVRC-2012. Il a utilisé la Cross-Entropy pour le calcul d'erreur. L’entraînement fut effectué par descente du gradient avec des mini-batch d'une taille de 128 images, un Learning-Rate de 0.01 et un dropout sur les dernières couches d'une valeur de 0,5. Les poids furent initialisés à 0.01 et les biais à 0.
+	Il a entraîné ce réseau à convolution sur la base d'images de ILSVRC-2012. Il a utilisé la Cross-Entropy pour le calcul d'erreur. L’entraînement fut effectué par descente du gradient avec des mini-batch d'une taille de 128 images, un Learning-Rate de 0.01 et un dropout sur les dernières couches d'une valeur de 0,5. Les poids furent initialisés à 0.01 et les biais à 0.
 
-	La deuxième architecture que Matthew Zeiler a proposé dans son travail, offre une nouvelle manière de retracer les activités des caractéristiques détectées jusqu'à arriver vers les pixels qui les ont activés. Cette architecture s'intitule: \textit{réseaux de déconvolution}, ces derniers reprennent la même architecture que le réseau à convolution de la première architecture, mais d'une manière inverse. Ils effectuent dans l'ordre suivant ces étapes:
+	La deuxième architecture que Matthew Zeiler a proposée dans son travail, offre une nouvelle manière de retracer les activités des caractéristiques détectées jusqu'à arriver vers les pixels qui les ont activés. Cette architecture s'intitule: \textit{réseaux de déconvolution}, ces derniers reprennent la même architecture que le réseau à convolution de la première architecture, mais d'une manière inverse. Ils effectuent dans l'ordre suivant ces étapes:
 
 \begin{enumerate}
 \item \textbf{Unpooling}: Le max-pooling qui est généralement utilisé dans les réseaux à convolution n'est pas inversible. L'Unpooling essaye d'approximer l'inverse du max-pooling, l’idée est donc de sauvegarder l'emplacement du maximum pour chaque région au moment de l'application d'un max-pooling. Comme le montre la figure suivante:
@@ -358,14 +380,14 @@ Ainsi, on trouve qu'un réseau à convolution imite finalement bien le comportem
 
 \item \textbf{Rectification}: Elle s'effectue à travers l'application de la fonction de non-linéarité "ReLu", la rectification ne fait que prendre le maximum entre la valeur en entrée de la fonction et 0 pour garder seulement les résultats positifs, les négatifs deviendront des zéros.
 
-\item \textbf{Filtrage}: la dernière étape est d'appliquer l'opération inverse des filtres (matrices) de convolution. Elle est est considérée comme étant la transposé des filtres (matrices) de convolution apprises.
+\item \textbf{Filtrage}: la dernière étape est d'appliquer l'opération inverse des filtres (matrices) de convolution. Elle est considérée comme étant la transposée des filtres (matrices) de convolution apprises.
 \end{enumerate}
 
 \subsection{Visualisation des caractéristiques}
 
-	Après avoir implémenté le réseau à déconvolution, Zeiler passe à la tache de visualisation où il tente de donner un sens à l'apprentissage qu'effectue un réseau à convolution, en d'autres termes: montrer ce que chaque masque de convolution détecte. L'approche est donc de tenter de trouver les zones d'images en entrée qui sont à l'origine de l'activation de chaque masque. 
+	Après avoir implémenté le réseau à déconvolution, Zeiler passe à la tâche de visualisation où il tente de donner un sens à l'apprentissage qu'effectue un réseau à convolution, en d'autres termes: montrer ce que chaque masque de convolution détecte. L'approche est donc de tenter de trouver les zones d'images en entrée qui sont à l'origine de l'activation de chaque masque. 
 	
-	Par soucis de temps, nous n'avons pas pu implémenter les réseaux à déconvolutions sur notre implémentation. Les résultats obtenus par Zeiler [Zei et al. 14] sont représentés sur la figure ci-dessous, elle représente le top-9 des zones qui causent le plus grand taux d'activation pour un masque donné.
+	Pour des raisons de manque de temps, nous n'avons pas pu implémenter les réseaux à déconvolutions sur notre implémentation. Les résultats obtenus par Zeiler [Zei et al. 14] sont représentés sur la figure ci-dessous, elle représente le top-9 des zones qui causent le plus grand taux d'activation pour un masque donné.
  
 \begin{figure}[H]
 	\centering
@@ -375,20 +397,20 @@ Ainsi, on trouve qu'un réseau à convolution imite finalement bien le comportem
 \end{figure}
 
 
-	On peut voir la nature hiérarchique de la reconnaissance, dans les premières couches, des formes basique sont détectées (la détection de différents traits et lignes par la couche 1, différents types de coins par la couche 2). Ces formes basiques se combinent d'une couche à une autre pour arriver à des représentations plus complexes (des textures dans la couche 3), jusqu’à pouvoir reconnaître des objets plus significatifs dans les dernières couches (humain, chien, roue, fleur, etc.), c'est cette dernière reconnaissance qu'on appellera comme \textit{description sémantique}.
+	On peut voir la nature hiérarchique de la reconnaissance, dans les premières couches, des formes basiques sont détectées (la détection de différents traits et lignes par la couche 1, différents types de coins par la couche 2). Ces formes basiques se combinent d'une couche à une autre pour arriver à des représentations plus complexes (des textures dans la couche 3), jusqu’à pouvoir reconnaître des objets plus significatifs dans les dernières couches (humain, chien, roue, fleur, etc.), c'est cette dernière reconnaissance qu'on qualifiera comme \textit{description sémantique}.
 
-	Matthew Zeiler [Zei et al. 14] observe ainsi l’évolution des caractéristiques (features) reconnues durant l’entraînement et fait une analyse de sensibilité (sensitivity analysis). Comme nous ne sommes pas certain si la détection se fait par rapport aux objets eux mêmes, ou bien à ce qu'ils ont autour (l'entourage des objets). Il propose pour remédier à ce problème, de cacher certaines parties des images(avec des rectangles gris), les résultats des testes montrent que le taux de reconnaissance diminue d'une façon radicale, ce qui prouve donc que la détection se fait bien sur les objets eux mêmes et non leur entourage.\\
+	Matthew Zeiler [Zei et al. 14] observe ainsi l’évolution des caractéristiques (features) reconnues durant l’entraînement et fait une analyse de sensibilité (sensitivity analysis). Puisque nous ne sommes pas certain que la détection se fait par rapport aux objets eux-mêmes et non pas à ce qu'ils ont autour (l'entourage des objets). Matthew Zeiler propose pour remédier à ce problème, de cacher certaines parties des images(avec des rectangles gris), les résultats des tests montrent que le taux de reconnaissance diminue d'une façon radicale, ce qui prouve donc que la détection se fait bien sur les objets eux mêmes et non leur entourage.\\
 
-	Nous pouvons donc assumer qu'au final, que la représentation retournée par le réseau est bien une représentation sémantique du contenu de l'image, elle décrit donc d'une certaine façon ce contenu. C'est cette représentation qui sera traduite en étiquettes (1000 classes) à travers la dernière couche Soft-max. 		Cette représentation force le réseau à utiliser des termes (étiquettes) bien précis pour exprimer ce qu'il a appris, c'est pour cette raison qu'on retrouve donc de meilleur résultats lors de l'utilisation des sorties de l'avant dernière couche (4096b) où les concepts appris sont encore libres de cette contrainte. Enfin, plus les représentations sont traitées en profondeur, plus elles sont significatives, et plus le réseau apprend des concepts plus complexes. C'est par ceci que sont expliqués les résultats pas très bons de l'avant avant dernière couche (4096a).
+	Nous pouvons donc assumer qu'au final, la représentation retournée par le réseau est bien une représentation sémantique du contenu de l'image, elle décrit donc d'une certaine façon ce contenu. C'est cette représentation qui sera traduite en étiquettes (1000 classes) à travers la dernière couche Soft-max. Cette représentation force le réseau à utiliser des termes (étiquettes) bien précis pour exprimer ce qu'il a appris, c'est pour cette raison qu'on retrouve donc de meilleurs résultats lors de l'utilisation des sorties de l'avant dernière couche (4096b) où les concepts appris sont encore libres de cette contrainte. Enfin, plus les représentations sont traitées en profondeur, plus elles sont significatives, et plus le réseau apprend des concepts plus complexes. C'est comme cela que sont expliqués les résultats pas très bons de l'avant avant dernière couche (4096a).
 	% (on remarque que les résultats de la couche de Soft-max (1000) se rapproches de celle de (4096a))
 
 \section{Description sémantique avec les Autoencoders}
-	Après avoir décrit ce qu'est la description sémantique d'une image, nous nous sommes intéressés dans nos approches suivantes sur l'utilisation des Deep Autoencoders, en les appliquant sur les descriptions sémantiques que nous avons obtenu à partir du réseau à convolution que nous avons utilisé. Pour cela, nous avons choisi de prendre comme description sémantique celle de la couche 4096b, vu les bons résultats qu'on a pu obtenir avec couche, qu'on essayera d'améliorer avec l'ajout des Deep Autoencoders.
-	Les Deep Autoencoders que nous avons implémentés auront pour but créer une représentation compressée des 4096 valeurs de la couche 4096b en seulement 1000 valeurs. Le choix de la valeur 1000 a été fait pour comparer entre les performances de la représentation par étiquette de la couche Soft-max 1000 et la représentation sémantique compressée de la couche 4096b avec les Deep Autoencoders.
+	Après avoir décrit ce qu'est la description sémantique d'une image, nous nous sommes intéressés dans nos approches suivantes à l'utilisation des Deep Autoencoders, en les appliquant sur les descriptions sémantiques que nous avons obtenus à partir du réseau à convolution que nous avons utilisé. Pour cela, nous avons choisi de prendre comme description sémantique celle de la couche 4096b (vu les bons résultats obtenus), qu'on essayera d'améliorer avec l'ajout des Deep Autoencoders.
+	Les Deep Autoencoders que nous avons implémentés auront pour but de créer une représentation compressée des 4096 valeurs de la couche 4096b en seulement 1000 valeurs. Le choix de la valeur 1000 a été fait pour comparer entre les performances de la représentation par étiquette de la couche Soft-max 1000 et la représentation sémantique compressée de la couche 4096b avec les Deep Autoencoders.
 	
-	Comme pour un réseau de neurones classique, les Deep autoencoders ont doivent être entraînés sur une base d'exemple. Nous avons utilisé une nouvelle base d'image qui est IAPR TC-12 [Gru et at. 06] contenant 20000 images différentes. Nous avons choisi cette base d'image pour ne pas obtenir des résultats biaisés lors des calculs des ressemblances entre les images et avoir une meilleure généralisation. De cette manière, les Deep Autoencoders que nous avons implémenté créeront des représentations compressées des images des bases WANG et Caltech-101, en ayant appris à faire cela sur une toute autre base qui est IAPR TC-12.
+	Comme pour un réseau de neurones classique, les Deep autoencoders doivent être entraînés sur une base d'exemples. Nous avons utilisé une nouvelle base d'images qui est IAPR TC-12 [Gru et at. 06] contenant 20000 images différentes. Nous avons choisi cette base d'images pour ne pas obtenir des résultats biaisés lors des calculs des ressemblances entre les images et avoir une meilleure généralisation. De cette manière, les Deep Autoencoders que nous avons implémentés créeront des représentations compressées des images des bases WANG et Caltech-101, en ayant appris à faire cela sur une toute autre base qui est IAPR TC-12.
 	
-	Chacune de nos architectures des autoencoders que nous avons implémenté ont été entraînées pendant plusieurs heures, entre 7 heures et 10 heures pour chaque architecture, pour un nombre d'epoch de 1000, un learning-rate de 0.1 et une taille de batch de 20.
+	Chacune de nos architectures des autoencoders que nous avons implémentée ont été entraînées pendant plusieurs heures, entre 7 heures et 10 heures pour chaque architecture, pour un nombre d'epoch de 1000, un learning-rate de 0.1 et une taille de batch de 20.
 
 \subsection{Autoencoder 4x1x4} 
 	Nous avons implémenté notre première architecture de Deep Autoencoder de sorte à obtenir une description compressée de la couche sémantique 4096b en 1000 valeurs seulement. Nous avons donc choisi une architecture très simple, comme le montre la figure suivante:
@@ -400,7 +422,7 @@ Ainsi, on trouve qu'un réseau à convolution imite finalement bien le comportem
 	\label{fig:Electron}
 \end{figure}
 
-	Cette architecture a pour entrée une couche de 4096 valeurs où qui contiendra la représentation sémantique 4096b d'une image, une couche cachée de 1000 valeurs où le Deep Autoencoder créera une représentation compressée des 4096 valeurs, et finalement la couche de sortie de 4096 valeurs où le Deep Autoencoder essayera de reconstruire l'entrée de 4096 valeurs à partir des 1000 valeurs compressées. On notera cette architecture en \textbf{Autoencoder 4x1x4}. Les résultats des mesures de performances que nous avons obtenus sont comme suit:
+	Cette architecture a pour entrée une couche de 4096 valeurs qui contiendra la représentation sémantique 4096b d'une image, une couche cachée de 1000 valeurs où le Deep Autoencoder créera une représentation compressée des 4096 valeurs, et finalement la couche de sortie de 4096 valeurs où le Deep Autoencoder essayera de reconstruire l'entrée de 4096 valeurs à partir des 1000 valeurs compressées. On notera cette architecture en \textbf{Autoencoder 4x1x4}. Les résultats des mesures de performances que nous avons obtenus sont comme suit:
 	
 
 \begin{table}[H]
@@ -418,9 +440,9 @@ Ainsi, on trouve qu'un réseau à convolution imite finalement bien le comportem
 \caption{Résultats obtenus avec l'Autoencoder 4x1x4.}
 \end{table}
 
-	Nous remarquons que les résultats pour la base WANG ne sont pas meilleurs que ceux obtenus avec la représentation sémantique profonde de la couche 4096b, mais sont quand même meilleurs que ceux de la représentation sémantique non profonde de la couche 4096a, mais surtout meilleur que la représentation par étiquette de la couche Soft-max 1000.
-	Par contre pour la base d'image Caltech-101 ce n'est pas le même cas, la représentation avec l'autoencoder 4x1x4 ne donne pas de de meilleure résultats par rapport à toutes les autres approches précédente.
-	Comme les résultats ne sont pas les mêmes entre les deux bases d'images que nous avons testé, nous allons essayer d'autres architecture de Deep Autoencoder.
+	Nous remarquons que les résultats pour la base WANG ne sont pas meilleurs que ceux obtenus avec la représentation sémantique profonde de la couche 4096b, mais sont quand même meilleurs que ceux de la représentation sémantique non profonde de la couche 4096a, mais surtout meilleurs que la représentation par étiquette de la couche Soft-max 1000.
+	Par contre pour la base d'images Caltech-101 ce n'est pas le même cas, la représentation avec l'autoencoder 4x1x4 ne donne pas de meilleurs résultats par rapport à toutes les autres approches précédentes.
+	Comme les résultats ne sont pas les mêmes entre les deux bases d'images que nous avons testées, nous allons essayer d'autres architectures de Deep Autoencoder.
 
 
 %Application d'un réseau d'autoencoder sur les valeurs de la couche 4096b, ce sera un apprentissage qui aura pour but de codifier (convertir) les 4096 valeurs en seulement 1000 valeurs. Ce réseau à une architecture très simple qui est comme suit: 4096 neurones dans la couche d'entrée, 1000 neurones dans la couche cachée et 4096 neurones dans la couche de sortie.
@@ -455,7 +477,7 @@ Ainsi, on trouve qu'un réseau à convolution imite finalement bien le comportem
 \caption{Résultats obtenus avec l'Autoencoder 4x2x1x2x4.}
 \end{table}
 
-	Pour les deux bases WANG et Caltech-101, nous avons obtenus des résultats presque similaires entre la couche 4096b et cette architecture Autoencoder 4x2x1x2x4. La représentation sémantique de 4096b donne de meilleurs performance lors de la recherche d'images avec les Précision 1-Préc, 5-Préc et 10-Préc. Par contre pour le reste des mesures surtout le Rappel, l'architecture Autoencoder 4x2x1x2x4 est un peu meilleur que celle de 4096b.
+	Pour les deux bases WANG et Caltech-101, nous avons obtenus des résultats presque similaires entre la couche 4096b et cette architecture Autoencoder 4x2x1x2x4. La représentation sémantique de 4096b donne de meilleures performances lors de la recherche d'images avec les Précision 1-Préc, 5-Préc et 10-Préc. Par contre pour le reste des mesures surtout le Rappel, l'architecture Autoencoder 4x2x1x2x4 est un peu meilleure que celle de 4096b.
 	
 	La différence entre les deux approches est qu'avec celle de 4096b nous comparons 4096 valeurs, quand à la représentation Autoencoder 4x2x1x2x4 nous ne comparons que 1000 valeurs seulement vu que c'est une représentation compressée.
 
@@ -465,7 +487,7 @@ Ainsi, on trouve qu'un réseau à convolution imite finalement bien le comportem
 
 
 \subsection{Denoising Autoencoder 4x1x4}
-	En regardant les résultats deux architecture de Deep Autoencoder, nous avons remarqué qu'il n'y avait pas vraiment d'amélioration ou seulement une légère amélioration. Au lieu de changer d'architecture de Deep Autoencoder, nous avons penser à implémenter un autre type de Deep Autoencoder qui sont les Deep Denoising Autoencoder. L'architecture d'un Deep Denoising Autoencoder ressemble à l'architecture d'un Deep Autoencoder, c'est la manière d'envoyer les valeurs en entrée qui sera changée, comme le montre la figure suivante:
+	En regardant les résultats des deux architectures de Deep Autoencoder, nous avons remarqué qu'il n'y avait pas vraiment d'amélioration ou seulement une légère amélioration. Au lieu de changer d'architecture de Deep Autoencoder, nous avons pensé à implémenter un autre type de Deep Autoencoder que sont les Deep Denoising Autoencoder. L'architecture d'un Deep Denoising Autoencoder ressemble à l'architecture d'un Deep Autoencoder, c'est la manière d'envoyer les valeurs en entrée qui change, comme le montre la figure suivante:
 
 \begin{figure}[H]
 	\centering
@@ -474,7 +496,7 @@ Ainsi, on trouve qu'un réseau à convolution imite finalement bien le comportem
 	\label{fig:Electron}
 \end{figure}
 
-	Cette architecture ressemble donc à l'architecture Autoencoder 4x1x4, comme nous le remarquons chaque donnée en entrée va être corrompue avec un certain taux de corruption. Donc les valeurs en entrée du réseau seront les valeurs de la couche sémantique 4096b, mais qui auront des valeurs modifiées à un certain taux. Le Deep Denoising Autoencoder que nous avons implémenté aura pour but dans ce cas de reconstruire à partir des 4096 valeurs corrompues, les 4096 valeurs non corrompus.
+	Cette architecture ressemble donc à l'architecture Autoencoder 4x1x4, comme nous le remarquons chaque donnée en entrée va être corrompue avec un certain taux de corruption. Donc les valeurs en entrée du réseau seront les valeurs de la couche sémantique 4096b, mais qui auront des valeurs modifiées à un certain taux. Le Deep Denoising Autoencoder que nous avons implémenté aura pour but dans ce cas de reconstruire à partir des 4096 valeurs corrompues, les 4096 valeurs non corrompues.
 	
 	Notre implémentation de Deep Denoising Autoencoder 4x1x4  a un taux de corruption de 30\% donc $4096 * \dfrac{30}{100} = 1228$ valeurs corrompues, les résultats obtenus sont comme suit:
 
@@ -494,8 +516,8 @@ Ainsi, on trouve qu'un réseau à convolution imite finalement bien le comportem
 \caption{Résultats obtenus avec le Denoising Autoencoder 4x1x4.}
 \end{table}
 
-	Les résultats de cette approches sont les meilleurs de tous les résultats des approches précédentes, que ce soit pour base WANG ou pour la base Caltech-101. Une amélioration des performances allant jusqu'à 10\% dans le Rappel par rapport à l'approche de la couche 4096b.
-	Nous pouvons donc déduire que notre approche avec le Deep Denoising Autoencoder a pu construire une représentation compressée de 4096b en seulement 1000 valeurs, où il garde seulement les informations utiles de la représentation sémantique 4096b, et cela améliore nettement la comparaison des images et donc la recherche d'image par le contenu. 
+	Les résultats de cette approche sont les meilleurs de tous les résultats des approches précédentes, que ce soit pour base WANG ou pour la base Caltech-101. Une amélioration des performances allant jusqu'à 10\% dans le Rappel par rapport à l'approche de la couche 4096b.
+	Nous pouvons donc déduire que notre approche avec le Deep Denoising Autoencoder a pu construire une représentation compressée de 4096b en seulement 1000 valeurs, où elle garde seulement les informations utiles de la représentation sémantique 4096b, et cela améliore nettement la comparaison des images et donc la recherche d'image par le contenu. 
 
 
 %Nous avons tester un autoencoder plus complexe. C'est la même architecture que l'autoencoder 4x1x4, mais avec un taux de corruption de 30\% et moins de paramètre pour éviter au maximum le sur-apprentissage.
@@ -510,26 +532,28 @@ Ainsi, on trouve qu'un réseau à convolution imite finalement bien le comportem
 \begin{tabular}{cc}
 \centering
 
-\includegraphics[width=9cm]{Figures/results/res-wang2.png}
+\includegraphics[width=9cm]{Figures/results/res-wang2b.png}
 &
-\includegraphics[width=9cm]{Figures/results/res-caltech2.png}\\
+\includegraphics[width=9cm]{Figures/results/res-caltech2b.png}\\
 WANG & Caltech-101\\
 \end{tabular}
 \caption[comp7]{Résultats avec Autoencoder obtenus sur les deux bases.}
 \end{figure}
 
-	Nos deux premières architectures d'Autoencoders qui sont Autoencoder 4x1x4 et 4x2x1x2x4 ne donne pas de mailleurs résultats par rapport à l'approche 4096b, mais avec notre troisième architecture du Denoising Autoencoder, on remarque une très grande amélioration. Cela est dû à l'ajout des bruits (noises) et donc de rajouter des contraintes supplémentaires au Denoising Autoencoder pour créer des représentations compressées plus efficacement. Ces résultats montrent la force des Deep Autoencoders.
+	Nous remarquons que les représentations compressées en 1000 valeurs des Autoecnoders donnent en général de meilleurs résultats que la couche Soft-max 1000, même si dans les deux cas les deux vecteurs ont une même taille. Donc la différence de performance entre les couches du réseau à convolutions (Soft-max 1000, 4096a et 4096b), n’était pas dû à la compression des espaces de représentation, mais à la différence du type d'information (sémantique ou étiquette) que contiennent ces couches, et aussi à la profondeur du traitement.
+	
+	Nos deux premières architectures d'Autoencoders qui sont Autoencoder 4x1x4 et 4x2x1x2x4 ne donnent pas de meilleurs résultats par rapport à l'approche 4096b, mais avec notre troisième architecture du Denoising Autoencoder, on remarque une très grande amélioration. Cela est dû à l'ajout des bruits (noises) qui rajoutent des contraintes supplémentaires au Denoising Autoencoder pour créer des représentations compressées plus efficaces. Ces résultats montrent la force des Deep Autoencoders.
 
 
 \section{La force des Deep Autoencoders}
 	En plus de réduire l'espace de représentation pour prouver que ce n'est pas finalement ce dernier qui influe sur les résultats, l'utilisation des Autoencoders a montré une amélioration considérable des résultats de recherches d'images.
 
-	Pour comprendre pourquoi ceci s'est produit nous allons explorer plus en détail le fonctionnement de l'Autoencoder [Goo et al. 16]. L’idée est, comme expliqué précédemment dans le chapitre 2, que les données sont concentrées autour d'une partie d'un espace d'une dimension (appelée Variété ou Manifold) inférieure à celle de l'espace de représentation actuelle des données. L'objectif est de retrouver la structure de ce cette dimension réduite. Un Autoencoder effectue cela en faisant le compromis entre les deux contraintes suivantes:
+	Pour comprendre pourquoi ceci s'est produit nous allons explorer plus en détail le fonctionnement de l'Autoencoder [Goo et al. 16]. L’idée est, comme expliqué précédemment dans le chapitre 2, que les données sont concentrées autour d'une partie d'un espace d'une dimension (appelée Variété ou Manifold) inférieure à celle de l'espace de représentation actuelle des données. L'objectif est de retrouver la structure de cette dimension réduite. Un Autoencoder effectue cela en faisant le compromis entre les deux contraintes suivantes:
 
 \begin{enumerate}[i]
-\item Apprendre une représentation \textit{h} d'un exemple en entrée \textit{x} (\textit{h} étant généralement d'une dimensionnalité plus inférieure) tel que \textit{x} peut être récupéré à partir de \textit{h} grâce à un décodeur, et ceci avec un minimum d'erreur. Si le \textit{x'} reconstruit à partir \textit{x} n'appartient pas à l'espace de données en entrée, la reconstruction n'est pas sensée donner de bon résultats.
+\item Apprendre une représentation \textit{h} d'un exemple en entrée \textit{x} (\textit{h} étant généralement d'une dimensionnalité plus inférieure) tel que \textit{x} peut être récupéré à partir de \textit{h} grâce à un décodeur, et ceci avec un minimum d'erreur. Si le \textit{x'} (reconstruit à partir \textit{x}) n'appartient pas à l'espace de données en entrée, la reconstruction n'est pas sensée donner de bons résultats.
 
-\item Le deuxième point à satisfaire est l'ensemble de régularisations qui sont infligés à un Autoencoder qui ont généralement pour but d’éviter le sur-apprentissage et permettre donc d'avoir une représentation plus générale.
+\item Le deuxième point à satisfaire est l'ensemble de régularisations qui sont infligées à un Autoencoder et qui ont généralement pour but d’éviter le sur-apprentissage et permettre donc d'avoir une représentation plus générale.
 
 \end{enumerate}
 
@@ -537,23 +561,23 @@ WANG & Caltech-101\\
 \begin{figure}[H]
 	\centering
 		\includegraphics[width=3.5in]{Figures/manifold.png}
-	\caption[Res]{Exemple d'une Variété à une dimension [Goo et al. 16] dans un espace de 784 dimensions des images de la base MNIST (28×28 pixels) [LeCun et al. 98]. Une image fut prise et déplacée verticalement de haut en bas. Le taux de déplacement vertical défini des coordonnées qui tracent une courbe. Pour la visualiser, cette dernière a été projetée vers un espace à 2 dimensions en utilisant PCA (Principal Component Analysis).}
+	\caption[Res]{Exemple d'une Variété à une dimension [Goo et al. 16] dans un espace de 784 dimensions des images de la base MNIST (28×28 pixels) [LeCun et al. 98]. Une image fut prise et déplacée verticalement de haut en bas. Le taux de déplacement vertical définit des coordonnées qui tracent une courbe. Pour la visualiser, cette dernière a été projetée vers un espace à 2 dimensions en utilisant PCA (Principal Component Analysis).}
 	\label{fig:Electron}
 \end{figure}
 
 
 	Nous expliquons donc, dans notre cas, la hausse de niveau de précision dans la comparaison des images par le fait que les représentations sémantiques retenues par le réseau à convolution soient compressées par le codeur, il constitue dorénavant un moyen de résumer les représentations en les combinant d'une façon à en garder ce qu'il y a de plus essentiel.
 
-Ensuite, les contraintes ajouté au Denoising Autoencoder lui ont permis d'apprendre une compression plus générale et plus efficace, d’où ses résultats remarquables.
+Ensuite, les contraintes ajoutées au Denoising Autoencoder lui ont permis d'apprendre une compression plus générale et plus efficace, d’où ses résultats remarquables.
 
 
 \section{Recherche avec descripteur d'image}
-	Comme nous l'avons mentionné au début de ce chapitre, nos contributions aux techniques de recherche d'images par le contenu basée-exemple est de proposer des alternatives aux descripteurs usuels qui étaient utilisés pour calculer la ressemblance des images et les comparer entre elles. Nous avons ensuite montré la puissance des techniques de l'apprentissage profond et ce qu'ils peuvent donner comme résultats. Dans cette partie, nous allons rajouter des descripteurs de texture aux meilleures représentations que nous avons obtenus (4096b et Denoising Autoencoder). Pour les descripteurs de texture, nous avons choisi le Local Binary Pattern [Oja et al. 02] (Motifs Locaux Binaires) et les matrices de co-occurences GLCM [Har 79] (Grey Level Co-Occurences Matrix).
+	Comme nous l'avons mentionné au début de ce chapitre, nos contributions aux techniques de recherche d'images par le contenu basée-exemple est de proposer des alternatives aux descripteurs usuels qui étaient utilisés pour calculer la ressemblance des images et les comparer entre elles. Nous avons ensuite montré la puissance des techniques de l'apprentissage profond et ce qu'ils peuvent donner comme résultats. Dans cette partie, nous allons rajouter des descripteurs de textures aux meilleures représentations que nous avons obtenues (4096b et Denoising Autoencoder). Pour les descripteurs de texture, nous avons choisi le Local Binary Pattern [Oja et al. 02] (Motifs Locaux Binaires) et les matrices de co-occurences GLCM [Har 79] (Grey Level Co-Occurences Matrix).
 
 \subsection{4096b avec descripteur}
 	Dans cette approche nous allons rajouter aux 4096 valeurs de la couche sémantique 4096b deux descripteurs, qui sont l'histogramme des motifs uniformes du Local Binary Pattern avec invariabilité aux rotations [Oja et al. 02], et les mesures suivantes des matrices de co-occurences [Har 79]: contraste, dissimilarité, homogénéité, énergie, corrélation, second moment angulaire.
 	
-	Les résultats obtenus sont représentés sur le tableau suivant: 
+	Les résultats obtenus sont représentés dans le tableau suivant: 
 
 \begin{table}[H]
 \begin{center}
@@ -570,11 +594,11 @@ Ensuite, les contraintes ajouté au Denoising Autoencoder lui ont permis d'appre
 \caption{Résultats obtenus avec l'ajout des descripteurs de texture.}
 \end{table}
 
-	Les résultats que nous avons obtenus ressemblent beaucoup à ceux des résultats de la couche sémantique 4096b pour la base Caltech-101, et on remarque une légère amélioration de 2\% à 3\% dans certaines mesures de performances pour la base d'image WANG. On peut dire que l'ajout de descripteur n'a pas un impact important lors de la comparaison des images.
+	Les résultats que nous avons obtenus ressemblent beaucoup à ceux des résultats de la couche sémantique 4096b pour la base Caltech-101, et on remarque une légère amélioration de 2\% à 3\% dans certaines mesures de performances pour la base d'images WANG. On peut dire que l'ajout de descripteur n'a pas un impact important lors de la comparaison des images.
 
 
 \subsection{Denoising Autoencoder avec descripteur}
-	Nous allons dans cette approche prendre les mêmes valeurs de l'approche précédente qui sont les 4096 valeurs de la couche sémantique 4096b plus de l'histogramme du Local Binary pattern et les mesures de matrices de co-occurences, ces valeurs seront données en entrée à une nouvelle architecture de Deep Denoising Autoencoder que nous avons implémenté qui est représentée sur la figure suivante:
+	Nous allons dans cette approche prendre les mêmes valeurs de l'approche précédente qui sont les 4096 valeurs de la couche sémantique 4096b en plus de l'histogramme du Local Binary pattern et les mesures de matrices de co-occurences, ces valeurs seront données en entrée à une nouvelle architecture de Deep Denoising Autoencoder que nous avons implémenté qui est représentée sur la figure suivante:
 	
 \begin{figure}[H]
 \centering
@@ -600,7 +624,7 @@ Ensuite, les contraintes ajouté au Denoising Autoencoder lui ont permis d'appre
 \caption{Résultats obtenus avec Denoising Autoencoder avec descripteurs de texture.}
 \end{table}
 
-	C'est résultats sont presque similaires aux résultats obtenus avec le Denoising Autoencoder sans descripteurs, nous remarquons par contre une très légère amélioration de 0.2\% à 0.3\% dans presque toutes les mesures de performances des deux bases d'images.
+	Ces résultats sont presque similaires aux résultats obtenus avec le Denoising Autoencoder sans descripteurs, nous remarquons par contre une très légère amélioration de 0.2\% à 0.3\% dans presque toutes les mesures de performances des deux bases d'images.
 	
 
 %avec descripteurs (SIFT,LBP,GLCM,formes,couleurs) : L'architecture de ce réseau ressemble un peu aux précédentes, sauf qu'au lieu de donner en entrée/sortie seulement les 4096 valeurs, on va leurs rajouter différents descripteurs. La combinaison de ses valeurs devra être codifié en 1000 valeurs dans la couche cachée.
@@ -624,12 +648,12 @@ WANG & Caltech-101\\
 \caption[comp7]{Résultats avec descripteurs obtenus sur les deux bases.}
 \end{figure}
 	
-	Nous remarquons que l'ajout ou non de descripteurs au représentations sémantiques n'affecte pas les résultats d'une manière considérable. Nous pouvons donc dire que nos représentations sémantiques de nos approches offrent de bonnes descriptions des images sans avoir besoins d'ajouter des descripteurs d'images.
+	Nous remarquons que l'ajout ou non de descripteurs aux représentations sémantiques n'affecte pas les résultats d'une manière considérable. Nous pouvons donc dire que nos représentations sémantiques de nos approches offrent de bonnes descriptions des images sans avoir besoins d'ajouter des descripteurs d'images.
 On pourrait aussi dire que les informations d'une image qu'offrent les descripteurs sont déjà inclues dans la description sémantique de l'image.
 
 \section{Comparaison avec d'autres systèmes CBIR}
 
-	Dans cette partie nous allons comparer nos meilleures approches qui sont la description sémantique de la couche 4096b, et la description du Denoising Autoencoder 4x1x4 sans descripteurs. Comme exemple de système de recherche d'image par le contenu, nous avons choisi deux systèmes de recherche qui sont FIRE [Des et al. 08] et LIRE [Lux et al. 13], parce-que ces deux systèmes ont utilisé des descripteurs traditionnels pour donner une description des images, et ont présenté les mesures de performances que leurs systèmes ont obtenus sur la base WANG [Li et Wan.,03][Wan et al.,01]. Parmi ces mesures de performances ils utilisent le taux d'erreur (événement inverse de la 1-Précision) pour comparer leurs différentes approches.
+	Dans cette partie nous allons comparer toutes nos approches qui sont la description sémantique de la couche 4096b, et la description du Denoising Autoencoder 4x1x4 sans descripteurs. Comme exemple de système de recherche d'image par le contenu, nous avons choisi deux systèmes de recherche qui sont FIRE [Des et al. 08] et LIRE [Lux et al. 13], parce-que ces deux systèmes ont utilisé des descripteurs traditionnels pour donner une description des images, et ont présenté les mesures de performances que leurs systèmes ont obtenus sur la base WANG [Li et Wan.,03][Wan et al.,01]. Parmi ces mesures de performances ils utilisent le taux d'erreur (événement inverse de la 1-Précision) pour comparer leurs différentes approches.
 	
 	Les résultats des deux systèmes LIRE et FIRE sont représentés dans les deux tableaux suivants:
 	
@@ -662,7 +686,7 @@ global texture feature & 0.514\\
 \hline
 \end{tabular}
 \end{center}
-\caption{Résultats du système FIRE.}
+\caption{Résultats du système FIRE. [Des et al. 08]}
 \end{table}
 
 
@@ -688,7 +712,7 @@ Tamura & 0.601\\
 \hline
 \end{tabular}
 \end{center}
-\caption{Résultats du système LIRE.}
+\caption{Résultats du système LIRE. [Lux et al. 13]}
 \end{table}
 
 	Rappelons que la base WANG contient 1000 images (10 classes des 100 images), contrairement à notre algorithme de recherche d'image par le contenu où nous avons divisé la base WANG en deux parties (la première contenant 20\% des images et la deuxième le reste des 80\%), les approches des deux systèmes sont un peu différentes. Ils calculent le taux d'erreur pour les 1000 images et non pas 200 requêtes comme dans notre algorithme, pour cela ils prennent chaque image et ils la comparent avec les 999 autres images, si l'image la plus ressemblante appartient à la même classe, le taux d'erreur sera égal à 0 sinon à 1 dans le cas contraire.
@@ -749,11 +773,11 @@ Tamura & 0.601\\
 \label{fig:Electron}
 \end{figure}
 	
-	Il est clair que les taux d'erreur de nos approches sont très largement petits par rapport à ceux des deux systèmes LIRE et FIRE, sauf pour les approches de la couche Soft-max 1000 (par étiquette) et la couche 4096a (sémantique mais non profonde). Cela confirme la puissance de la description sémantique profonde ainsi que la puissance des Deep Autoencoders. Nos techniques utilisée offrent donc une meilleure alternative aux descripteurs d'images traditionnels.
+	Il est clair que les taux d'erreur de nos approches sont très largement petits par rapport à ceux des deux systèmes LIRE et FIRE, sauf pour les approches de la couche Soft-max 1000 (par étiquette) et la couche 4096a (sémantique mais non profonde). Cela confirme la puissance de la description sémantique profonde ainsi que la puissance des Deep Autoencoders. Nos techniques utilisées offrent donc une meilleure alternative aux descripteurs d'images traditionnels.
 	
 \section{Conclusion}
 
-	Nous concluons ce chapitre en constatant que les méthodes d'apprentissage profond donnent effectivement des résultats très satisfaisants quand on les appliquent au problème de recherche d'image par le contenu.
+	Nous concluons ce chapitre en constatant que les méthodes d'apprentissage profond donnent effectivement des résultats très satisfaisants quand on les applique au problème de recherche d'image par le contenu.
 	Les méthodes d'apprentissage profond que nous avons implémenté dans nos approches sont les réseaux à convolution (ConvNets) et les Deep Autoencoders, nous avons proposé une nouvelle approche pour décrire une image qui est la description sémantique, nous avons montré à quel point cette description est efficace et comment nous avons pu l'améliorer en utilisant des Deep Autoencoders.
 	
 	Comme les techniques d'apprentissage profond sont nouvelles et très variées, nos approches pourraient être développées et améliorées pour donner de meilleurs résultats en performance et en temps d’exécution. Nous allons dans le prochain chapitre, aborder les détails techniques de nos implémentations, ainsi qu'une visualisation concrète des exemples d'images retrouvées par notre système.

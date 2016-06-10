@@ -1,4 +1,5 @@
 \select@language {french}
+<<<<<<< HEAD
 \contentsline {chapter}{\numberline {1}Recherche d'image par le contenu}{4}
 \contentsline {section}{\numberline {1.1}Introduction}{4}
 \contentsline {section}{\numberline {1.2}La conception d'un syst\IeC {\`e}me CBIR}{5}
@@ -66,3 +67,72 @@
 \contentsline {section}{\numberline {4.3}Interface de l'application}{49}
 \contentsline {section}{\numberline {4.4}Tests}{51}
 \contentsline {section}{\numberline {4.5}Conclusion}{51}
+=======
+\contentsline {chapter}{\numberline {1}Recherche d'images par le contenu}{2}
+\contentsline {section}{\numberline {1.1}Introduction}{2}
+\contentsline {section}{\numberline {1.2}La conception d'un syst\IeC {\`e}me CBIR}{3}
+\contentsline {section}{\numberline {1.3}Calcul de similarit\IeC {\'e}}{3}
+\contentsline {section}{\numberline {1.4}Probl\IeC {\`e}me du foss\IeC {\'e} s\IeC {\'e}mantique}{4}
+\contentsline {section}{\numberline {1.5}Types de CBIR [Shr et al. 13]}{4}
+\contentsline {subsection}{\numberline {1.5.1}Bas\IeC {\'e}e-r\IeC {\'e}gion}{4}
+\contentsline {subsection}{\numberline {1.5.2}Bas\IeC {\'e}e-objets}{4}
+\contentsline {subsection}{\numberline {1.5.3}Bas\IeC {\'e}e-exemples}{5}
+\contentsline {subsection}{\numberline {1.5.4}Bas\IeC {\'e}e-Feedback}{5}
+\contentsline {section}{\numberline {1.6}Syst\IeC {\`e}mes de recherche d'images existants}{5}
+\contentsline {section}{\numberline {1.7}Conclusion}{7}
+\contentsline {chapter}{\numberline {2}Apprentissage profond}{8}
+\contentsline {section}{\numberline {2.1}Introduction}{8}
+\contentsline {section}{\numberline {2.2}Apprentissage automatique}{8}
+\contentsline {section}{\numberline {2.3}Concepts de base de l'apprentissage automatique}{9}
+\contentsline {subsection}{\numberline {2.3.1}Les t\IeC {\^a}ches \textit {T}}{9}
+\contentsline {subsection}{\numberline {2.3.2}Les mesures de performance \textit {P}}{10}
+\contentsline {subsection}{\numberline {2.3.3}L\IeC {\textquoteright }exp\IeC {\'e}rience \textit {E}}{10}
+\contentsline {subsection}{\numberline {2.3.4}Exemple d'algorithme d'apprentissage: Les r\IeC {\'e}seaux de neurones}{11}
+\contentsline {section}{\numberline {2.4}Introduction \IeC {\`a} l'apprentissage profond}{12}
+\contentsline {section}{\numberline {2.5}Les architectures de l'apprentissage profond}{14}
+\contentsline {subsection}{\numberline {2.5.1}Deep Belief Networks}{14}
+\contentsline {subsection}{\numberline {2.5.2}R\IeC {\'e}seau de neurones \IeC {\`a} convolution}{14}
+\contentsline {subsubsection}{La convolution}{14}
+\contentsline {subsubsection}{Le padding}{15}
+\contentsline {subsubsection}{Le sous-\IeC {\'e}chantillonnage}{15}
+\contentsline {subsubsection}{Normalisation}{16}
+\contentsline {subsubsection}{Perceptron multicouche enti\IeC {\`e}rement connect\IeC {\'e}}{16}
+\contentsline {subsubsection}{Dropout}{16}
+\contentsline {subsection}{\numberline {2.5.3}Deep AutoEncoders}{17}
+\contentsline {section}{\numberline {2.6}Les exploits des techniques d'apprentissage profond [Site2]}{18}
+\contentsline {section}{\numberline {2.7}Conclusion}{19}
+\contentsline {chapter}{\numberline {3}Repr\IeC {\'e}sentation s\IeC {\'e}mantique d'images}{20}
+\contentsline {section}{\numberline {3.1}Introduction}{20}
+\contentsline {section}{\numberline {3.2}Recherche d'images par le contenu bas\IeC {\'e}e exemple}{20}
+\contentsline {section}{\numberline {3.3}Architecture du r\IeC {\'e}seau \IeC {\`a} convolution}{22}
+\contentsline {section}{\numberline {3.4}Entra\IeC {\^\i }nement du r\IeC {\'e}seau}{26}
+\contentsline {section}{\numberline {3.5}Extraction des caract\IeC {\'e}ristiques}{28}
+\contentsline {subsection}{\numberline {3.5.1}Derni\IeC {\`e}re couche Soft-max 1000}{28}
+\contentsline {subsection}{\numberline {3.5.2}Avant avant derni\IeC {\`e}re couche 4096a}{29}
+\contentsline {subsection}{\numberline {3.5.3}Avant derni\IeC {\`e}re couche 4096b}{30}
+\contentsline {subsection}{\numberline {3.5.4}R\IeC {\'e}sultats}{30}
+\contentsline {section}{\numberline {3.6}La description s\IeC {\'e}mantique}{31}
+\contentsline {subsection}{\numberline {3.6.1}R\IeC {\'e}seau \IeC {\`a} d\IeC {\'e}convolution}{31}
+\contentsline {subsection}{\numberline {3.6.2}Visualisation des caract\IeC {\'e}ristiques}{32}
+\contentsline {section}{\numberline {3.7}Description s\IeC {\'e}mantique avec les Autoencoders}{34}
+\contentsline {subsection}{\numberline {3.7.1}Autoencoder 4x1x4}{34}
+\contentsline {subsection}{\numberline {3.7.2}Autoencoder 4x2x1x2x4}{35}
+\contentsline {subsection}{\numberline {3.7.3}Denoising Autoencoder 4x1x4}{36}
+\contentsline {subsection}{\numberline {3.7.4}R\IeC {\'e}sultats}{37}
+\contentsline {section}{\numberline {3.8}La force des Deep Autoencoders}{38}
+\contentsline {section}{\numberline {3.9}Recherche avec descripteur d'image}{39}
+\contentsline {subsection}{\numberline {3.9.1}4096b avec descripteur}{39}
+\contentsline {subsection}{\numberline {3.9.2}Denoising Autoencoder avec descripteur}{40}
+\contentsline {subsection}{\numberline {3.9.3}R\IeC {\'e}sultats}{41}
+\contentsline {section}{\numberline {3.10}Comparaison avec d'autres syst\IeC {\`e}mes CBIR}{41}
+\contentsline {section}{\numberline {3.11}Conclusion}{44}
+\contentsline {chapter}{\numberline {4}Application}{45}
+\contentsline {section}{\numberline {4.1}Introduction}{45}
+\contentsline {section}{\numberline {4.2}Outils utilis\IeC {\'e}s}{45}
+\contentsline {subsection}{\numberline {4.2.1}Le langage Python}{45}
+\contentsline {subsection}{\numberline {4.2.2}Theano}{45}
+\contentsline {subsection}{\numberline {4.2.3}Autres Frameworks}{48}
+\contentsline {section}{\numberline {4.3}Interface de l'application}{48}
+\contentsline {section}{\numberline {4.4}Tests}{50}
+\contentsline {section}{\numberline {4.5}Conclusion}{50}
+>>>>>>> 797df651a1d0f5156e29355b9b334557d598444e

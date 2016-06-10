@@ -62,33 +62,35 @@ Donc, la dérivée de la fonction \textbf{y} que nous avons défini, par rapport
 
 >> \textit{gy = T.grad(y, x)}\\
 
-\textbf{gy} contient dorénavant la dérivée de \textbf{y} par rapport à \textit{x}, qui n'est rien d'autre que \textbf{2x} .\\
+\textbf{gy} contient dorénavant la dérivée de \textbf{y} par rapport à \textit{x}, qui n'est rien d'autre que $2*x$ .\\
 
->> \textit{theano.pp(gy)}\\
- '((fill((x ** TensorConstant{2}), TensorConstant{1.0}) * TensorConstant{2}) * (x ** (TensorConstant{2} - TensorConstant{1})))'\\
+%>> \textit{theano.pp(gy)}\\
+% '((fill((x ** TensorConstant{2}), TensorConstant{1.0}) * TensorConstant{2}) * (x ** (TensorConstant{2} - TensorConstant{1})))'\\
  
-En essayant d'afficher le graph de \textbf{gy} nous obtenons:
+	En essayant d'afficher le graphe de \textbf{gy} nous obtenons la figure [Figure 4.2] ci-dessous:
 
 \begin{figure}[H]
 	\centering
 		\includegraphics[width=5in]{Figures/beforeOptimization.png}
-	\caption[TheanoGraph]{Visualisation du graph de \textbf{gy} avant optimisation}
+	\caption[TheanoGraph]{Visualisation du graphe de \textbf{gy} avant optimisation.}
 	\label{fig:Electron}
 \end{figure}
 
-Compiler le graph \textbf{gy} a l'aide de la fonction "function" pour le rendre exécutable s'effectue comme suit :
+	Ce graphe n'est pas évident à comprendre alors qu'il s'agit seulement de la fonction $ gy = 2*x$. Compiler le graphe de \textbf{gy} à l'aide de la fonction "function" de Theano pour le rendre exécutable s'effectue comme suit:\\
 
->> f = theano.function([x], gy)
+>> \textit{f = theano.function([x], gy)}\\
 
-l’opération optimise le calcule de \textbf{gy}, et le graph de \textbf{f} devient :
+	Cette opération optimise le calcul de \textbf{gy}, et le graphe de \textbf{f} devient comme le montre la figure ci-dessous:
 
 \begin{figure}[H]
 	\centering
 		\includegraphics[width=3in]{Figures/afterOptimization.png}
-	\caption[TheanoGraph]{Visualisation du graph de \textbf{gy} après optimisation}
+	\caption[TheanoGraph]{Visualisation du graphe de \textbf{gy} après optimisation.}
 	\label{fig:Electron}
 \end{figure}
- 
+
+	Ceci montre à quel point Theano est puissant dans sa gestion des fonctions et de leurs dérivées, ainsi que leurs optimisation en quelques lignes de codes.
+	
 	Une notion très importante qui existe dans Theano est celle des \textit{variables symboliques}. Elle peuvent être considérées comme des tampons (buffers) qui contiennent des valeurs qui peuvent être partagées entre plusieurs fonctions de Theano.\\
 
 	Un autre point fort de Theano est l'optimisation pour l'utilisation de matrices multi-dimensionnelles, mais aussi la facilité de compiler et exécuter les opérations sur des GPU au lieu des CPU.\\

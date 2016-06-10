@@ -59,6 +59,28 @@ Donc, la dérivée de \textbf{y}, défini ci-dessus, par rapport a \textbf{x} pe
 >> theano.pp(gy)\\
  '((fill((x ** TensorConstant{2}), TensorConstant{1.0}) * TensorConstant{2}) * (x ** (TensorConstant{2} - TensorConstant{1})))'\\
  
+En essayant d'afficher le graph de \textbf{gy} nous obtenons:
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=5in]{Figures/beforeOptimization.png}
+	\caption[TheanoGraph]{Visualisation du graph de \textbf{gy} avant optimisation}
+	\label{fig:Electron}
+\end{figure}
+
+Compiler le graph \textbf{gy} a l'aide de la fonction "function" pour le rendre exécutable s'effectue comme suit :
+
+>> f = theano.function([x], gy)
+
+l’opération optimise le calcule de \textbf{gy}, et le graph de \textbf{f} devient :
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=3in]{Figures/afterOptimization.png}
+	\caption[TheanoGraph]{Visualisation du graph de \textbf{gy} après optimisation}
+	\label{fig:Electron}
+\end{figure}
+ 
 Une notion importante est celle de \textit{variables symboliques} qui représente des variables symboliques. Elle peuvent être considéré comme des buffers qui contient des valeurs qui peuvent être partagée entre plusieurs fonctions de Theano.\\
 
 Un autre point fort est l'optimisation pour l'utilisation de matrice multi-dimensionnel, mais aussi la facilite de compiler les opérations sur des GPU.\\

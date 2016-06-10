@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.6)  9 JUN 2016 10:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.6)  10 JUN 2016 04:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -565,6 +565,12 @@ LaTeX Warning: Label `fig:Electron' multiply defined.
 LaTeX Warning: Label `fig:Electron' multiply defined.
 
 ) (./Chapters/Chapter4.aux
+
+LaTeX Warning: Label `fig:Electron' multiply defined.
+
+
+LaTeX Warning: Label `fig:Electron' multiply defined.
+
 
 LaTeX Warning: Label `fig:Electron' multiply defined.
 
@@ -1352,6 +1358,10 @@ File: Figures/visualisation.png Graphic file (type png)
 Package pdftex.def Info: Figures/visualisation.png used on input line 357.
 (pdftex.def)             Requested size: 361.34999pt x 500.3485pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 365--366
+
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.35403pt.
@@ -1365,7 +1375,7 @@ File: Figures/ae/414.jpg Graphic file (type jpg)
 Package pdftex.def Info: Figures/ae/414.jpg used on input line 383.
 (pdftex.def)             Requested size: 180.67499pt x 193.06358pt.
 
-Underfull \vbox (badness 2837) has occurred while \output is active []
+Underfull \vbox (badness 1221) has occurred while \output is active []
 
 
 
@@ -1605,25 +1615,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--61
 
  []
 
+<Figures/beforeOptimization.png, id=218, 928.46875pt x 727.71875pt>
+File: Figures/beforeOptimization.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
+<use Figures/beforeOptimization.png>
+Package pdftex.def Info: Figures/beforeOptimization.png used on input line 66.
+(pdftex.def)             Requested size: 361.34999pt x 283.22064pt.
 
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 69--71
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 72--73
-
- []
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1632,58 +1632,100 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [44 <./Figures/yGraph.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
+<Figures/afterOptimization.png, id=223, 401.5pt x 276.03125pt>
+File: Figures/afterOptimization.png Graphic file (type png)
+
+<use Figures/afterOptimization.png>
+Package pdftex.def Info: Figures/afterOptimization.png used on input line 79.
+(pdftex.def)             Requested size: 216.81pt x 149.05885pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--79
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 91--93
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[45 <./Figures/beforeOptimization.png> <./Figures/afterOptimization.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
-<Figures/mainMenu.png, id=222, 656.4525pt x 698.61pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--101
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
+
+ []
+
+<Figures/mainMenu.png, id=228, 656.4525pt x 698.61pt>
 File: Figures/mainMenu.png Graphic file (type png)
 
 <use Figures/mainMenu.png>
-Package pdftex.def Info: Figures/mainMenu.png used on input line 96.
+Package pdftex.def Info: Figures/mainMenu.png used on input line 118.
 (pdftex.def)             Requested size: 216.81pt x 230.73389pt.
 
-<Figures/search.png, id=223, 1016.79875pt x 836.12375pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[46] <Figures/search.png, id=233, 1016.79875pt x 836.12375pt>
 File: Figures/search.png Graphic file (type png)
 
 <use Figures/search.png>
-Package pdftex.def Info: Figures/search.png used on input line 107.
+Package pdftex.def Info: Figures/search.png used on input line 129.
 (pdftex.def)             Requested size: 361.34999pt x 297.13858pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[45 <./Figures/mainMenu.png>])
+)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[46 <./Figures/search.png>]
+[47 <./Figures/mainMenu.png> <./Figures/search.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[48]
 \openout2 = `Chapters/Conclusion.aux'.
 
  (./Chapters/Conclusion.tex
@@ -1695,7 +1737,7 @@ Package ucs Warning: This text contains LRM/RLM/LRE/RLE characters.
 (ucs)                characters instead to ensure correct order.
 (ucs)                 on input line 18.
 
-[47
+[49
 
 
 
@@ -1712,7 +1754,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[48] 
+[50] 
 AED: lastpage setting LastPage
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
@@ -1755,7 +1797,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[49
+[51
 
 
 ] (./main.aux (./Chapters/Introduction.aux) (./Chapters/Chapter1.aux)
@@ -1766,10 +1808,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 11065 strings out of 494940
- 154261 string characters out of 6178600
+ 11075 strings out of 494940
+ 154578 string characters out of 6178600
  338827 words of memory out of 5000000
- 13772 multiletter control sequences out of 15000+600000
+ 13780 multiletter control sequences out of 15000+600000
  89187 words of font info for 65 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  38i,52n,43p,1043b,1426s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1785,10 +1827,10 @@ nts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb
 share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
 ols/msbm10.pfb>
-Output written on main.pdf (52 pages, 7785743 bytes).
+Output written on main.pdf (54 pages, 7859482 bytes).
 PDF statistics:
- 292 PDF objects out of 1000 (max. 8388607)
- 163 compressed objects within 2 object streams
+ 301 PDF objects out of 1000 (max. 8388607)
+ 167 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 191 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 201 words of extra memory for PDF output out of 10000 (max. 10000000)
 

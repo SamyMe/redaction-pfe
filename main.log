@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.10)  11 JUN 2016 02:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.11)  11 JUN 2016 06:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 9 languages loaded.
+Babel <3.9h> and hyphenation patterns for 8 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
@@ -265,13 +265,6 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
@@ -279,6 +272,13 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
 (/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks28
@@ -527,7 +527,7 @@ Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \f@ncyO@olf=\skip80
 \f@ncyO@orf=\skip81
 ) (./main.aux
-(./Chapters/abstract.aux) (./Chapters/remerciement.aux)
+(./Chapters/remerciement.aux) (./Chapters/abstract.aux)
 (./Chapters/Introduction.aux) (./Chapters/Chapter1.aux
 
 LaTeX Warning: Label `fig:Electron' multiply defined.
@@ -640,6 +640,9 @@ LaTeX Warning: Label `fig:Electron' multiply defined.
 LaTeX Warning: Label `fig:Electron' multiply defined.
 
 ) (./Chapters/Chapter4.aux
+
+LaTeX Warning: Label `fig:Electron' multiply defined.
+
 
 LaTeX Warning: Label `fig:Electron' multiply defined.
 
@@ -856,66 +859,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+\openout2 = `Chapters/remerciement.aux'.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./main.toc
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 6.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 6.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 6.
- [2
-
-])
-\tf@toc=\write6
-\openout6 = `main.toc'.
-
- [3]
-Package minitoc Info: I0024
-(minitoc)             PREPARING MINITOCS FROM main.toc on input line 107.
-\openout2 = `Chapters/abstract.aux'.
-
-
-(./Chapters/abstract.tex
+ (./Chapters/remerciement.tex
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
-File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
-)
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
-
- []
-
-LaTeX Font Info:    Try loading font information for U+xnsh on input line 28.
-(/usr/share/texlive/texmf-dist/tex/latex/arabtex/Uxnsh.fd
-File: uxnsh.fd  1999/10/19 v3.10 ArabTeX Naskh extd. font definitions
-)
-LaTeX Font Info:    Font shape `U/xnsh/m/n' will be
-(Font)              scaled to size 35.82726pt on input line 28.
-LaTeX Font Info:    Font shape `U/xnsh/m/n' will be
-(Font)              scaled to size 17.28003pt on input line 32.
-) [1
-
-
-
-]
-\openout2 = `Chapters/remerciement.aux'.
-
-
-(./Chapters/remerciement.tex) [2
-
-
-
-]
-\openout2 = `Chapters/Introduction.aux'.
-
- (./Chapters/Introduction.tex
 Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
@@ -930,7 +880,79 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
-) [3
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+ []
+
+) [1
+
+
+
+]
+\openout2 = `Chapters/abstract.aux'.
+
+ (./Chapters/abstract.tex
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
+LaTeX Font Info:    Try loading font information for U+xnsh on input line 27.
+(/usr/share/texlive/texmf-dist/tex/latex/arabtex/Uxnsh.fd
+File: uxnsh.fd  1999/10/19 v3.10 ArabTeX Naskh extd. font definitions
+)
+LaTeX Font Info:    Font shape `U/xnsh/m/n' will be
+(Font)              scaled to size 35.82726pt on input line 27.
+LaTeX Font Info:    Font shape `U/xnsh/m/n' will be
+(Font)              scaled to size 17.28003pt on input line 31.
+) [2
+
+
+
+] (./main.toc
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 6.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 6.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 6.
+
+[3
+
+
+])
+\tf@toc=\write6
+\openout6 = `main.toc'.
+
+Package minitoc Info: I0024
+(minitoc)             PREPARING MINITOCS FROM main.toc on input line 115.
+ [4]
+\openout2 = `Chapters/Introduction.aux'.
+
+ (./Chapters/Introduction.tex
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
+File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
+)
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+ []
+
+) [1
 
 
 
@@ -952,7 +974,7 @@ File: Figures/textBasedIR.png Graphic file (type png)
 <use Figures/textBasedIR.png>
 Package pdftex.def Info: Figures/textBasedIR.png used on input line 27.
 (pdftex.def)             Requested size: 216.81pt x 176.38281pt.
- [4
+ [2
 
 
 
@@ -963,7 +985,7 @@ File: Figures/cbir.JPG Graphic file (type jpg)
 <use Figures/cbir.JPG>
 Package pdftex.def Info: Figures/cbir.JPG used on input line 36.
 (pdftex.def)             Requested size: 252.94499pt x 164.92155pt.
- [5 <./Figures/cbir.JPG>] [6]
+ [3 <./Figures/cbir.JPG>] [4]
 <Figures/cbirMedic.jpg, id=43, 762.85pt x 642.4pt>
 File: Figures/cbirMedic.jpg Graphic file (type jpg)
  <use Figures/cbirMedic.jpg>
@@ -976,7 +998,7 @@ File: Figures/qbic-demo.jpg Graphic file (type jpg)
 <use Figures/qbic-demo.jpg>
 Package pdftex.def Info: Figures/qbic-demo.jpg used on input line 117.
 (pdftex.def)             Requested size: 216.81pt x 253.4518pt.
- [7 <./Figures/cbirMedic.jpg>]
+ [5 <./Figures/cbirMedic.jpg>]
 <Figures/lire-demo.png, id=48, 990.70125pt x 692.5875pt>
 File: Figures/lire-demo.png Graphic file (type png)
 
@@ -986,14 +1008,14 @@ Package pdftex.def Info: Figures/lire-demo.png used on input line 129.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8 <./Figures/qbic-demo.jpg> <./Figures/lire-demo.png>]
+ [6 <./Figures/qbic-demo.jpg> <./Figures/lire-demo.png>]
 <Figures/fire-demo.png, id=53, 520.94624pt x 350.30875pt>
 File: Figures/fire-demo.png Graphic file (type png)
 
 <use Figures/fire-demo.png>
 Package pdftex.def Info: Figures/fire-demo.png used on input line 143.
 (pdftex.def)             Requested size: 361.34999pt x 242.99081pt.
-) [9 <./Figures/fire-demo.png>]
+) [7 <./Figures/fire-demo.png>]
 \openout2 = `Chapters/Chapter2.aux'.
 
 
@@ -1009,7 +1031,7 @@ Package pdftex.def Info: Figures/OneLearningAlgoAndreNg.jpg used on input line
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10
+ [8
 
 
 
@@ -1028,7 +1050,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
  []
 
-[11 <./Figures/OneLearningAlgoAndreNg.jpg>]
+[9 <./Figures/OneLearningAlgoAndreNg.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
@@ -1068,7 +1090,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
-[12] <Figures/mlp.png, id=74, 286.06876pt x 130.4875pt>
+[10] <Figures/mlp.png, id=74, 286.06876pt x 130.4875pt>
 File: Figures/mlp.png Graphic file (type png)
  <use Figures/mlp.png>
 Package pdftex.def Info: Figures/mlp.png used on input line 83.
@@ -1078,7 +1100,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
-[13 <./Figures/mlp.png>]
+[11 <./Figures/mlp.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
@@ -1094,7 +1116,7 @@ File: Figures/image024.png Graphic file (type png)
 <use Figures/image024.png>
 Package pdftex.def Info: Figures/image024.png used on input line 109.
 (pdftex.def)             Requested size: 216.81pt x 157.87537pt.
- [14 <./Figures/image024.png>]
+ [12 <./Figures/image024.png>]
 <Figures/highVariation.jpg, id=85, 1003.75pt x 1420.30624pt>
 File: Figures/highVariation.jpg Graphic file (type jpg)
 
@@ -1104,7 +1126,7 @@ Package pdftex.def Info: Figures/highVariation.jpg used on input line 129.
 
 Underfull \vbox (badness 2913) has occurred while \output is active []
 
- [15 <./Figures/highVariation.jpg>]
+ [13 <./Figures/highVariation.jpg>]
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-1.def
 File: uni-1.def 2013/05/13 UCS: Unicode data U+0100..U+01FF
 )
@@ -1124,21 +1146,21 @@ Package pdftex.def Info: Figures/convExample.png used on input line 172.
 
 Underfull \vbox (badness 1888) has occurred while \output is active []
 
- [16 <./Figures/Mylenet.png>] <Figures/zero-padding.png, id=96, 768.8725pt x 38
+ [14 <./Figures/Mylenet.png>] <Figures/zero-padding.png, id=96, 768.8725pt x 38
 0.42125pt>
 File: Figures/zero-padding.png Graphic file (type png)
 
 <use Figures/zero-padding.png>
 Package pdftex.def Info: Figures/zero-padding.png used on input line 188.
 (pdftex.def)             Requested size: 361.34999pt x 178.79219pt.
- [17 <./Figures/convExample.png> <./Figures/zero-padding.png>] <Figures/maxpool
+ [15 <./Figures/convExample.png> <./Figures/zero-padding.png>] <Figures/maxpool
 .jpeg, id=101, 789.95125pt x 369.38pt>
 File: Figures/maxpool.jpeg Graphic file (type jpg)
 
 <use Figures/maxpool.jpeg>
 Package pdftex.def Info: Figures/maxpool.jpeg used on input line 205.
 (pdftex.def)             Requested size: 361.34999pt x 168.96432pt.
- [18 <./Figures/maxpool.jpeg>]
+ [16 <./Figures/maxpool.jpeg>]
 <Figures/deep_autoencoder.png, id=105, 542.025pt x 366.36874pt>
 File: Figures/deep_autoencoder.png Graphic file (type png)
 
@@ -1152,7 +1174,7 @@ File: Figures/randomImageGEn.JPG Graphic file (type jpg)
 <use Figures/randomImageGEn.JPG>
 Package pdftex.def Info: Figures/randomImageGEn.JPG used on input line 244.
 (pdftex.def)             Requested size: 216.81pt x 135.24101pt.
- [19 <./Figures/deep_autoencoder.png> <./Figures/randomImageGEn.JPG>]
+ [17 <./Figures/deep_autoencoder.png> <./Figures/randomImageGEn.JPG>]
 <Figures/clairifaiIMAGENET.png, id=111, 1204.5pt x 685.56125pt>
 File: Figures/clairifaiIMAGENET.png Graphic file (type png)
 
@@ -1170,7 +1192,7 @@ File: Figures/selfDriving.png Graphic file (type png)
 <use Figures/selfDriving.png>
 Package pdftex.def Info: Figures/selfDriving.png used on input line 272.
 (pdftex.def)             Requested size: 361.34999pt x 252.77327pt.
- [20 <./Figures/clairifaiIMAGENET.png (PNG copy)>]) [21 <./Figures/selfDriving.
+ [18 <./Figures/clairifaiIMAGENET.png (PNG copy)>]) [19 <./Figures/selfDriving.
 png>]
 \openout2 = `Chapters/Chapter3.aux'.
 
@@ -1186,7 +1208,7 @@ Overfull \hbox (36.41951pt too wide) in paragraph at lines 18--19
  [][] 
  []
 
-[22
+[20
 
 
 
@@ -1222,7 +1244,7 @@ Overfull \hbox (28.46642pt too wide) in paragraph at lines 38--80
  [] 
  []
 
-[23 <./Figures/caltech101.jpg>]
+[21 <./Figures/caltech101.jpg>]
 
 LaTeX Warning: Command \' invalid in math mode on input line 91.
 
@@ -1235,7 +1257,7 @@ LaTeX Warning: Command \' invalid in math mode on input line 91.
 
 LaTeX Warning: Command \' invalid in math mode on input line 93.
 
-[24]
+[22]
 Overfull \hbox (50.90411pt too wide) in paragraph at lines 114--123
  [] 
  []
@@ -1250,7 +1272,7 @@ Overfull \hbox (72.5545pt too wide) in paragraph at lines 140--141
  [][] 
  []
 
-[25 <./Figures/conv.jpg>]
+[23 <./Figures/conv.jpg>]
 
 LaTeX Warning: Command \` invalid in math mode on input line 147.
 
@@ -1264,7 +1286,7 @@ Overfull \hbox (36.41951pt too wide) in paragraph at lines 156--157
  [][] 
  []
 
-[26 <./Figures/pool.jpg>]
+[24 <./Figures/pool.jpg>]
 <Figures/flattening.jpg, id=141, 393.47pt x 572.1375pt>
 File: Figures/flattening.jpg Graphic file (type jpg)
 
@@ -1281,13 +1303,13 @@ Package pdftex.def Info: Figures/architectureVGG.jpg used on input line 189.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [27 <./Figures/flattening.jpg>]
+ [25 <./Figures/flattening.jpg>]
 Overfull \hbox (7.92165pt too wide) in paragraph at lines 199--200
 []\T1/lmr/m/n/12 La base uti-li-sée pour l'en-traî-ne-ment (ap-pren-tis-sage) d
 e ce ré-seau à convo-lu-tion est ILSVRC-
  []
 
-[28 <./Figures/architectureVGG.jpg>]
+[26 <./Figures/architectureVGG.jpg>]
 <Figures/diagramme1.png, id=150, 513.41812pt x 246.9225pt>
 File: Figures/diagramme1.png Graphic file (type png)
 
@@ -1308,11 +1330,11 @@ File: Figures/diagramme3.png Graphic file (type png)
 <use Figures/diagramme3.png>
 Package pdftex.def Info: Figures/diagramme3.png used on input line 226.
 (pdftex.def)             Requested size: 433.62pt x 224.78969pt.
- [29 <./Figures/diagramme1.png (PNG copy)> <./Figures/diagramme2.png (PNG copy)
+ [27 <./Figures/diagramme1.png (PNG copy)> <./Figures/diagramme2.png (PNG copy)
 >]
 Underfull \vbox (badness 2512) has occurred while \output is active []
 
- [30 <./Figures/diagramme3.png (PNG copy)>] [31]
+ [28 <./Figures/diagramme3.png (PNG copy)>] [29]
 <Figures/results/res-wang1.png, id=162, 586.8324pt x 442.2924pt>
 File: Figures/results/res-wang1.png Graphic file (type png)
 
@@ -1332,7 +1354,7 @@ Overfull \hbox (66.67911pt too wide) in paragraph at lines 328--336
  [][] 
  []
 
-[32] <Figures/arch.png, id=167, 700.2963pt x 172.0026pt>
+[30] <Figures/arch.png, id=167, 700.2963pt x 172.0026pt>
 File: Figures/arch.png Graphic file (type png)
 
 <use Figures/arch.png>
@@ -1341,14 +1363,14 @@ Package pdftex.def Info: Figures/arch.png used on input line 362.
 
 Underfull \vbox (badness 1152) has occurred while \output is active []
 
- [33 <./Figures/results/res-wang1.png> <./Figures/results/res-caltech1.png>]
+ [31 <./Figures/results/res-wang1.png> <./Figures/results/res-caltech1.png>]
 <Figures/unpooling.png, id=173, 867.24pt x 317.2653pt>
 File: Figures/unpooling.png Graphic file (type png)
 
 <use Figures/unpooling.png>
 Package pdftex.def Info: Figures/unpooling.png used on input line 376.
 (pdftex.def)             Requested size: 361.34999pt x 132.19516pt.
- [34 <./Figures/arch.png> <./Figures/unpooling.png>] <Figures/visualisation.png
+ [32 <./Figures/arch.png> <./Figures/unpooling.png>] <Figures/visualisation.png
 , id=180, 727.0362pt x 1006.7211pt>
 File: Figures/visualisation.png Graphic file (type png)
 
@@ -1360,7 +1382,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 402--403
 
  []
 
-[35 <./Figures/visualisation.png>]
+[33 <./Figures/visualisation.png>]
 <Figures/ae/414.jpg, id=185, 424.58624pt x 453.695pt>
 File: Figures/ae/414.jpg Graphic file (type jpg)
  <use Figures/ae/414.jpg>
@@ -1369,7 +1391,7 @@ Package pdftex.def Info: Figures/ae/414.jpg used on input line 420.
 
 Underfull \vbox (badness 1221) has occurred while \output is active []
 
- [36]
+ [34]
 <Figures/ae/42124.jpg, id=189, 424.58624pt x 458.71375pt>
 File: Figures/ae/42124.jpg Graphic file (type jpg)
 
@@ -1379,14 +1401,14 @@ Package pdftex.def Info: Figures/ae/42124.jpg used on input line 458.
 
 Underfull \vbox (badness 5064) has occurred while \output is active []
 
- [37 <./Figures/ae/414.jpg>] <Figures/ae/denoising.jpg, id=193, 600.2425pt x 47
+ [35 <./Figures/ae/414.jpg>] <Figures/ae/denoising.jpg, id=193, 600.2425pt x 47
 2.76625pt>
 File: Figures/ae/denoising.jpg Graphic file (type jpg)
 
 <use Figures/ae/denoising.jpg>
 Package pdftex.def Info: Figures/ae/denoising.jpg used on input line 494.
 (pdftex.def)             Requested size: 216.81pt x 170.76561pt.
- [38 <./Figures/ae/42124.jpg>]
+ [36 <./Figures/ae/42124.jpg>]
 <Figures/results/res-wang2b.png, id=197, 586.8324pt x 442.2924pt>
 File: Figures/results/res-wang2b.png Graphic file (type png)
 
@@ -1410,7 +1432,7 @@ Overfull \hbox (66.67911pt too wide) in paragraph at lines 532--540
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [39 <./Figures/ae/denoising.jpg>]
+ [37 <./Figures/ae/denoising.jpg>]
 Overfull \hbox (9.00072pt too wide) in paragraph at lines 545--546
 []\T1/lmr/m/n/12 Nos deux pre-mières ar-chi-tec-tures d'Au-toen-co-ders qui son
 t Au-toen-co-der 4x1x4 et 4x2x1x2x4
@@ -1422,15 +1444,15 @@ File: Figures/manifold.png Graphic file (type png)
 <use Figures/manifold.png>
 Package pdftex.def Info: Figures/manifold.png used on input line 563.
 (pdftex.def)             Requested size: 252.94499pt x 258.07887pt.
- [40 <./Figures/results/res-wang2b.png> <./Figures/results/res-caltech2b.png>] 
-[41 <./Figures/manifold.png>]
+ [38 <./Figures/results/res-wang2b.png> <./Figures/results/res-caltech2b.png>] 
+[39 <./Figures/manifold.png>]
 <Figures/ae/AE-Descripteur.jpg, id=213, 590.205pt x 554.07pt>
 File: Figures/ae/AE-Descripteur.jpg Graphic file (type jpg)
 
 <use Figures/ae/AE-Descripteur.jpg>
 Package pdftex.def Info: Figures/ae/AE-Descripteur.jpg used on input line 605.
 (pdftex.def)             Requested size: 216.81pt x 203.53162pt.
- [42 <./Figures/ae/AE-Descripteur.jpg>]
+ [40 <./Figures/ae/AE-Descripteur.jpg>]
 <Figures/results/res-wang3.png, id=217, 586.8324pt x 442.2924pt>
 File: Figures/results/res-wang3.png Graphic file (type png)
 
@@ -1450,8 +1472,8 @@ Overfull \hbox (66.67911pt too wide) in paragraph at lines 640--648
  [][] 
  []
 
-[43 <./Figures/results/res-wang3.png> <./Figures/results/res-caltech3.png>]
-[44]
+[41 <./Figures/results/res-wang3.png> <./Figures/results/res-caltech3.png>]
+[42]
 Overfull \hbox (49.77814pt too wide) in paragraph at lines 726--743
  [] 
  []
@@ -1470,8 +1492,8 @@ Package pdftex.def Info: Figures/results/res-wang5.png used on input line 771.
 
 Underfull \vbox (badness 7256) has occurred while \output is active []
 
- [45])
-[46 <./Figures/results/res-wang5.png>]
+ [43])
+[44 <./Figures/results/res-wang5.png>]
 \openout2 = `Chapters/Chapter4.aux'.
 
  (./Chapters/Chapter4.tex
@@ -1486,7 +1508,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
-[47
+[45
 
 
 
@@ -1544,7 +1566,7 @@ Package pdftex.def Info: Figures/beforeOptimization.png used on input line 74.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [48 <./Figures/yGraph.png>]
+ [46 <./Figures/yGraph.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
@@ -1570,7 +1592,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
-[49 <./Figures/beforeOptimization.png> <./Figures/afterOptimization.png>]
+[47 <./Figures/beforeOptimization.png> <./Figures/afterOptimization.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 101--103
 
  []
@@ -1615,31 +1637,274 @@ Package pdftex.def Info: Figures/mainMenu.png used on input line 128.
 
 Underfull \vbox (badness 4713) has occurred while \output is active []
 
- [50]
+ [48]
 <Figures/search.png, id=255, 1016.79875pt x 836.12375pt>
 File: Figures/search.png Graphic file (type png)
 
 <use Figures/search.png>
 Package pdftex.def Info: Figures/search.png used on input line 140.
-(pdftex.def)             Requested size: 361.34999pt x 297.13858pt.
+(pdftex.def)             Requested size: 325.215pt x 267.42473pt.
+ [49 <./Figures/mainMenu.png> <./Figures/search.png>]
+<Figures/guiTests1.png, id=261, 960.58875pt x 804.00375pt>
+File: Figures/guiTests1.png Graphic file (type png)
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<use Figures/guiTests1.png>
+Package pdftex.def Info: Figures/guiTests1.png used on input line 151.
+(pdftex.def)             Requested size: 289.07999pt x 241.95134pt.
 
- [51 <./Figures/mainMenu.png>] <Figures/guiTests.png, id=260, 960.58875pt x 181
-6.7875pt>
-File: Figures/guiTests.png Graphic file (type png)
+<Figures/guiTests2.png, id=262, 960.58875pt x 809.0225pt>
+File: Figures/guiTests2.png Graphic file (type png)
 
-<use Figures/guiTests.png>
-Package pdftex.def Info: Figures/guiTests.png used on input line 151.
-(pdftex.def)             Requested size: 289.07999pt x 546.7315pt.
+<use Figures/guiTests2.png>
+Package pdftex.def Info: Figures/guiTests2.png used on input line 158.
+(pdftex.def)             Requested size: 289.07999pt x 243.46165pt.
+ [50 <./Figures/guiTests1.png> <./Figures/guiTests2.png>] <Figures/crab/0.jpg, 
+id=269, 301.125pt x 174.6525pt>
+File: Figures/crab/0.jpg Graphic file (type jpg)
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<use Figures/crab/0.jpg>
+Package pdftex.def Info: Figures/crab/0.jpg used on input line 172.
+(pdftex.def)             Requested size: 256.0748pt x 148.53793pt.
+ <Figures/crab/1.jpg, id=270, 301.125pt x 204.765pt>
+File: Figures/crab/1.jpg Graphic file (type jpg)
 
- [52 <./Figures/search.png>]) [53 <./Figures/guiTests.png>]
+<use Figures/crab/1.jpg>
+Package pdftex.def Info: Figures/crab/1.jpg used on input line 175.
+(pdftex.def)             Requested size: 85.35826pt x 58.04305pt.
+ <Figures/crab/2.jpg, id=271, 301.125pt x 182.6825pt>
+File: Figures/crab/2.jpg Graphic file (type jpg)
+
+<use Figures/crab/2.jpg>
+Package pdftex.def Info: Figures/crab/2.jpg used on input line 177.
+(pdftex.def)             Requested size: 85.35826pt x 51.78351pt.
+ <Figures/crab/3.jpg, id=272, 301.125pt x 186.6975pt>
+File: Figures/crab/3.jpg Graphic file (type jpg)
+
+<use Figures/crab/3.jpg>
+Package pdftex.def Info: Figures/crab/3.jpg used on input line 179.
+(pdftex.def)             Requested size: 85.35826pt x 52.9216pt.
+ <Figures/crab/4.jpg, id=273, 301.125pt x 220.825pt>
+File: Figures/crab/4.jpg Graphic file (type jpg)
+
+<use Figures/crab/4.jpg>
+Package pdftex.def Info: Figures/crab/4.jpg used on input line 181.
+(pdftex.def)             Requested size: 85.35826pt x 62.59544pt.
+ <Figures/crab/5.jpg, id=274, 301.125pt x 249.93375pt>
+File: Figures/crab/5.jpg Graphic file (type jpg)
+
+<use Figures/crab/5.jpg>
+Package pdftex.def Info: Figures/crab/5.jpg used on input line 183.
+(pdftex.def)             Requested size: 85.35826pt x 70.84666pt.
+ <Figures/crab/6.jpg, id=275, 301.125pt x 187.70125pt>
+File: Figures/crab/6.jpg Graphic file (type jpg)
+
+<use Figures/crab/6.jpg>
+Package pdftex.def Info: Figures/crab/6.jpg used on input line 187.
+(pdftex.def)             Requested size: 85.35826pt x 53.20613pt.
+ <Figures/crab/7.jpg, id=276, 301.125pt x 191.71625pt>
+File: Figures/crab/7.jpg Graphic file (type jpg)
+
+<use Figures/crab/7.jpg>
+Package pdftex.def Info: Figures/crab/7.jpg used on input line 189.
+(pdftex.def)             Requested size: 85.35826pt x 54.34422pt.
+ <Figures/crab/8.jpg, id=277, 301.125pt x 195.73125pt>
+File: Figures/crab/8.jpg Graphic file (type jpg)
+
+<use Figures/crab/8.jpg>
+Package pdftex.def Info: Figures/crab/8.jpg used on input line 191.
+(pdftex.def)             Requested size: 85.35826pt x 55.48233pt.
+ <Figures/crab/9.jpg, id=278, 301.125pt x 181.67876pt>
+File: Figures/crab/9.jpg Graphic file (type jpg)
+
+<use Figures/crab/9.jpg>
+Package pdftex.def Info: Figures/crab/9.jpg used on input line 193.
+(pdftex.def)             Requested size: 85.35826pt x 51.49898pt.
+ <Figures/crab/10.jpg, id=279, 301.125pt x 246.9225pt>
+File: Figures/crab/10.jpg Graphic file (type jpg)
+
+<use Figures/crab/10.jpg>
+Package pdftex.def Info: Figures/crab/10.jpg used on input line 195.
+(pdftex.def)             Requested size: 85.35826pt x 69.99309pt.
+
+<Figures/crab/11.jpg, id=280, 301.125pt x 203.76125pt>
+File: Figures/crab/11.jpg Graphic file (type jpg)
+
+<use Figures/crab/11.jpg>
+Package pdftex.def Info: Figures/crab/11.jpg used on input line 199.
+(pdftex.def)             Requested size: 85.35826pt x 57.75853pt.
+ <Figures/crab/12.jpg, id=281, 301.125pt x 224.84pt>
+File: Figures/crab/12.jpg Graphic file (type jpg)
+
+<use Figures/crab/12.jpg>
+Package pdftex.def Info: Figures/crab/12.jpg used on input line 201.
+(pdftex.def)             Requested size: 85.35826pt x 63.73355pt.
+
+<Figures/crab/13.jpg, id=282, 301.125pt x 182.6825pt>
+File: Figures/crab/13.jpg Graphic file (type jpg)
+
+<use Figures/crab/13.jpg>
+Package pdftex.def Info: Figures/crab/13.jpg used on input line 203.
+(pdftex.def)             Requested size: 85.35826pt x 51.78351pt.
+
+<Figures/crab/14.jpg, id=283, 301.125pt x 247.92625pt>
+File: Figures/crab/14.jpg Graphic file (type jpg)
+
+<use Figures/crab/14.jpg>
+Package pdftex.def Info: Figures/crab/14.jpg used on input line 205.
+(pdftex.def)             Requested size: 85.35826pt x 70.27762pt.
+
+<Figures/crab/15.jpg, id=284, 301.125pt x 237.88875pt>
+File: Figures/crab/15.jpg Graphic file (type jpg)
+
+<use Figures/crab/15.jpg>
+Package pdftex.def Info: Figures/crab/15.jpg used on input line 207.
+(pdftex.def)             Requested size: 85.35826pt x 67.43237pt.
+
+<Figures/crab/16.jpg, id=285, 301.125pt x 201.75375pt>
+File: Figures/crab/16.jpg Graphic file (type jpg)
+
+<use Figures/crab/16.jpg>
+Package pdftex.def Info: Figures/crab/16.jpg used on input line 212.
+(pdftex.def)             Requested size: 85.35826pt x 57.18948pt.
+
+<Figures/crab/17.jpg, id=286, 301.125pt x 225.84375pt>
+File: Figures/crab/17.jpg Graphic file (type jpg)
+
+<use Figures/crab/17.jpg>
+Package pdftex.def Info: Figures/crab/17.jpg used on input line 214.
+(pdftex.def)             Requested size: 85.35826pt x 64.01807pt.
+
+<Figures/crab/18.jpg, id=287, 301.125pt x 197.73875pt>
+File: Figures/crab/18.jpg Graphic file (type jpg)
+
+<use Figures/crab/18.jpg>
+Package pdftex.def Info: Figures/crab/18.jpg used on input line 216.
+(pdftex.def)             Requested size: 85.35826pt x 56.05138pt.
+
+<Figures/crab/19.jpg, id=288, 301.125pt x 195.73125pt>
+File: Figures/crab/19.jpg Graphic file (type jpg)
+
+<use Figures/crab/19.jpg>
+Package pdftex.def Info: Figures/crab/19.jpg used on input line 218.
+(pdftex.def)             Requested size: 85.35826pt x 55.48233pt.
+
+<Figures/crab/20.jpg, id=289, 301.125pt x 170.6375pt>
+File: Figures/crab/20.jpg Graphic file (type jpg)
+
+<use Figures/crab/20.jpg>
+Package pdftex.def Info: Figures/crab/20.jpg used on input line 220.
+(pdftex.def)             Requested size: 85.35826pt x 48.3692pt.
+
+Overfull \hbox (17.32082pt too wide) in paragraph at lines 169--224
+[][] 
+ []
+
+[51 <./Figures/crab/0.jpg> <./Figures/crab/1.jpg> <./Figures/crab/2.jpg> <./Fig
+ures/crab/3.jpg> <./Figures/crab/4.jpg> <./Figures/crab/5.jpg> <./Figures/crab/
+6.jpg> <./Figures/crab/7.jpg> <./Figures/crab/8.jpg> <./Figures/crab/9.jpg> <./
+Figures/crab/10.jpg> <./Figures/crab/11.jpg> <./Figures/crab/12.jpg> <./Figures
+/crab/13.jpg> <./Figures/crab/14.jpg> <./Figures/crab/15.jpg> <./Figures/crab/1
+6.jpg> <./Figures/crab/17.jpg> <./Figures/crab/18.jpg> <./Figures/crab/19.jpg> 
+<./Figures/crab/20.jpg>] <Figures/africans/0.jpg, id=293, 385.44pt x 256.96pt>
+File: Figures/africans/0.jpg Graphic file (type jpg)
+
+<use Figures/africans/0.jpg>
+Package pdftex.def Info: Figures/africans/0.jpg used on input line 235.
+(pdftex.def)             Requested size: 170.71652pt x 113.80771pt.
+
+<Figures/africans/1.jpg, id=294, 385.44pt x 256.96pt>
+File: Figures/africans/1.jpg Graphic file (type jpg)
+
+<use Figures/africans/1.jpg>
+Package pdftex.def Info: Figures/africans/1.jpg used on input line 240.
+(pdftex.def)             Requested size: 85.35826pt x 56.90385pt.
+
+<Figures/africans/2.jpg, id=295, 385.44pt x 256.96pt>
+File: Figures/africans/2.jpg Graphic file (type jpg)
+
+<use Figures/africans/2.jpg>
+Package pdftex.def Info: Figures/africans/2.jpg used on input line 242.
+(pdftex.def)             Requested size: 85.35826pt x 56.90385pt.
+
+<Figures/africans/3.jpg, id=296, 256.96pt x 385.44pt>
+File: Figures/africans/3.jpg Graphic file (type jpg)
+
+<use Figures/africans/3.jpg>
+Package pdftex.def Info: Figures/africans/3.jpg used on input line 244.
+(pdftex.def)             Requested size: 85.35774pt x 56.90189pt.
+
+<Figures/africans/4.jpg, id=297, 385.44pt x 256.96pt>
+File: Figures/africans/4.jpg Graphic file (type jpg)
+
+<use Figures/africans/4.jpg>
+Package pdftex.def Info: Figures/africans/4.jpg used on input line 246.
+(pdftex.def)             Requested size: 85.35826pt x 56.90385pt.
+
+<Figures/africans/5.jpg, id=298, 385.44pt x 256.96pt>
+File: Figures/africans/5.jpg Graphic file (type jpg)
+
+<use Figures/africans/5.jpg>
+Package pdftex.def Info: Figures/africans/5.jpg used on input line 248.
+(pdftex.def)             Requested size: 85.35826pt x 56.90385pt.
+
+Overfull \hbox (17.3203pt too wide) in paragraph at lines 232--252
+[][] 
+ []
+
+<Figures/anchor/0.jpg, id=299, 301.125pt x 206.7725pt>
+File: Figures/anchor/0.jpg Graphic file (type jpg)
+
+<use Figures/anchor/0.jpg>
+Package pdftex.def Info: Figures/anchor/0.jpg used on input line 261.
+(pdftex.def)             Requested size: 170.71652pt x 117.23051pt.
+
+<Figures/anchor/1.jpg, id=300, 301.125pt x 229.85875pt>
+File: Figures/anchor/1.jpg Graphic file (type jpg)
+
+<use Figures/anchor/1.jpg>
+Package pdftex.def Info: Figures/anchor/1.jpg used on input line 266.
+(pdftex.def)             Requested size: 85.35826pt x 65.15617pt.
+
+<Figures/anchor/2.jpg, id=301, 301.125pt x 213.79875pt>
+File: Figures/anchor/2.jpg Graphic file (type jpg)
+
+<use Figures/anchor/2.jpg>
+Package pdftex.def Info: Figures/anchor/2.jpg used on input line 268.
+(pdftex.def)             Requested size: 85.35826pt x 60.60378pt.
+
+<Figures/anchor/3.jpg, id=302, 301.125pt x 170.6375pt>
+File: Figures/anchor/3.jpg Graphic file (type jpg)
+
+<use Figures/anchor/3.jpg>
+Package pdftex.def Info: Figures/anchor/3.jpg used on input line 270.
+(pdftex.def)             Requested size: 85.35826pt x 48.3692pt.
+
+<Figures/anchor/4.jpg, id=303, 301.125pt x 220.825pt>
+File: Figures/anchor/4.jpg Graphic file (type jpg)
+
+<use Figures/anchor/4.jpg>
+Package pdftex.def Info: Figures/anchor/4.jpg used on input line 272.
+(pdftex.def)             Requested size: 85.35826pt x 62.59544pt.
+
+<Figures/anchor/5.jpg, id=304, 236.885pt x 301.125pt>
+File: Figures/anchor/5.jpg Graphic file (type jpg)
+
+<use Figures/anchor/5.jpg>
+Package pdftex.def Info: Figures/anchor/5.jpg used on input line 274.
+(pdftex.def)             Requested size: 85.35805pt x 56.90189pt.
+
+Overfull \hbox (17.3206pt too wide) in paragraph at lines 258--278
+[][] 
+ []
+
+[52 <./Figures/africans/0.jpg> <./Figures/africans/1.jpg> <./Figures/africans/2
+.jpg> <./Figures/africans/3.jpg> <./Figures/africans/4.jpg> <./Figures/africans
+/5.jpg> <./Figures/anchor/0.jpg> <./Figures/anchor/1.jpg> <./Figures/anchor/2.j
+pg> <./Figures/anchor/3.jpg> <./Figures/anchor/4.jpg> <./Figures/anchor/5.jpg>]
+) [53]
 \openout2 = `Chapters/Conclusion.aux'.
 
- (./Chapters/Conclusion.tex)
-[54
+ (./Chapters/Conclusion.tex) [54
 
 
 
@@ -1700,6 +1965,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 27--28
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
@@ -1798,12 +2068,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
-
+[56]
 Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
 
-[56]
+
 Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
@@ -1839,7 +2109,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--80
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 81--121
+Underfull \hbox (badness 10000) in paragraph at lines 81--126
 
  []
 
@@ -1883,7 +2153,7 @@ Package minitoc(hints) Warning: W0024
 [58
 
 
-] (./main.aux (./Chapters/abstract.aux) (./Chapters/remerciement.aux)
+] (./main.aux (./Chapters/remerciement.aux) (./Chapters/abstract.aux)
 (./Chapters/Introduction.aux) (./Chapters/Chapter1.aux)
 (./Chapters/Chapter2.aux) (./Chapters/Chapter3.aux) (./Chapters/Chapter4.aux)
 (./Chapters/Conclusion.aux) (./Chapters/Ref.aux))
@@ -1925,9 +2195,9 @@ graphics.sty    2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 graphics.cfg    2010/04/23 v1.9 graphics configuration of TeX Live
 pppdftex.def    2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
  lmodern.sty    2009/10/30 v1.6 Latin Modern Fonts
-amsfonts.sty    2013/01/14 v3.01 Basic AMSFonts support
  fontenc.sty
    t1enc.def    2005/09/27 v1.99g Standard LaTeX file
+amsfonts.sty    2013/01/14 v3.01 Basic AMSFonts support
 enumerate.sty    1999/03/05 v3.00 enumerate extensions (DPC)
  amssymb.sty    2013/01/14 v3.01 AMS font symbols
  makeidx.sty    2000/03/29 v1.0m Standard LaTeX package
@@ -2000,12 +2270,12 @@ epstopdf-sys.cfg    2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
  omxlmex.fd    2009/10/30 v1.6 Font defs for Latin Modern
     umsa.fd    2013/01/14 v3.01 AMS symbols A
     umsb.fd    2013/01/14 v3.01 AMS symbols B
-Chapters/abstract.tex
-   uni-0.def    2013/05/13 UCS: Unicode data U+0000..U+00FF
-  uni-32.def    2013/05/13 UCS: Unicode data U+2000..U+20FF
-   Uxnsh.fd
 Chapters/remerciement.tex
+   uni-0.def    2013/05/13 UCS: Unicode data U+0000..U+00FF
+Chapters/abstract.tex
+   Uxnsh.fd
 Chapters/Introduction.tex
+  uni-32.def    2013/05/13 UCS: Unicode data U+2000..U+20FF
 Chapters/Chapter1.tex
 Figures/googleImage2.png
 Figures/textBasedIR.png
@@ -2059,7 +2329,41 @@ Figures/beforeOptimization.png
 Figures/afterOptimization.png
 Figures/mainMenu.png
 Figures/search.png
-Figures/guiTests.png
+Figures/guiTests1.png
+Figures/guiTests2.png
+Figures/crab/0.jpg
+Figures/crab/1.jpg
+Figures/crab/2.jpg
+Figures/crab/3.jpg
+Figures/crab/4.jpg
+Figures/crab/5.jpg
+Figures/crab/6.jpg
+Figures/crab/7.jpg
+Figures/crab/8.jpg
+Figures/crab/9.jpg
+Figures/crab/10.jpg
+Figures/crab/11.jpg
+Figures/crab/12.jpg
+Figures/crab/13.jpg
+Figures/crab/14.jpg
+Figures/crab/15.jpg
+Figures/crab/16.jpg
+Figures/crab/17.jpg
+Figures/crab/18.jpg
+Figures/crab/19.jpg
+Figures/crab/20.jpg
+Figures/africans/0.jpg
+Figures/africans/1.jpg
+Figures/africans/2.jpg
+Figures/africans/3.jpg
+Figures/africans/4.jpg
+Figures/africans/5.jpg
+Figures/anchor/0.jpg
+Figures/anchor/1.jpg
+Figures/anchor/2.jpg
+Figures/anchor/3.jpg
+Figures/anchor/4.jpg
+Figures/anchor/5.jpg
 Chapters/Conclusion.tex
 Chapters/Ref.tex
  ***********
@@ -2069,13 +2373,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 13489 strings out of 494931
- 178977 string characters out of 6178299
- 386489 words of memory out of 5000000
- 16079 multiletter control sequences out of 15000+600000
+ 13671 strings out of 494949
+ 182714 string characters out of 6178913
+ 386579 words of memory out of 5000000
+ 16229 multiletter control sequences out of 15000+600000
  86791 words of font info for 66 fonts, out of 8000000 for 9000
- 38 hyphenation exceptions out of 8191
- 39i,52n,43p,964b,1458s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36 hyphenation exceptions out of 8191
+ 39i,52n,43p,964b,1461s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
 c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm
@@ -2088,10 +2392,10 @@ nts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb
 share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/arabtex/xnsh14.pfb>
-Output written on main.pdf (61 pages, 11044447 bytes).
+Output written on main.pdf (63 pages, 11656448 bytes).
 PDF statistics:
- 335 PDF objects out of 1000 (max. 8388607)
- 183 compressed objects within 2 object streams
+ 376 PDF objects out of 1000 (max. 8388607)
+ 187 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 246 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 416 words of extra memory for PDF output out of 10000 (max. 10000000)
 

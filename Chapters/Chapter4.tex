@@ -123,40 +123,168 @@ Puis, il est initialisé par:\\
 
 	Après notre étude comparative dans le chapitre précédent entre les différentes approches que nous avons réalisées, nous avons décidé d'implémenter dans l'interface graphique la meilleure approche (celle qui a donné les meilleures mesures de performance), qui est celle du Denoising Autoencoder 4x1x4.
 
-	L'interface que nous avons développée [Figure 4.2] pour l'implémentation de notre approche permet de sélectionner une base d'images qui servira de recueil pour les résultats des requêtes, comme le montre la figure ci dessous:
+	L'interface que nous avons développée [Figure 4.3] pour l'implémentation de notre approche permet de sélectionner une base d'images qui servira de recueil pour les résultats des requêtes, comme le montre la figure [Figure 4.3].
 
 
 \begin{figure}[H]
 	\centering
 		\includegraphics[width=3in]{Figures/mainMenu.png}
-	\caption[Menu principal]{Menu principal}
+	\caption[Menu principal]{Menu principal.}
 	\label{fig:Electron}
 \end{figure}
 
 	Nous pouvons choisir de créer une nouvelle base, pour cela on doit indiquer le lien vers le dossier contenant la base d'images, puis appuyer sur le bouton \textit{Créer}. Le programme dans ce cas va créer la description de chaque image en la faisant passer par le réseau à convolution, ensuite extraire la description sémantique de l'image de la couche 4096b et finalement créer la description compressée en utilisant le Denoising Autoencoder 4x1x4.
 	C'est cette description qui sera enregistrée en tant que modèle pour la recherche d'images. On peut aussi charger une base déjà existante en appuyant sur le bouton \textit{Charger}.
 
-	En cliquant sur le bouton "Recherche", une nouvelle fenêtre s'ouvre qui permet de sélectionner une image qui fera office de requête [Figure 4.3]. Une fois l'image sélectionnée, le programme va créer sa représentation sémantique compressée. Le bouton "Chercher" lance la recherche et affiche les cinq images jugées les plus ressemblantes (top-5).
+	En cliquant sur le bouton \textit{Recherche}, une nouvelle fenêtre s'ouvre qui permet de sélectionner une image qui fera office de requête [Figure 4.4]. Une fois l'image sélectionnée, le programme va créer sa représentation sémantique compressée. Le bouton \textit{Chercher} lance la recherche et affiche les cinq images jugées les plus ressemblantes (top-5).
 
 \begin{figure}[H]
 	\centering
-		\includegraphics[width=5in]{Figures/search.png}
+		\includegraphics[width=4.5in]{Figures/search.png}
 	\caption[]{Interface de recherche d'images.}
 	\label{fig:Electron}
 \end{figure}
 
 \section{Tests}
 
-La figure A et B ci-dessous représente deux testes effectués sur deux images tirées respectivement des bases \textbf{Wang} et \textbf{Caltech}. Nous pouvons bien voir la qualité des résultats obtenus sur le top 5 des images retournées.
+	Nous allons dans cette partie faire quelques tests de notre système de recherche d'images par le contenu. Les deux figures [Figure 4.5] et [Figure 4.6] ci-dessous, représentent deux tests effectués sur deux images prises respectivement des bases deux base d'images \textbf{WANG} [Wan et al.,01][Li et Wan.,03] et \textbf{Caltech-101} [Fei et al. 04].
+	
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=4in]{Figures/guiTests1.png}
+	\caption[]{Résultat de recherche d'une image de la base WANG.}
+	\label{fig:Electron}
+\end{figure}
 
 \begin{figure}[H]
 	\centering
-		\includegraphics[width=4in]{Figures/guiTests.png}
-	\caption[]{Test sur deux images respectivement des bases \textbf{Wang} et \textbf{Caltech}.}
+		\includegraphics[width=4in]{Figures/guiTests2.png}
+	\caption[]{Résultat de recherche d'une image de la base Caltech-101.}
 	\label{fig:Electron}
 \end{figure}
 
 
+	L'image prise de le base WANG appartient à la classe \textit{Africans}, et celle de Caltech-101 à la classe \textit{Cougar\_face}. Nous pouvons très bien voir la qualité des résultats obtenus sur le top-5 des images retournées.
+	
+	Ces deux classes donnent de bons taux en terme de performance. Nous allons maintenant donner un exemple d'une image de la base Caltech-101 de la classe \textit{Crab}, qui ne donne pas d'aussi bons résultats. La figure suivante [Figure 4.7] montre le top-20 (de gauche à droite, de haut en bas) des images retournées par notre système:
+
+\begin{figure}[H]
+\begin{tabular}{ccccc}\\
+
+
+\multicolumn{5}{c}{\includegraphics[width=9cm]{Figures/crab/0.jpg}}\\
+\multicolumn{5}{c}{Image requête de la classe \textit{Crab}}\\
+%\hline
+\includegraphics[width=3cm]{Figures/crab/1.jpg}
+&
+\includegraphics[width=3cm]{Figures/crab/2.jpg}
+&
+\includegraphics[width=3cm]{Figures/crab/3.jpg}
+&
+\includegraphics[width=3cm]{Figures/crab/4.jpg}
+&
+\includegraphics[width=3cm]{Figures/crab/5.jpg}\\
+Crab & Crab & Crab & Crayfish & Crayfish\\
+
+
+\includegraphics[width=3cm]{Figures/crab/6.jpg}
+&
+\includegraphics[width=3cm]{Figures/crab/7.jpg}
+&
+\includegraphics[width=3cm]{Figures/crab/8.jpg}
+&
+\includegraphics[width=3cm]{Figures/crab/9.jpg}
+&
+\includegraphics[width=3cm]{Figures/crab/10.jpg}\\
+Crab & Crab & Crab & Crayfish & Crayfish\\
+
+
+\includegraphics[width=3cm]{Figures/crab/11.jpg}
+&
+\includegraphics[width=3cm]{Figures/crab/12.jpg}
+&
+\includegraphics[width=3cm]{Figures/crab/13.jpg}
+&
+\includegraphics[width=3cm]{Figures/crab/14.jpg}
+&
+\includegraphics[width=3cm]{Figures/crab/15.jpg}\\
+Crayfish & Crayfish & Hawksbill & Scorpion & Crayfish\\
+
+
+
+\includegraphics[width=3cm]{Figures/crab/16.jpg}
+&
+\includegraphics[width=3cm]{Figures/crab/17.jpg}
+&
+\includegraphics[width=3cm]{Figures/crab/18.jpg}
+&
+\includegraphics[width=3cm]{Figures/crab/19.jpg}
+&
+\includegraphics[width=3cm]{Figures/crab/20.jpg}\\
+Crab & Sea\_horse & Scorpion & Crayfish & Crayfish\\
+
+\end{tabular}
+\caption[comp7]{Résultats obtenus sur l'image d'un Crabe.}
+\end{figure}
+
+	Les mesures de performance pour une image comme celle ci ne sont pas assez bonnes. Le top-1, top-5 et top-10 des images retrournées sont acceptables, mais si on cherche encore plus de résultats, le système n'arrive pas à donner de meilleurs résultats. N’empêche que les images non pertinentes (qui n'appartiennent pas à la classe \textit{Crab}) ne sont pas vraiment loin du concept d'animal marin ou de crustacé, cela est possible grâce aux descriptions sémantiques des images.
+	
+	Nous allons présenter cette fois-ci d'autres tests sur la base WANG [Figure 4.8] et Caltech-101 [Figure 4.9], qui ne donnent pas de bons résultats mais les images retournées ne sont pas forcément de contenu différent.
+	
+\begin{figure}[H]
+\begin{tabular}{ccccc}\\
+
+
+\multicolumn{5}{c}{\includegraphics[width=6cm]{Figures/africans/0.jpg}}\\
+\multicolumn{5}{c}{Image requête de la classe \textit{Africans}}\\
+%\hline
+
+
+\includegraphics[width=3cm]{Figures/africans/1.jpg}
+&
+\includegraphics[width=3cm]{Figures/africans/2.jpg}
+&
+\includegraphics[height=2cm,width=3cm]{Figures/africans/3.jpg}
+&
+\includegraphics[width=3cm]{Figures/africans/4.jpg}
+&
+\includegraphics[width=3cm]{Figures/africans/5.jpg}\\
+Foods & Foods & Foods & Foods & Foods\\
+
+\end{tabular}
+\caption[comp7]{Résultats obtenus sur une image de la classe \textit{Africans}.}
+\end{figure}
+
+	Cette image requête donne des mesures de performance qui ne dépassent pas les 20\% de reconnaissance, le système est censé trouver des images de la classe \textit{Africans} alors qu'il retourne à la place des images de la classe \textit{Foods}. Il est clair que cette image requête est bien différentes des images de la classe \textit{Africans} qui contient des images du peuple Africain. Le contenu de cette image requête (nourriture ou bien médicament) est très proche du concept de la classe \textit{Foods}, le système donc retourne des images qui ont le même contenu mais qui ne sont pas de la même classe. Ce problème est dû au fait que les images de la base WANG appartiennent seulement à une seule classe.
+
+\begin{figure}[H]
+\begin{tabular}{ccccc}\\
+
+
+\multicolumn{5}{c}{\includegraphics[width=6cm]{Figures/anchor/0.jpg}}\\
+\multicolumn{5}{c}{Image requête de la classe \textit{Anchor}}\\
+%\hline
+
+
+\includegraphics[width=3cm]{Figures/anchor/1.jpg}
+&
+\includegraphics[width=3cm]{Figures/anchor/2.jpg}
+&
+\includegraphics[width=3cm]{Figures/anchor/3.jpg}
+&
+\includegraphics[width=3cm]{Figures/anchor/4.jpg}
+&
+\includegraphics[height=2cm,width=3cm]{Figures/anchor/5.jpg}\\
+Anchor & Anchor & Anchor & Wheelchair & Wheelchair\\
+
+\end{tabular}
+\caption[comp7]{Résultats obtenus sur une image de la classe \textit{Anchor}.}
+\end{figure}
+
+	Cette image requête de la base Caltech-101 appartient à la classe \textit{Anchor}, les 3 premières images (top-3) sont correctes, par contre la quatrième et la cinquième image ne le sont pas. On peut remarquer une similarité entre ces deux dernières avec l'image requête, on peut dire que le contenu (un homme qui s'assoit) est assez similaire.
+
 \section{Conclusion}
 
-Nous concluons ce chapitre en mettant le point sur les avantages qu'apporte de la représentation symbolique derrière le framework Theano. Ceci permet entre autre de faciliter la description de modèles complexes mais aussi de faciliter leur entraînement (en retro-propagation) grâce au calcule automatique des dérivés. Nous avons aussi montré des résultats sur différents exemples de requêtes ou nous avons pu observer en détail...
+	Nous concluons ce chapitre en mettant le point sur les avantages qu'apporte la représentation des mathématiques symboliques que propose le framework Theano. Ceci permet entre autre de faciliter la description de modèles complexes, mais aussi de faciliter la phase d'entraînement (la rétro-propagation) grâce au calcul automatique des dérivés.
+	
+	Nous avons ensuite montré des résultats de notre système de recherche d'images par le contenu sur différents exemples de requête, où nous avons pu observer ce que la représentation sémantique des images donne comme réponse.

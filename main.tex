@@ -15,7 +15,7 @@
 \usepackage{amsmath}
 \usepackage[final]{pdfpages}
 \usepackage{lmodern}
-\usepackage{amsfonts}
+%\usepackage{amsfonts}
 \usepackage[T1]{fontenc} 
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -91,24 +91,29 @@
 
 \begin{spacing}{1}
 \let\cleardoublepage\clearpage
-\frontmatter
+
 \maketitle
+\frontmatter
+\addcontentsline{toc}{chapter}{Remerciements}
+\include{Chapters/remerciement} 
+
+\addcontentsline{toc}{chapter}{Résumé}
+\include{Chapters/abstract} 
+
+
 %\onehalfspacing
 \tableofcontents
 % \listoftables
 % \addcontentsline{toc}{chapter}{Liste des tableaux }
 % \listoffigures
 % \addcontentsline{toc}{chapter}{Table des figures }
-\mainmatter
+
 %\includepdf[page=1]{pdg.pdf}
 %\part{ETAT DE L'ART}
 %\include{intro}
 \dominitoc
 
-\addcontentsline{toc}{chapter}{Résumé}
-\include{Chapters/abstract} 
-\addcontentsline{toc}{chapter}{Remerciements}
-\include{Chapters/remerciement} 
+\mainmatter
 \addcontentsline{toc}{chapter}{Introduction générale}
 \include{Chapters/Introduction} 
 \include{Chapters/Chapter1}

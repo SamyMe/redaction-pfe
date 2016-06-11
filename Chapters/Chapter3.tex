@@ -208,7 +208,7 @@ Les deux premières couches entièrement connectées ont 4096 neurones chacune, 
 	
 	Comme dans notre cas, nous ne disposons pas d'une aussi grande puissance de calcul ni le temps nécessaire pour paramétrer le réseau à convolution, nous ne pouvons pas réaliser l’entraînement de ce réseau. L'équipe VGG a eu donc la courtoisie de publier pour les chercheurs les poids que leurs réseaux (VGG-CNN-S et autres) ont appris durant la phase entraînement, nous n'avons donc pas eu à refaire ce qui a été fait.
 	
-	Nos contributions à la recherche d'image par le contenu, peuvent être résumées sur les trois schémas suivant:
+	Nos contributions à la recherche d'image par le contenu, peuvent être résumées sur les trois schémas suivants:
 	
 	\begin{figure}[H]
 	\centering
@@ -543,7 +543,7 @@ WANG & Caltech-101\\
 \caption[comp7]{Résultats avec Autoencoder obtenus sur les deux bases.}
 \end{figure}
 
-	Nous remarquons que les représentations compressées en 1000 valeurs des Autoecnoders donnent en général de meilleurs résultats que la couche Soft-max 1000, même si dans les deux cas les deux vecteurs ont une même taille. Donc la différence de performance entre les couches du réseau à convolutions (Soft-max 1000, 4096a et 4096b), n’était pas dû à la compression des espaces de représentation, mais à la différence du type d'information (sémantique ou étiquette) que contiennent ces couches, et aussi à la profondeur du traitement.
+	Nous remarquons que les représentations compressées en 1000 valeurs des Autoecnoders donnent en général de meilleurs résultats que la couche Soft-max 1000, même si dans les deux cas les deux vecteurs ont une même taille. Donc la différence de performance entre les couches du réseau à convolution (Soft-max 1000, 4096a et 4096b), n’était pas dû à la compression des espaces de représentation, mais à la différence du type d'information (sémantique ou étiquette) que contiennent ces couches, et aussi à la profondeur du traitement.
 	
 	Nos deux premières architectures d'Autoencoders qui sont Autoencoder 4x1x4 et 4x2x1x2x4 ne donnent pas de meilleurs résultats par rapport à l'approche 4096b, mais avec notre troisième architecture du Denoising Autoencoder, on remarque une très grande amélioration. Cela est dû à l'ajout des bruits (noises) qui rajoutent des contraintes supplémentaires au Denoising Autoencoder pour créer des représentations compressées plus efficaces. Ces résultats montrent la force des Deep Autoencoders.
 

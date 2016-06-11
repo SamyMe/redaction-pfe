@@ -69,5 +69,5 @@
 \contentsline {section}{\numberline {4.3}Interface de l'application}{50}
 \contentsline {section}{\numberline {4.4}Tests}{52}
 \contentsline {section}{\numberline {4.5}Conclusion}{53}
-\contentsline {chapter}{Conclusion}{54}
+\contentsline {chapter}{Conclusion g\IeC {\'e}n\IeC {\'e}rale}{54}
 \contentsline {chapter}{Bibliographie}{55}

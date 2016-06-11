@@ -1,9 +1,7 @@
 %Chapter 2
 
 \chapter{Apprentissage profond}
-
-\lhead{Chapter 2. \emph{Apprentissage profond}} % This is for the header on each page - perhaps a shortened title
-
+\lhead{Chapitre 2. \emph{Apprentissage profond}}
 
 \section{Introduction}
 
@@ -20,7 +18,7 @@
 
 	En effet, à travers l'exploration du processus d'apprentissage du cerveau, les scientifiques ont fait l'hypothèse qu'il pourrait y avoir un algorithme d'apprentissage unique utilisé pour une variété de tâches. Cet algorithme unique pourrait donc à lui tout seul s'adapter à tous les problèmes qu'il rencontre. 
 
-	Une expérience [figure 3.1] a été conçue en neuroscience au Département du MIT de Brain and Cognitive Sciences [Roe et al. 92], où ils ont coupé le lien entre l'oreille et le cortex auditif de furets, et lui ont relié les nerfs optiques (Le cortex auditif étant la partie du cerveau responsable des processus qui traitent l'information auditive capturé par l'oreille). Ils ont découvert que le cortex auditif a pu apprendre à traiter les données optiques. En d'autres termes, la partie du cerveau qui une fois a appris à entendre, maintenant apprend à voir.
+	Une expérience (Figure 2.1) a été conçue en neuroscience au Département du MIT de Brain and Cognitive Sciences [Roe et al. 92], où ils ont coupé le lien entre l'oreille et le cortex auditif de furets, et lui ont relié les nerfs optiques (Le cortex auditif étant la partie du cerveau responsable des processus qui traitent l'information auditive capturé par l'oreille). Ils ont découvert que le cortex auditif a pu apprendre à traiter les données optiques. En d'autres termes, la partie du cerveau qui une fois a appris à entendre, maintenant apprend à voir.
 
 \begin{figure}[H]
 	\centering
@@ -78,7 +76,7 @@
 	
 	Nous allons maintenant présenter l'une des techniques les plus utilisées pour l'apprentissage automatique supervisé (et aussi pour le non-supervisé), à savoir les réseaux de neurones (Perceptron Multicouche).
 	
-	Un réseau de neurones artificiel essaye d'imiter le fonctionnement des réseaux de neurones biologiques. Appelé aussi perceptron multicouche, ces derniers sont comme leur nom l'indique, formés de plusieurs couches de neurones, la première est la couche d'entrée, ensuite viennent celles du milieu qui sont les couches cachées et à la fin une dernière couche appelée couche de sortie. La figure [Figure 2.2] ci-dessous montre un exemple d'un réseau de neurones à une seule couche cachée:
+	Un réseau de neurones artificiel essaye d'imiter le fonctionnement des réseaux de neurones biologiques. Appelé aussi perceptron multicouche, ces derniers sont comme leur nom l'indique, formés de plusieurs couches de neurones, la première est la couche d'entrée, ensuite viennent celles du milieu qui sont les couches cachées et à la fin une dernière couche appelée couche de sortie. La figure (Figure 2.2) ci-dessous montre un exemple d'un réseau de neurones à une seule couche cachée:
 
 
 \begin{figure}[H]
@@ -100,7 +98,7 @@ $$f(x) = G( b^{(2)} + W^{(2)}\times( s( b^{(1)} + W^{(1)}\times x)))$$
 	Nous allons ensuite réaliser un apprentissage du réseau de neurones et donc essayer de se rapprocher de la fonction qu'on souhaite apprendre. Les paramètres à apprendre (\textit{w1}, \textit{ w2}, \textit{b1} et \textit{b2}) seront changés à chaque itération grâce à différents algorithmes, le plus utilisé étant l'algorithme rétro-propagation du gradient (backpropagation of errors). 
 	Ayant le résultat souhaité (réel) et le résultat retourné, l'idée est de définir une fonction "coût" (l'inverse de la performance) qui décrira à quel point la fonction \textit{f} est éloignée de ce qui est recherché. Ensuite dériver \textit{f} en fonction de chacun de ses paramètres, et changer ces derniers dans le sens qu'il faut (rajouter à sa valeur, ou en soustraire), dans le but de faire diminuer la valeur du coût.
 
-	Comme mentionné précédemment, l'apprentissage d'une tâche \textit{T} est sensé permettre une application de ce qui a été acquis sur de nouvelles données, ceci est appelé la capacité de généralisation. La généralisation d'un apprentissage peut faire face à plusieurs problèmes [figure 2.3], les plus importants sont:\\
+	Comme mentionné précédemment, l'apprentissage d'une tâche \textit{T} est sensé permettre une application de ce qui a été acquis sur de nouvelles données, ceci est appelé la capacité de généralisation. La généralisation d'un apprentissage peut faire face à plusieurs problèmes (Figure 2.3), les plus importants sont:\\
 
 \textbf{Le sur-apprentissage:} Quand le programme retourne de bons résultats sur les données d'apprentissage, mais n'arrive pas à généraliser sur des données qu'il n'a jamais rencontrées auparavant.\\
 
@@ -125,7 +123,7 @@ Depuis 2010, l'utilisation de la puissance des GPUs pour les calculs est devenue
 	L'apprentissage profond permet de développer des approches d'apprentissage automatique de plus en plus profondes (plus volumineuses et donc plus complexes), mais il permet aussi une très grande flexibilité qui lui permet de combiner plusieurs techniques différentes. Pourtant, beaucoup de problèmes restent à régler, un des plus gros étant la soi-disant curse of dimentionality (la malédiction de la dimensionnalité). En fait, les données en entrée à un algorithme d'apprentissage sont de haute dimensionnalité. Une image par exemple, est une matrice de milliers, ou peut-être même de millions de pixels, chacun peut prendre des centaines de valeurs différentes (les valeurs RGB). Si nous prenons par exemple une image de $100 \times 100$, le nombre de configurations distinctes qu'elle peut prendre est:
 $256^{3} \times 100 \times 100 = 1 677 721 600$.
 
-	Cet espace de valeurs est évidemment trop grand pour pouvoir en couvrir même une fraction. Mais le problème serait plus à propos des fonctions de hautes variations que nous essayons de reproduire (fonctions d'apprentissage). En fait, si la fonction n'est pas trop complexe, même dans des dimensions élevées, quelques exemples pourraient être suffisants pour l'apprentissage de sa représentation, mais si la fonction cible a beaucoup de variations, nous aurons besoin en conséquence de plusieurs exemples d'apprentissage, comme le montre la figure [Figure 2.4] ci-dessous:
+	Cet espace de valeurs est évidemment trop grand pour pouvoir en couvrir même une fraction. Mais le problème serait plus à propos des fonctions de hautes variations que nous essayons de reproduire (fonctions d'apprentissage). En fait, si la fonction n'est pas trop complexe, même dans des dimensions élevées, quelques exemples pourraient être suffisants pour l'apprentissage de sa représentation, mais si la fonction cible a beaucoup de variations, nous aurons besoin en conséquence de plusieurs exemples d'apprentissage, comme le montre la figure (Figure 2.4) ci-dessous:
 
 \begin{figure}[H]
 	\centering
@@ -177,7 +175,7 @@ Les réseaux profonds de croyance sont utilisés pour le pré-apprentissage non-
 	\label{fig:Electron}
 \end{figure}
 
-	Soit une image \textit{I} et un filtre de convolution \textit{h}, appliquer un filtre de convolution sur un pixel, par exemple le pixel au centre avec la valeur 52, signifie donner une nouvelle valeur (égale à 42) à ce pixel en appliquant le filtre sur ce pixel et ses voisins, comme le montre la figure [Figure 2.6].
+	Soit une image \textit{I} et un filtre de convolution \textit{h}, appliquer un filtre de convolution sur un pixel, par exemple le pixel au centre avec la valeur 52, signifie donner une nouvelle valeur (égale à 42) à ce pixel en appliquant le filtre sur ce pixel et ses voisins, comme le montre la figure (Figure 2.6).
 	
 	Les couches de piles de convolution appliquent simplement une multitude de convolutions sur les couches du réseau en utilisant différents filtres.
 

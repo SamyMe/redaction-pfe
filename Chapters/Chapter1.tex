@@ -4,13 +4,13 @@
 
 %\label{Chapter1} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
-\lhead{Chapter 1. \emph{Recherche d'image par le contenue}} % This is for the header on each page - perhaps a shortened title
+\lhead{Chapitre 1. \emph{Recherche d'images par le contenu}} % This is for the header on each page - perhaps a shortened title
 
 %----------------------------------------------------------------------------------------
 
 \section{Introduction}
 
-	De nos jours, un grand nombre d'images est généré et transmis sous format numérique sur Internet, et il existe une variété d'outils permettant d'accéder à ces images numériques. Cependant, lors de la recherche d'une image à partir d'Internet en utilisant un moteur de recherche d'images (par exemple: Google [Figure 1.1]), les résultats récupérés ne répondent pas forcément au besoin de l'utilisateur. En effet, les images sont retrouvées en se basant sur les métadonnées associées comme les mots clés, les titres, etc.
+	De nos jours, un grand nombre d'images est généré et transmis sous format numérique sur Internet, et il existe une variété d'outils permettant d'accéder à ces images numériques. Cependant, lors de la recherche d'une image à partir d'Internet en utilisant un moteur de recherche d'images (par exemple: Google (Figure 1.1)), les résultats récupérés ne répondent pas forcément au besoin de l'utilisateur. En effet, les images sont retrouvées en se basant sur les métadonnées associées comme les mots clés, les titres, etc.
 	
 	
 \begin{figure}[H]
@@ -20,7 +20,7 @@
 	\label{fig:Electron}
 \end{figure}
 
-	La recherche d'image par texte (Text Based Image Rertieval - TBIR) [Figure 1.2] dépend de la qualité des annotations d'une image qui doivent couvrir tous les termes désirés, cette tâche peut être donc difficile, coûteuse ou même encore infaisable quand la collection d'images est très volumineuse.
+	La recherche d'image par texte (Text Based Image Rertieval - TBIR) (Figure 1.2) dépend de la qualité des annotations d'une image qui doivent couvrir tous les termes désirés, cette tâche peut être donc difficile, coûteuse ou même encore infaisable quand la collection d'images est très volumineuse.
 	
 \begin{figure}[H]
 	\centering
@@ -29,7 +29,7 @@
 	\label{fig:Electron}
 \end{figure}
 	
-	La recherche d'image par le contenu (Content Based Image Retrieval - CBIR) [Figure 1.3] propose des techniques pour éviter l'utilisation des descriptions textuelles, et permet de récupérer les images pertinentes à partir d'une grande collection de base d'image. Les techniques de récupération d'images se basent sur certaines caractéristiques récupérées du contenu de l'image, comme la texture, la couleur, la forme, etc.
+	La recherche d'image par le contenu (Content Based Image Retrieval - CBIR) (Figure 1.3) propose des techniques pour éviter l'utilisation des descriptions textuelles, et permet de récupérer les images pertinentes à partir d'une grande collection de base d'image. Les techniques de récupération d'images se basent sur certaines caractéristiques récupérées du contenu de l'image, comme la texture, la couleur, la forme, etc.
 
 \begin{figure}[H]
 	\centering
@@ -97,7 +97,7 @@
 
 \section{Systèmes de recherche d'images existants}
 
-	Les systèmes de recherche d'image par le contenu ont été utilisés dans un grand nombre d'applications telles que: le diagnostic médical [Figure 1.4], les archives photographiques, l'identification des empreintes digitales et la reconnaissance faciale.
+	Les systèmes de recherche d'image par le contenu ont été utilisés dans un grand nombre d'applications telles que: le diagnostic médical (Figure 1.4), les archives photographiques, l'identification des empreintes digitales et la reconnaissance faciale.
 
 
 \begin{figure}[H]
@@ -110,7 +110,7 @@
 	Nous allons maintenant présenter quelques systèmes connus de recherche d'image par le contenu:
 
 \subsection*{QBIC}
-	Query By Image Content (QBIC) [Nib et al. 93][Fli et al.95], signifie requête par contenu d'image, il est le premier système de recherche d'images par le contenu commercial. Il fournit des framework et des techniques de base pour de nombreux systèmes de récupération d'images. QBIC supporte les requêtes basées sur des exemples d'images, d'images construites par l'utilisateur, des dessins et modèles de couleur et de texture, etc. Les fonctions de couleur utilisées dans QBIC sont (R, G, B), (Y, i, q), ( L, a, b), MTM (transformée mathématique Munsell), et un histogramme de couleur à k-élément. Dans son nouveau système, la recherche de texte par mot-clé peut être combinée avec la recherche de similarité par contenu. La [Figure 1.5] montre une démo de QBIC.
+	Query By Image Content (QBIC) [Nib et al. 93][Fli et al.95], signifie requête par contenu d'image, il est le premier système de recherche d'images par le contenu commercial. Il fournit des framework et des techniques de base pour de nombreux systèmes de récupération d'images. QBIC supporte les requêtes basées sur des exemples d'images, d'images construites par l'utilisateur, des dessins et modèles de couleur et de texture, etc. Les fonctions de couleur utilisées dans QBIC sont (R, G, B), (Y, i, q), ( L, a, b), MTM (transformée mathématique Munsell), et un histogramme de couleur à k-élément. Dans son nouveau système, la recherche de texte par mot-clé peut être combinée avec la recherche de similarité par contenu. La (Figure 1.5) montre une démo de QBIC.
 
 \begin{figure}[H]
 	\centering
@@ -122,7 +122,7 @@
 \subsection*{LIRE}
 	LIRE [Lux et al. 08][Lux et al. 13] est une bibliothèque Java qui fournit un moyen simple permettant de rechercher des photos et des images en fonction de leurs caractéristiques de couleur et de texture. LIRE crée un index de Lucene des caractéristiques de l'image pour la récupération de son contenu. Elle est facile à utiliser, des méthodes pour rechercher l'index et les résultat sont fournis par LIRE.
 	
-	La bibliothèque LIRE et l'application de démo [Figure 1.6] ainsi que tous les fichiers sources de test et de développement sont disponibles sous la licence GNU GPL.
+	La bibliothèque LIRE et l'application de démo (Figure 1.6) ainsi que tous les fichiers sources de test et de développement sont disponibles sous la licence GNU GPL.
 
 \begin{figure}[H]
 	\centering

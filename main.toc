@@ -1,4 +1,7 @@
 \select@language {french}
+\contentsline {chapter}{R\begingroup \let \relax \relax \endgroup [Pleaseinsert\PrerenderUnicode {é}intopreamble]sum\begingroup \let \relax \relax \endgroup [Pleaseinsert\PrerenderUnicode {é}intopreamble]}{1}
+\contentsline {chapter}{Remerciements}{2}
+\contentsline {chapter}{Introduction g\IeC {\'e}n\IeC {\'e}rale}{3}
 \contentsline {chapter}{\numberline {1}Recherche d'images par le contenu}{4}
 \contentsline {section}{\numberline {1.1}Introduction}{4}
 \contentsline {section}{\numberline {1.2}La conception d'un syst\IeC {\`e}me CBIR}{5}
@@ -66,3 +69,5 @@
 \contentsline {section}{\numberline {4.3}Interface de l'application}{50}
 \contentsline {section}{\numberline {4.4}Tests}{52}
 \contentsline {section}{\numberline {4.5}Conclusion}{53}
+\contentsline {chapter}{Conclusion}{54}
+\contentsline {chapter}{Bibliographie}{55}

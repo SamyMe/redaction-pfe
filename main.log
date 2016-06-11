@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.10)  11 JUN 2016 02:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.10)  11 JUN 2016 02:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -859,11 +859,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./main.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 3.
+(Font)              <12> on input line 6.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 3.
+(Font)              <8> on input line 6.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 3.
+(Font)              <6> on input line 6.
  [2
 
 ])
@@ -908,32 +908,7 @@ LaTeX Font Info:    Font shape `U/xnsh/m/n' will be
 \openout2 = `Chapters/remerciement.aux'.
 
 
-(./Chapters/remerciement.tex
-! You can't use `macro parameter character #' in horizontal mode.
-l.8 ...as pu être accompli sans l'ouverture que #
-                                                  ## la recherche en Intelli...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! You can't use `macro parameter character #' in horizontal mode.
-l.8 ...s pu être accompli sans l'ouverture que ##
-                                                  # la recherche en Intellig...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! You can't use `macro parameter character #' in horizontal mode.
-l.8 ... pu être accompli sans l'ouverture que ###
-                                                   la recherche en Intellige...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-) [2
+(./Chapters/remerciement.tex) [2
 
 
 
@@ -1864,7 +1839,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--80
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 81--115
+Underfull \hbox (badness 10000) in paragraph at lines 81--121
 
  []
 
@@ -2113,7 +2088,7 @@ nts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb
 share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/arabtex/xnsh14.pfb>
-Output written on main.pdf (61 pages, 11044508 bytes).
+Output written on main.pdf (61 pages, 11044655 bytes).
 PDF statistics:
  335 PDF objects out of 1000 (max. 8388607)
  183 compressed objects within 2 object streams
